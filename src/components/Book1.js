@@ -10,23 +10,22 @@ class Book1 extends Component {
     render() {
         return (
             <div className='center-block' >
+                <br />
+                <br />
                 <div className="container">
                     <div className='row'>
                         <div className='col-sm-3 col-md-6 col-lg-12'>
                             <FlipPage orientation="horizontal" >
-                                <img className="" src={require("../img/newstory1.png")} style={{height: '480px', width: '240px'}} />
+                            
+                                <img className="" src={require("../img/newstory1.png")} style={{ height: '480px', width: '240px' }} />
                                 <img className="" src={require("../img/popstory1.jpg")} style={{ height: '480px', width: '240px' }} />
                                 <img className="" src={require("../img/book2.jpg")} style={{ height: '480px', width: '240px' }} />
                                 <img className="" src={require("../img/amazon.jpg")} style={{ height: '480px', width: '240px' }} />
-                                                                
+
                             </FlipPage>
                         </div>
                     </div>
-               </div>
-               <br/>
-                <br />
-                <br />
-                <br />
+                </div>
                 <br />
                 <br />
             </div>   
