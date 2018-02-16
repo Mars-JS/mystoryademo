@@ -21,7 +21,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "webpack": "webpack",
-    "web": "react-scripts start"
+    "web": "yarn run start"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
