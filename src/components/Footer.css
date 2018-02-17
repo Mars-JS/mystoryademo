@@ -1,0 +1,9 @@
+.footer{
+background-color:  rgb(246, 246, 246);
+}
+#footerlogo{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 55px;
+}
