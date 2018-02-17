@@ -26,7 +26,7 @@ class Book1 extends Component {
 
                             </FlipPage>
                         </div>
-                        <div><span>...all those memories, moments in time... lost, like tears in the rain... </span></div>
+
                     </div>
                 </div>
                 <br />
