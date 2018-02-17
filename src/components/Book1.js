@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
+
 import anime from 'animejs';
 import FlipPage from 'react-flip-page';
 
@@ -12,16 +11,18 @@ class Book1 extends Component {
             <div className='center-block' >
                 <br />
                 <br />
-                <div className="container">
+                <br />
+                <br />
+                <div className="container-fluid">
                     <div className='row'>
                         <span>Title: My Life </span>
                         <div className='col-sm-3 col-md-6 col-lg-12'>
-                            <FlipPage orientation="horizontal" >
+                            <FlipPage orientation="horizontal" maxAngle="65" uncutPages="true" showSwipeHint="true" showHint="true" flipOnTouch="true">
 
-                                <img className="" src={require("../img/newstory1.png")} style={{ height: '480px', width: '240px' }} />
-                                <img className="" src={require("../img/popstory1.jpg")} style={{ height: '480px', width: '240px' }} />
-                                <img className="" src={require("../img/book2.jpg")} style={{ height: '480px', width: '240px' }} />
-                                <img className="" src={require("../img/amazon.jpg")} style={{ height: '480px', width: '240px' }} />
+                                <img className="img-responsive" src={require("../img/newstory1.png")} style={{ height: '480px', width: '240px' }} />
+                                <img className="img-responsive" src={require("../img/popstory1.jpg")} style={{ height: '480px', width: '240px' }} />
+                                <img className="img-responsive" src={require("../img/book2.jpg")} style={{ height: '480px', width: '240px' }} />
+                                <img className="img-responsive" src={require("../img/amazon.jpg")} style={{ height: '480px', width: '240px' }} />
 
                             </FlipPage>
                         </div>
