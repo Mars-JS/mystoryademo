@@ -16,7 +16,7 @@ class Book1 extends Component {
                 <div className="container-fluid">
                     <div className='row'>
                         <span>Title: My Life </span>
-                        <div className='col-sm-3 col-md-6 col-lg-12'>
+                        <div className='col-sm-12 col-md-12 col-lg-12'>
                             <FlipPage orientation="horizontal" maxAngle="65" uncutPages="true" showSwipeHint="true" showHint="true" flipOnTouch="true">
 
                                 <img className="img-responsive" src={require("../img/newstory1.png")} style={{ height: '480px', width: '240px' }} />
@@ -26,7 +26,11 @@ class Book1 extends Component {
 
                             </FlipPage>
                         </div>
-
+                        <div className="row">
+                            <div className="col-sm-12 col-md-12 col-lg-12">
+                                <span>...all those memories, moments in time... lost, like tears in the rain... </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br />
