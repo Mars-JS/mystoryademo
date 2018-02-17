@@ -14,8 +14,9 @@ class BookShelf extends Component {
                             <Link to="/books/1" className="">
                                 <div className="books">
                                     <div className="book">
+                                        
                                         <img className="bookImage" src={require("../img/newstory1.png")} />
-                                        <div className="overlay">
+                                            <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
                                     </div>
@@ -23,7 +24,7 @@ class BookShelf extends Component {
                             </Link>
                         </div>
                         <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                            <a href="/read">
+                            <a href="/">
                                 <div className="books">
                                     <div className="book">
                                         <img className="bookImage" src={require("../img/popstory1.jpg")} />
@@ -35,7 +36,7 @@ class BookShelf extends Component {
                             </a>
                         </div>
                         <div id="latestThree" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                            <a href="/read">
+                            <a href="/">
                                 <div className="books">
                                     <div className="book">
                                         <img className="bookImage" src={require("../img/book2.jpg")} />
@@ -47,7 +48,7 @@ class BookShelf extends Component {
                             </a>
                         </div>
                         <div id="latestFour" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                            <a href="/read">
+                            <a href="/">
                                 <div className="books">
                                     <div className="book">
                                         <img className="bookImage" src={require("../img/amazon.jpg")} />

@@ -26,6 +26,7 @@ class App extends Component {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/books/1" component={Book1} />
           <Route exact path="/books/2" component={Book2} />
+          <Route exact path="/books" component={Landing} />
           <BookShelf />
           <Footer/>
       </div>

@@ -548,3 +548,81 @@ body{
   bottom: 60%;
   width: 40px;
 }
+
+
+.overlay {
+  position: absolute;
+  top: 0.5%;
+  bottom: 0;
+  left: 5.5%;
+  right: 0;
+  height: 99%;
+  width: 89%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.book:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.coverText{
+  /* position: absolute; */
+  top: 10%;
+  left:10px;
+  right:10px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.coverText h4, .coverText h5{
+  background-color: rgba(5, 5, 5, 0.3);
+  padding: 3px;
+  border: solid 1px rgba(165, 165, 165, 0.34)
+}
+
+.navigation
+{
+  text-align: center;
+}
+
+.contents{
+  margin-bottom: 75px;
+  background-image: url("./img/greyBackground.jpg");
+  background-size: contain;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.greyPic{
+  height:300px;
+  width:300px;
+  display: block;
+  margin: 20px auto 20px auto;
+}
+
+.greyText {
+  text-align: center;
+
+}
+
+#vimeo{
+  padding: 0px;
+}
