@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'
-
+import '../App.css';
 import anime from 'animejs';
 import FlipPage from 'react-flip-page';
 
@@ -26,7 +26,7 @@ class Book1 extends Component {
                         </div>
                     </div>
                     <div className='row'>
-                        
+
                         <div className='col-sm-12 col-md-12 col-lg-12'>
                             <FlipPage orientation="horizontal" maxAngle="65" uncutPages="true" showSwipeHint="true" showHint="true" flipOnTouch="true">
 
@@ -48,11 +48,10 @@ class Book1 extends Component {
                 <br />
                 </div>
                 </div>
-            </div>   
+            </div>
         );
     }
 
 }
 
 export default Book1;
-
