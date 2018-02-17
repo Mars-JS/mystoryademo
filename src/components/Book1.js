@@ -19,7 +19,7 @@ class Book1 extends Component {
                 <br />
                 <div className="container-fluid">
                 <div className='row'>
-                        <div className='col-sm-12 col-md-12 col-lg-12 col-sm-offset-6 col-md-offset-6 col-lg-offset-6'>
+                        <div className='col-sm-12 col-md-12 col-lg-12 col-sm-offset-5 col-md-offset-5 col-lg-offset-5'>
                     <div className='row'>
                         <div className='col-sm-12 col-md-12 col-lg-12'>
                             <span>Title: My Life </span>
