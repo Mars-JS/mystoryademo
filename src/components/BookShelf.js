@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 class BookShelf extends Component {
     render() {
         return (
-            <div>
+          <div className="container">
+            <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
                     <div className="container" style={{paddingBottom: "17px"}}>
@@ -60,6 +61,7 @@ class BookShelf extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

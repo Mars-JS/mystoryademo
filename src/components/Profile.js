@@ -5,7 +5,14 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+                <div className="container profile">
 
                     <div id="1A" className="row" style={{backgroundColor:'F6F6F6'}}>
 

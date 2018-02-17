@@ -4,12 +4,13 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 
 
-import Header from "./components/Header";
+import Nav from "./components/Header";
+import Footer from "./components/landing-components/footer";
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
 import Book1 from "./components/Book1";
 /* import { Book2 } from "Book2";*/
-import BookShelf from "./components/BookShelf"; 
+import BookShelf from "./components/BookShelf";
 /* const Header = 'header'; */
 /* const Book1 = 'book1'; */
 const Book2 = 'book2';
@@ -20,14 +21,13 @@ class App extends Component {
     return (
     <BrowserRouter>
       <div classname='container'>
-          
-          <Header />
+          <Nav />
           <Route exact path="/" component={Landing} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/books/1" component={Book1} />
           <Route exact path="/books/2" component={Book2} />
           <BookShelf />
-        
+          <Footer/>
       </div>
     </BrowserRouter>
     );
