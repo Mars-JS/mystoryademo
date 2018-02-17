@@ -13,9 +13,20 @@ class Book1 extends Component {
                 <br />
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className="container-fluid">
+                <div className='row'>
+                        <div className='col-sm-12 col-md-12 col-lg-12 col-sm-offset-6 col-md-offset-6 col-lg-offset-6'>
                     <div className='row'>
-                        <span>Title: My Life </span>
+                        <div className='col-sm-12 col-md-12 col-lg-12'>
+                            <span>Title: My Life </span>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        
                         <div className='col-sm-12 col-md-12 col-lg-12'>
                             <FlipPage orientation="horizontal" maxAngle="65" uncutPages="true" showSwipeHint="true" showHint="true" flipOnTouch="true">
 
@@ -35,6 +46,8 @@ class Book1 extends Component {
                 </div>
                 <br />
                 <br />
+                </div>
+                </div>
             </div>   
         );
     }
