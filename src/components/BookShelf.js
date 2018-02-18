@@ -15,7 +15,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/newstory1.png")} />
+                                        <img className="bookImage img-responsive" src={require("../img/newstory1.png")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -27,7 +27,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/popstory1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/popstory1.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -39,7 +39,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/book2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/book2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -51,7 +51,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/amazon.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/amazon.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -73,7 +73,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/popstory3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/popstory3.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -85,7 +85,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/newstory2.png")} />
+                                        <img className="bookImage img-responsive" src={require("../img/newstory2.png")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -97,7 +97,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/newstory3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/newstory3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -109,7 +109,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/popstory4.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/popstory4.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -131,7 +131,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/celebstory2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celebstory2.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -143,7 +143,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/celebstory3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celebstory3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -155,7 +155,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/riridrake.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/riridrake.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -167,7 +167,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/celebstory4.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celebstory4.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -189,7 +189,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/celebstory1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celebstory1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -201,7 +201,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/celeb1z.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celeb1z.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -213,7 +213,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/celeb2z.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/celeb2z.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -225,7 +225,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/newstory4.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/newstory4.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -247,7 +247,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/college1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/college1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -259,7 +259,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/college2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/college2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -271,7 +271,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/college3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/college3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -283,7 +283,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/bbuy.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/bbuy.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -305,7 +305,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/music1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/music1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -317,7 +317,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/music2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/music2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -329,7 +329,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/music3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/music3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -341,7 +341,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/itunes.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/itunes.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -363,7 +363,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/tech1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/tech1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -375,7 +375,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/tech2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/tech2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -387,7 +387,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/tech3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/tech3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -399,7 +399,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/apple.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/apple.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -421,7 +421,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/food1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/food1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -433,7 +433,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/food2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/food2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -445,7 +445,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/food3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/food3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -457,7 +457,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/hello.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/hello.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
@@ -479,7 +479,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage" src={require("../img/game1.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/game1.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -491,7 +491,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/game2.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/game2.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -503,7 +503,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/game3.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/game3.jpg")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -515,7 +515,7 @@ class BookShelf extends Component {
                             <a href="/">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage" src={require("../img/ps4.jpg")} />
+                                        <img className="bookImage img-responsive" src={require("../img/ps4.jpg")} />
                                         <div className="overlay">
                                             <div className="text">SHOP NOW</div>
                                         </div>
