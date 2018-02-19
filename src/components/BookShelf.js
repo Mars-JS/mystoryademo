@@ -6,10 +6,6 @@ class BookShelf extends Component {
     render() {
         return (
           <div className="container-fluid">
-<<<<<<< HEAD
-
-=======
->>>>>>> 243c1f4bb38c6401f6eb96e5f858e07accf2d3cd
             <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
