@@ -245,7 +245,10 @@
         padding-top: 100px;
       }
       .center-block{
-        margin-right: 25%;
+        position: relative;
+        right: 250px;
+        margin-right: 100px;
+        padding-right: 200px;
       }
 
 /* PROFILE SECTION */
