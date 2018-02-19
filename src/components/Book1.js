@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import '../App.css';
 import anime from 'animejs';
 import FlipPage from 'react-flip-page';
-import Iframe from 'react-iframe'
+
 
 class Book1 extends Component {
 
