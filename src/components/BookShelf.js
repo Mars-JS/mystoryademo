@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 class BookShelf extends Component {
     render() {
         return (
-          <div className="container">
+          <div className="container-fluid">
+
             <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
@@ -12,15 +14,12 @@ class BookShelf extends Component {
                         <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
                             <button id="userLeftScroll" className="btn btn-info leftScroll"><span className="glyphicon glyphicon-chevron-left pull-left"></span></button>
                             <Link to="/books/1" className="">
-                                <div className="books">
-                                    <div className="book">
-
+                                    <div className="book books">
                                         <img className="bookImage img-responsive" src={require("../img/newstory1.png")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
                                     </div>
-                                </div>
                             </Link>
                         </div>
                         <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -63,6 +62,7 @@ class BookShelf extends Component {
                     </div>
                 </div>
             </div>
+
             <div className="row">
                 <h3 className="shelfTitle text-center">POPULAR STORIES</h3>
                 <div id="latestStories" className="row shelf">

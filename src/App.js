@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 
 
 import Nav from "./components/Header";
@@ -9,7 +9,7 @@ import Footer from "./components/landing-components/footer";
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
 import Book1 from "./components/Book1";
-/* import { Book2 } from "Book2";*/
+/* import Book2 from "./components/Book2"; */
 import BookShelf from "./components/BookShelf";
 /* const Header = 'header'; */
 /* const Book1 = 'book1'; */

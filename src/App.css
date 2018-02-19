@@ -454,19 +454,19 @@ input#myFile{
 
 }
 
-.container .company-info{
+.company-info{
   font-size: 13px;
   font-family: "didot";
   margin-top: 20px;
   margin-left: 30px;
 }
-.container .text-muted{
+.text-muted{
 padding-top: 10px;
   margin: 20px 0;
   vertical-align: middle;
 }
 
-.container .social-icons{
+.social-icons{
   margin: 30px 0;
 }
 
