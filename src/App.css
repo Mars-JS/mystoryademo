@@ -176,9 +176,7 @@
         margin: 30px 0;
       }
       .profile{
-        border-width: 5px;
-        border-color: #ccc;
-        border-style: solid;
+        background-color: #F6F6F6;
       }
       #profilePic{
         height: 275px;

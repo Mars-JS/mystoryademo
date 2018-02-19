@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class BookShelf extends Component {
     render() {
         return (
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
