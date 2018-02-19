@@ -9,16 +9,13 @@ class Book1 extends Component {
 
     render() {
         return (
-            <div className='center-block' >
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className="container-fluid">
+            <div className='container center-block' >
+                <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-12 col-lg-offset-4" style={{marginTop: "-100px"}}>
+                        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fdt848afh&bgcolor=F4EAEE&t=1519017786" width="1000" height="1000" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+{/*                 <div className="container-fluid">
                     <div className='row'>
                         <div className='col-sm-12 col-md-12 col-lg-12 col-sm-offset-5 col-md-offset-5 col-lg-offset-5'>
                             <div className='row'>
@@ -65,7 +62,7 @@ class Book1 extends Component {
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-12 col-md-12 col-lg-12">
-                                        <h4>...all those memories, moments in time... lost, like tears in the rain... </h4>
+                                        <h4>Author: Rhianna</h4>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +72,7 @@ class Book1 extends Component {
                         <br />
                         <br />
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }
