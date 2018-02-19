@@ -287,6 +287,7 @@
 #save{
   background-color: #D6E4F0!important;
   border-color: #D6E4F0!important;
+  margin-bottom: 30px;
 }
 
 input#myFile{

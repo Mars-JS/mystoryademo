@@ -40,9 +40,9 @@ class Profile extends Component {
                         </div>
 
                     </div>
-                    <div id="" className="row" style={{ backgroundColor: '#396fc6' }}>
-                        <div id="col3A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-right" style={{ color: 'white'}} >Stories</span></div>
-                        <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'white' }} >Saved</span></div>
+                    <div id="save" className="row" style={{ backgroundColor: '#396fc6' }}>
+                        <div id="col3A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-right" style={{ color: 'black'}} >Stories</span></div>
+                        <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'black' }} >Saved</span></div>
                     </div>
                 </div>
             </div>
