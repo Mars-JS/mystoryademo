@@ -29,8 +29,8 @@ const Splash = () => {
 
               <div id="row10" className="row">
                 <div className="col-sm-9 col-md-9 col-lg-9">
-                  <button className="loginBtn loginBtn--facebook"><a class="loginbtn" href="/profile">Login with Facebook</a></button>
-                  <button className="loginBtn loginBtn--google"><a class="loginbtn" href="/profile">Login with Google</a></button>
+                  <button className="loginBtn loginBtn--facebook"><a className="loginbtn" href="/profile">Login with Facebook</a></button>
+                  <button className="loginBtn loginBtn--google"><a className="loginbtn" href="/profile">Login with Google</a></button>
 
                 </div>
               </div>
@@ -61,8 +61,8 @@ const Splash = () => {
               </div>
               <br/>
               <div id="row8" className="row">
-                <div class="col-sm-9 col-md-9 col-lg-9">
-                  <button type="submit" class="signUpBtn btn">S I G N U P</button>
+                <div className="col-sm-9 col-md-9 col-lg-9">
+                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'black'}}>S I G N U P</button>
 
                 </div>
               </div>
