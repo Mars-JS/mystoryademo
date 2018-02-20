@@ -4,7 +4,7 @@ import '../App.css';
 class BookShelf extends Component {
     render() {
         return (
-          <div className="container-fluid">
+          <div className="container-fluid" >
             <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
@@ -15,7 +15,7 @@ class BookShelf extends Component {
                                 <div className="books">
                                     <div className="book">
 
-                                        <img className="bookImage img-responsive" src={require("../img/newstory1.png")} />
+                                        <img className="bookImage img-responsive" src={require("../img/book2.jpg")} />
                                             <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>
@@ -39,7 +39,7 @@ class BookShelf extends Component {
                             <Link to="/books/1" className="">
                                 <div className="books">
                                     <div className="book">
-                                        <img className="bookImage img-responsive" src={require("../img/book2.jpg")} />
+                                            <img className="bookImage img-responsive" src={require("../img/newstory1.png")} />
                                         <div className="overlay">
                                             <div className="text">Open Story</div>
                                         </div>

@@ -391,8 +391,8 @@ input#myFile{
 }
 
 .bookImage{
-	width: 85%;
-	height: 85%;
+	width: 217px;;
+  height: 296px;
 	border: solid #979595 2px;
   position: relative;
   bottom: 25px;
@@ -563,11 +563,11 @@ body{
 
 .overlay {
   position: absolute;
-  top: -8.5%;
+  top: -8%;
   bottom: 0;
   left: 5.5%;
   right: 0;
-  height: 99%;
+  height: 99.5%;
   width: 76%;
   opacity: 0;
   transition: .5s ease;
