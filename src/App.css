@@ -245,12 +245,11 @@
         padding-top: 100px;
       }
       .center-block{
-        position: relative;
-        right: 250px;
-        margin-right: 100px;
-        padding-right: 200px;
+        margin-top: 8%;
       }
-
+      .carousel{
+        height: 500px;
+      }
 /* PROFILE SECTION */
 #profilePic{
   height: 275px;
