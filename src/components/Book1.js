@@ -14,7 +14,6 @@ class Book1 extends Component {
               <h1><strong>Author: </strong>Rihanna</h1>
             </div>
           </div>
-
           
           <div className="row" >
             <div className="col-sm-12 col-md-12 col-lg-12">
