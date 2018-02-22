@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
+import ProfileBookShelf from './ProfileBookShelf'
+
 class Profile extends Component {
 
     render() {
@@ -46,6 +48,7 @@ class Profile extends Component {
                         <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'black' }} >Saved</span></div>
                     </div>
                 </div>
+                <ProfileBookShelf />
             </div>
         );
     }
