@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import '../App.css';
-
-class ProfileBookShelf extends Component {
+class ReadBookShelf extends Component {
     render() {
         return (
             <div className="container" >
                 <div className="row">
-                    <h3 className="shelfTitle text-center">Profile Book Shelf 1</h3>
+                    <h3 className="shelfTitle text-center"> read shelf 1 </h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -65,7 +64,7 @@ class ProfileBookShelf extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <h3 className="shelfTitle text-center">Profile Book Shelf 2</h3>
+                    <h3 className="shelfTitle text-center">POPULAR STORIES</h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -123,7 +122,7 @@ class ProfileBookShelf extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <h3 className="shelfTitle text-center">Profile Book Shelf 3</h3>
+                    <h3 className="shelfTitle text-center">TRENDING STORIES </h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -533,4 +532,4 @@ class ProfileBookShelf extends Component {
     }
 }
 
-export default ProfileBookShelf;
+export default ReadBookShelf;

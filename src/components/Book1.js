@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import "../App.css";
 import { Carousel } from "react-bootstrap";
-import BookShelf from './BookShelf';
+import ReadBookShelf from './ReadBookShelf';
 
 class Book1 extends Component {
   render() {
@@ -584,7 +584,7 @@ class Book1 extends Component {
             </div>
           </div>
         </div>
-        <BookShelf/>
+        <ReadBookShelf/>
       </div>
     );
   }
