@@ -4,9 +4,10 @@ import '../App.css';
 class ReadBookShelf extends Component {
     render() {
         return (
-            <div className="container" >
+           
+           <div className="container" >
                 <div className="row">
-                    <h3 className="shelfTitle text-center"> read shelf 1 </h3>
+                    <h3 className="shelfTitle text-center">OTHER STORIES FROM @BADGALRIRI</h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -27,7 +28,7 @@ class ReadBookShelf extends Component {
                                 <Link to="/books/2" className="">
                                     <div className="books">
                                         <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/popstory1.jpg")} />
+                                            <img className="bookImage img-responsive" src={require("../img/ririBazar.jpg")} />
                                             <div className="overlay">
                                                 <div className="text">Open Story</div>
                                             </div>
@@ -39,7 +40,7 @@ class ReadBookShelf extends Component {
                                 <Link to="/books/1" className="">
                                     <div className="books">
                                         <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/newstory1.png")} />
+                                            <img className="bookImage img-responsive" src={require("../img/ririDior.jpg")} />
                                             <div className="overlay">
                                                 <div className="text">Open Story</div>
                                             </div>
@@ -51,7 +52,7 @@ class ReadBookShelf extends Component {
                                 <Link to="/books/1" className="">
                                     <div className="books">
                                         <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/amazon.jpg")} />
+                                            <img className="bookImage img-responsive" src={require("../img/riridrake.jpg")} />
                                             <div className="overlay">
                                                 <div className="text">SHOP NOW</div>
                                             </div>
@@ -238,64 +239,6 @@ class ReadBookShelf extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <h3 className="shelfTitle text-center">COLLEGE STORIES </h3>
-                    <div id="latestStories" className="row shelf">
-                        <div className="container" style={{ paddingBottom: "17px" }}>
-                            <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <button id="userLeftScroll" className="btn btn-info leftScroll"><span className="glyphicon glyphicon-chevron-left pull-left"></span></button>
-                                <Link to="/books/1" className="">
-                                    <div className="books">
-                                        <div className="book">
-
-                                            <img className="bookImage img-responsive" src={require("../img/college1.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/college2.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="latestThree" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/college3.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="latestFour" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/bbuy.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">SHOP NOW</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button id="userRightScroll" className="btn btn-info rightScroll"><span className="glyphicon glyphicon-chevron-right pull-right"></span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
                     <h3 className="shelfTitle text-center">MUSIC STORIES </h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
@@ -458,64 +401,6 @@ class ReadBookShelf extends Component {
                                     <div className="books">
                                         <div className="book">
                                             <img className="bookImage img-responsive" src={require("../img/hello.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">SHOP NOW</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button id="userRightScroll" className="btn btn-info rightScroll"><span className="glyphicon glyphicon-chevron-right pull-right"></span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <h3 className="shelfTitle text-center">GAMING STORIES </h3>
-                    <div id="latestStories" className="row shelf">
-                        <div className="container" style={{ paddingBottom: "17px" }}>
-                            <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <button id="userLeftScroll" className="btn btn-info leftScroll"><span className="glyphicon glyphicon-chevron-left pull-left"></span></button>
-                                <Link to="/books/1" className="">
-                                    <div className="books">
-                                        <div className="book">
-
-                                            <img className="bookImage img-responsive" src={require("../img/game1.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/game2.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="latestThree" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/game3.jpg")} />
-                                            <div className="overlay">
-                                                <div className="text">Open Story</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="latestFour" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                                <a href="/">
-                                    <div className="books">
-                                        <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/ps4.jpg")} />
                                             <div className="overlay">
                                                 <div className="text">SHOP NOW</div>
                                             </div>
