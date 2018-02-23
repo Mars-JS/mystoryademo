@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import '../App.css';
+
 class BookShelf extends Component {
     render() {
         return (
-          <div className="container-fluid" >
+          <div className="container" >
             <div className="row">
                 <h3 className="shelfTitle text-center">NEW STORIES </h3>
                 <div id="latestStories" className="row shelf">
@@ -24,7 +25,7 @@ class BookShelf extends Component {
                             </Link>
                         </div>
                         <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                            <Link to="/books/1" className="">
+                            <Link to="/books/2" className="">
                                 <div className="books">
                                     <div className="book">
                                         <img className="bookImage img-responsive" src={require("../img/popstory1.jpg")} />
