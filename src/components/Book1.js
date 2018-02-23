@@ -89,7 +89,7 @@ class Book1 extends Component {
               <img
                 className="img-responsive"
                 src={require("../img/popstory1.jpg")}
-                style={{ height: "360px", width: "240px" }}
+                style={{ height: "300px", width: "180px" }}
               />
             </Carousel.Item>
 
