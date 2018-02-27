@@ -3,12 +3,13 @@ import { render } from "react-dom";
 import "../App.css";
 import { Carousel } from "react-bootstrap";
 import ReadBookShelf from './ReadBookShelf';
-
+import Nav from './Header';
 class Book2 extends Component {
     render() {
         return (
             <div className='container'>
                 <div className="container-fluid center-block" style={{ marginTop: '10%', marginBottom: '10%' }}>
+                  <Nav/>
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
                             <h1><strong>Title: </strong>My Life in 2018</h1>

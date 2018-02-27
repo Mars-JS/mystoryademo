@@ -3,14 +3,14 @@ import { render } from "react-dom";
 import "../App.css";
 import { Carousel } from "react-bootstrap";
 import ReadBookShelf from './ReadBookShelf';
-
+import Nav from './Header';
 class Book1 extends Component {
   render() {
     return (
 
       <div className='container'>
         <div className="container-fluid center-block" style={{ marginTop: '10%', marginBottom: '10%' }}>
-
+          <Nav/>
           <div className="row" >
             <div className="col-sm-12 col-md-12 col-lg-12">
               <Carousel className="carousel" style={{ height: "480px", width: "854px", marginTop: '8%', marginBottom: '2%',marginLeft: '11%' }} interval="15000">
@@ -26,7 +26,7 @@ class Book1 extends Component {
 
                       <div className="col-sm- col-md-4 col-lg-4">
                         <h1>Chapter 1</h1>
-                   
+
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -44,7 +44,7 @@ class Book1 extends Component {
                           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    
+
                       </div>
 
                       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -57,9 +57,9 @@ class Book1 extends Component {
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                           
+
                       </p>
-                    
+
                         </div>
                         <div className='row'>
                           <div className="col-sm-4 col-md-8 col-lg-12">
@@ -77,7 +77,7 @@ class Book1 extends Component {
 
                       <div className="col-sm- col-md-4 col-lg-4">
                         <h1>Chapter 1</h1>
-                   
+
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -95,7 +95,7 @@ class Book1 extends Component {
                           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    
+
                       </div>
 
                       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -108,9 +108,9 @@ class Book1 extends Component {
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                           
+
                       </p>
-                    
+
                         </div>
                         <div className='row'>
                           <div className="col-sm-4 col-md-8 col-lg-12">
@@ -129,7 +129,7 @@ class Book1 extends Component {
 
                       <div className="col-sm- col-md-4 col-lg-4">
                         <h1>Chapter 1</h1>
-                   
+
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -147,7 +147,7 @@ class Book1 extends Component {
                           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    
+
                       </div>
 
                       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -160,9 +160,9 @@ class Book1 extends Component {
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                           
+
                       </p>
-                    
+
                         </div>
                         <div className='row'>
                           <div className="col-sm-4 col-md-8 col-lg-12">
@@ -180,7 +180,7 @@ class Book1 extends Component {
 
                       <div className="col-sm- col-md-4 col-lg-4">
                         <h1>Chapter 1</h1>
-                   
+
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -198,7 +198,7 @@ class Book1 extends Component {
                           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    
+
                       </div>
 
                       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -211,9 +211,9 @@ class Book1 extends Component {
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                           
+
                       </p>
-                    
+
                         </div>
                         <div className='row'>
                           <div className="col-sm-4 col-md-8 col-lg-12">
@@ -231,7 +231,7 @@ class Book1 extends Component {
 
                       <div className="col-sm- col-md-4 col-lg-4">
                         <h1>Chapter 1</h1>
-                   
+
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -249,7 +249,7 @@ class Book1 extends Component {
                           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    
+
                       </div>
 
                       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -262,9 +262,9 @@ class Book1 extends Component {
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                           
+
                       </p>
-                    
+
                         </div>
                         <div className='row'>
                           <div className="col-sm-4 col-md-8 col-lg-12">
