@@ -19,14 +19,14 @@ class Book2 extends Component {
 
                     <div className="row" >
                         <div className="col-sm-12 col-md-12 col-lg-12">
-                            <Carousel className="carousel" style={{ height: "720px", width: "1280px", marginTop: '2%', marginBottom: '2%' }} interval="15000">
+                            <Carousel style={{ height: "720px", width: "1280px", marginTop: '2%', marginBottom: '2%' }} interval="15000">
                                 <Carousel.Item id="coverPage">
                                     <img
                                         className="img-responsive"
                                         src={require("../img/rihannaPage0.jpg")}
                                     />
                                 </Carousel.Item>
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem" style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="row">
 
@@ -119,7 +119,7 @@ class Book2 extends Component {
                                         </div>
                                     </div>
                                 </Carousel.Item>
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem"  style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="container-fluild">
                                             <div className="row">
@@ -220,7 +220,7 @@ class Book2 extends Component {
                                     </div>
                                 </Carousel.Item>
 
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem"  style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="container-fluild">
                                             <div className="row">
@@ -305,7 +305,7 @@ class Book2 extends Component {
                                         </div>
                                     </div>
                                 </Carousel.Item>
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem"  style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="row">
 
@@ -416,7 +416,7 @@ class Book2 extends Component {
                                         </div>
                                     </div>
                                 </Carousel.Item>
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem"  style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="container-fluild">
                                             <div className="row">
@@ -527,7 +527,7 @@ class Book2 extends Component {
                                         </div>
                                     </div>
                                 </Carousel.Item>
-                                <Carousel.Item style={{ margin: '2%' }}>
+                                <Carousel.Item className=" carouselitem"  style={{ margin: '2%' }}>
                                     <div className="container">
                                         <div className="container-fluild">
                                             <div className="row">
