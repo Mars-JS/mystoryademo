@@ -7,6 +7,7 @@ const Splash = () => {
         <div className="col-sm-8 col-md-8 col-lg-8">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12">
+              <img className="jumboImg img-responsive" src={require('../../img/mysLogo00.png')} alt="logo0" />
             </div>
           </div>
           <div className="row">

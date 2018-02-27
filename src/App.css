@@ -234,8 +234,8 @@
         width: 150px;
       }
       #searchhome{
-        width: 80%;
-        margin-left: 10%;
+        width: 85%;
+        margin-left: 7%;
         padding-top: 17px;
       }
       #searchtext{
@@ -249,6 +249,7 @@
       }
       .carousel{
         height: 500px;
+        background-image: url("img/bookSlider.png");
       }
 /* PROFILE SECTION */
 #profilePic{
@@ -286,7 +287,7 @@
 #save{
   background-color: #D6E4F0!important;
   border-color: #D6E4F0!important;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 input#myFile{

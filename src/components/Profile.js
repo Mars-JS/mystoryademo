@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ProfileBookShelf from './ProfileBookShelf'
-
+import Nav from "./Header";
+import Search from './landing-components/searchbar';
 class Profile extends Component {
 
     render() {
@@ -15,7 +16,7 @@ class Profile extends Component {
                 <br />
                 <br />
                 <div className="container-fluid">
-
+                    <Nav />
                     <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6' }}>
 
                         <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginBottom: '2px'}} >
@@ -48,6 +49,7 @@ class Profile extends Component {
                         <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'black' }} >Saved</span></div>
                     </div>
                 </div>
+                <Search/>
                 <ProfileBookShelf />
             </div>
         );
