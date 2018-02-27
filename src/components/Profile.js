@@ -7,7 +7,7 @@ class Profile extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container-fluid">
                 <br />
                 <br />
                 <br />
@@ -15,7 +15,7 @@ class Profile extends Component {
                 <br />
                 <br />
                 <br />
-                <div className="container-fluid">
+
                     <Nav />
                     <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6' }}>
 
@@ -49,9 +49,11 @@ class Profile extends Component {
                         <div id="col3A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-right" style={{ color: 'black'}} >Stories</span></div>
                         <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'black' }} >Saved</span></div>
                     </div>
-                </div>
+
+                <div className="row">
                 <Search/>
                 <ProfileBookShelf />
+                </div>
             </div>
         );
     }

@@ -4,11 +4,12 @@ import "../App.css";
 import { Carousel } from "react-bootstrap";
 import ReadBookShelf from './ReadBookShelf';
 import Nav from './Header';
+import Search from './landing-components/searchbar';
 class Book1 extends Component {
   render() {
     return (
 
-      <div className='container'>
+      <div className='container-fluid'>
         <div className="container-fluid center-block" style={{ marginTop: '10%', marginBottom: '10%' }}>
           <Nav/>
           <div className="row" >
@@ -282,6 +283,9 @@ class Book1 extends Component {
               </Carousel>
             </div>
           </div>
+        </div>
+        <div className="row">
+        <Search/>
         </div>
         <ReadBookShelf/>
       </div>
