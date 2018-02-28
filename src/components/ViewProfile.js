@@ -25,7 +25,7 @@ class ViewProfile extends Component {
 
                         <div id="col2A" className="col-sm-8 col-md-8 col-lg-8">
                             <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6' }}>
-                                <div id="col1B" className="col-sm-6 col-md-6 col-lg-6"><h2>pat_hustad <button type="button" id="editProfileButton" className="btn-primary btn btn-xs float-left">Edit Profile</button></h2></div>
+                                <div id="col1B" className="col-sm-6 col-md-6 col-lg-6"><h2>pat_hustad <button type="button" id="editProfileButton" className="btn-primary btn btn-xs float-left">Follow+</button></h2></div>
                                 <div id="col2B" className="col-sm-6 col-md-6 col-lg-6 "></div>
                             </div>
                             <br />
@@ -40,7 +40,6 @@ class ViewProfile extends Component {
                                 </div>
                             </div>
                             <br />
-                            <button id="editProfileButton" type="submit" className="btn-primary btn float-left"> Create New Story <span className="glyphicon glyphicon-plus"> </span></button>
                         </div>
 
                     </div>

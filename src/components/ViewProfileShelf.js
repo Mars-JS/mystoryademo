@@ -7,7 +7,7 @@ class ViewProfileShelf extends Component {
         return (
             <div className="container" >
                 <div className="row">
-                    <h3 className="shelfTitle text-center">MY STORIES</h3>
+                    <h3 className="shelfTitle text-center">P A T H U S T A D STORIES</h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
