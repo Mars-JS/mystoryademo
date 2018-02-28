@@ -12,8 +12,7 @@ class Book2 extends Component {
                   <Nav/>
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
-                            <h1><strong>Title: </strong>My Life in 2018</h1>
-                            <h1><strong>Author: </strong>Rihanna</h1>
+                            
                         </div>
                     </div>
 

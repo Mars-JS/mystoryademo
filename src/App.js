@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import Footer from "./components/landing-components/footer";
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
+import viewProfile from "./components/viewProfile";
 import Book1 from "./components/Book1";
 import Book2 from "./components/Book2";
 import BookShelf from "./components/BookShelf";
@@ -22,6 +23,7 @@ class App extends Component {
       <div classname='container'>
           <Route exact path="/" component={Landing} />
           <Route exact path="/profile" component={Profile} />
+          <Route exact path="/viewProfile" component={viewProfile} />
           <Route exact path="/books/1" component={Book1} />
           <Route exact path="/books/2" component={Book2} />
           <Route exact path="/books" component={Landing} />
