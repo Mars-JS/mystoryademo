@@ -1,6 +1,6 @@
 import React from 'react';
-import SplashPage from './landing-components/splashpage';
-import Search from './landing-components/searchbar';
+import SplashPage from './landing/SplashPage';
+import Search from './landing/Search';
 import BookShelf from './BookShelf';
 
 const Landing = () => {

@@ -4,7 +4,8 @@ import "../App.css";
 import { Carousel } from "react-bootstrap";
 import ReadBookShelf from './ReadBookShelf';
 import Nav from './Header';
-import Search from './landing-components/searchbar';
+import Search from './landing/Search';
+
 class Book1 extends Component {
   render() {
     return (

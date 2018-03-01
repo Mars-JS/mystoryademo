@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ViewProfileShelf from './ViewProfileShelf'
 import Nav from "./Header";
-import Search from './landing-components/searchbar';
+import Search from './landing/Search';
 class ViewProfile extends Component {
 
     render() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+
 const Splash = () => {
   return (<div className="container-fluid">
     <div className="row">
