@@ -40,7 +40,7 @@ class Profile extends Component {
                                 </div>
                             </div>
                             <br />
-                            <button id="editProfileButton" type="submit" className="btn-primary btn float-left"> Create New Story <span className="glyphicon glyphicon-plus"> </span></button>
+                            <a href="/create"><button id="editProfileButton" type="submit" className="btn-primary btn float-left"> Create New Story <span className="glyphicon glyphicon-plus"> </span></button></a>
                         </div>
 
                     </div>

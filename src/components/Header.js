@@ -13,10 +13,7 @@ const Nav = () => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Navbar.Form pullRight id="search">
-        <FormGroup>
-          <FormControl type="text" placeholder="Search" />
-        </FormGroup>{' '}
-        <Button type="submit">Submit</Button>
+        <a href="/"><button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'black', backgroundColor: '#176cff'}}>Logout</button></a>
       </Navbar.Form>
     </Navbar.Collapse>
   </Navbar>

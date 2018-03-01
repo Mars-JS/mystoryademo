@@ -250,15 +250,15 @@
       }
       /* .carousel{
         background-image: url("img/openBook7.png");
-        
+
       } */
        .carousel-inner{
-        
+
         background-image: url("img/fffff.png");
-      } 
+      }
       /* .carouselitem{
         background-image: url("img/fffff.png");
-        
+
       } */
 /* PROFILE SECTION */
 #profilePic{
@@ -585,6 +585,27 @@ body{
 
 #vimeo{
   padding: 0px;
+}
+
+/* Create Section */
+
+.createSlider{
+  background-image: url("img/fffff.png");
+}
+
+.createGlyphicons{
+  margin-left: 23%;
+  margin-top: 2%;
+}
+
+.glyphCross{
+  background-image: url("img/cross.png");
+  background-repeat: no-repeat;
+}
+
+.glyph{
+  position: relative;
+  left: 12px;
 }
 
 @media(max-width: 720px){

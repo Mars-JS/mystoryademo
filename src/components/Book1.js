@@ -11,7 +11,7 @@ class Book1 extends Component {
     return (
 
       <div className='container-fluid'>
-        <div className="container-fluid center-block" style={{ marginTop: '10%', marginBottom: '10%' }}>
+        <div className="container-fluid center-block" style={{ marginTop: '10%', marginBottom: '10%', marginLeft: '10%' }}>
           <Nav/>
           <div className="row" >
             <div className="col-sm-12 col-md-12 col-lg-12">
