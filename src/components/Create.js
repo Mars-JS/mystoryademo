@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from "./Header";
 import ProfileBookShelf from './ProfileBookShelf'
-import Search from './landing-components/searchbar';
+import Search from './landing/Search';
 import { Carousel, Glyphicon } from "react-bootstrap";
 import '../App.css';
 class Create extends Component {
