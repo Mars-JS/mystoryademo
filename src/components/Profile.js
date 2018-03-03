@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ProfileBookShelf from './ProfileBookShelf'
 import Nav from "./Header";
-import Search from './landing/Search';
+
 class Profile extends Component {
 
     render() {
@@ -51,7 +51,7 @@ class Profile extends Component {
                     </div>
 
                 <div className="row">
-                <Search/>
+                
                 <ProfileBookShelf />
                 </div>
             </div>

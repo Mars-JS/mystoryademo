@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 125px;
   padding: 20px;
   color: white;
 }
@@ -31,8 +31,8 @@
 
 .jumbophoto {
 
-    background-image: url("img/unsp7.jpg");
-    height: 900px;
+    background-image: url("img/ioio.png");
+    height: 800px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@
 
       .company-info{
         font-size: 13px;
-        font-family: "georgia";
+        font-family: "proxima-nova,sans-serif";
         color:black;
         margin-top: 20px;
         margin-left: 30px;
@@ -200,7 +200,7 @@
       }
 
       #profileRow{
-        background-color: #F4F2F2;
+        background-color: #F6F6F6;
         padding-top: 15px;
         border-bottom: solid 1px lightgrey;
       }
@@ -478,7 +478,7 @@ body{
 }
 
 .shelf {
-    background-image: url("img/shelf11.png");
+    background-image: url("img/lineShelfgrey.png");
     background-repeat: no-repeat;
     background-position: bottom;
     margin-bottom: 80px;
