@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import "../App.css";
 import ReadBookShelf from './ReadBookShelf';
 import Search from './landing/Search';
-import { Textfit } from 'react-textfit';
+import Nav from './Header';
+
 import FlipPage from 'react-flip-page';
 
 class Book7 extends Component {
     render() {
         return (
             <div className='container'>
-
+  <Nav/>
                 <div className='row' style={{ marginTop: '10%'}}>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >

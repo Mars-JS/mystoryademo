@@ -7,7 +7,7 @@ class BookShelf extends Component {
         return (
           <div className="container" >
             <div className="row">
-                <h3 className="shelfTitle text-center">NEW STORIES </h3>
+                <h3 className="shelfTitle text-center">New Stories</h3>
                 <div id="latestStories" className="row shelf">
                     <div className="container" style={{paddingBottom: "17px"}}>
                         <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -65,7 +65,7 @@ class BookShelf extends Component {
                 </div>
             </div>
             <div className="row">
-                <h3 className="shelfTitle text-center">POPULAR STORIES</h3>
+                <h3 className="shelfTitle text-center">Popular Stories</h3>
                 <div id="latestStories" className="row shelf">
                     <div className="container" style={{paddingBottom: "17px"}}>
                         <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
