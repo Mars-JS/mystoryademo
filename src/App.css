@@ -608,7 +608,7 @@ body{
   left: 12px;
 }
 
-@media(max-width: 720px){
+/* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;
     }
@@ -624,4 +624,4 @@ body{
     h1, p, h2, row{
         font-size: 12px;
     }
-}
+} */
