@@ -14,11 +14,13 @@ class Profile extends Component {
 
                 <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6' }}>
 
-                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginBottom: '2px' }} >
+                    <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
+                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '5px' }} >
                         <img id="" className="img-responsive img-circle" src={require("../img/patProfile.png")} alt="profilepic" />
                     </div>
-
-                    <div id="col2A" className="col-sm-8 col-md-8 col-lg-8">
+                    <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
+                    <div id="col2A" className="col-sm-6 col-md-6 col-lg-6">
+                    
                         <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '10px' }}>
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <h2>pat_hustad <Button style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
