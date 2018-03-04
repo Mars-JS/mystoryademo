@@ -1,6 +1,5 @@
 import React from 'react';
 import { Jumbotron, FormGroup, FormControl } from 'react-bootstrap';
-/* import '../../App.css'; */
 
 const Search = () => {
   return (
@@ -12,10 +11,6 @@ const Search = () => {
           <button>
             <span className="glyphicon glyphicon-search" style={{ color: 'black' }}></span>
           </button>
-{/*           <FormGroup >
-            <FormControl type="search" placeholder="Search Mystorya" />
-            <i className="glyphicon glyphicon-search" style={{ color: 'black' }}></i>
-          </FormGroup> */}
       </div>
     </div>
     </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import SplashPage from './landing/SplashPage';
-import Search from './landing/Search';
+import SearchBig from './landing/SearchBig';
 import BookShelf from './BookShelf';
 
 const Landing = () => {
     return (
       <div>
       <SplashPage/>
-      <Search/>
+      <SearchBig/>
       <BookShelf/>
       </div>
     );
