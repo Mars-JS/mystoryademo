@@ -253,7 +253,7 @@
 
       } */
       .carousel-inner{
-        background-image: url("img/shelfGrey2.png");
+        background-image: url("img/lineShelfgrey.png");
         background-repeat: no-repeat;
         background-position-x: 50%;
         background-position-y: 90%;
@@ -607,8 +607,8 @@ body{
 }
 
 .createGlyphicons{
-  margin-left: 23%;
-  margin-top: 2%;
+  /* margin-left: 23%;
+  margin-top: 2%; */
 }
 
 .glyphCross{
@@ -618,9 +618,16 @@ body{
 
 .glyph{
   position: relative;
-  left: 12px;
+  /* left: 12px; */
 }
 
+.centerDiv {
+  height: 100%;
+  width: 100%;
+  display: center;
+  justify-content: center;
+  align-items: center;
+}
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;
