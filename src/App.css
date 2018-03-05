@@ -252,10 +252,23 @@
         background-image: url("img/openBook7.png");
 
       } */
-       .carousel-inner{
-
-        background-image: url("img/fffff.png");
+      .carousel-inner{
+        background-image: url("img/shelfGrey2.png");
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 90%;
       }
+      .shelfBook {
+        border: 1px solid rgb(95, 95, 95);
+        margin-bottom: 45%;
+        margin-top: 10%;
+        width: 200px;
+        height: 240px;
+        bottom: 55px;
+      }
+/*        .carousel-inner{
+        background-image: url("img/fffff.png");
+      } */
       /* .carouselitem{
         background-image: url("img/fffff.png");
 
