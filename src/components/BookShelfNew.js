@@ -24,37 +24,37 @@ class BookShelfNew extends Component {
                                 <Carousel.Item>
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/book2.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/popstory1.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory1.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/newstory1.png")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/amazon.jpg")} /></div>
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory3.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory1.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/food2.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/amazon.jpg")} /></div>         
                                     </div></div>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <div className="container">
-                                        <div className="row">
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/book1.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/popstory2.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory2.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/popstory3.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/celeb1z.jpg")} /></div>
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                                    <div className="row">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/music3.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory2.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/newstory2.png")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/popstory4.jpg")} /></div>         
                                     </div></div>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <div className="container">
-                                        <div className="row">
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/rihannaPageBridge.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/unsp7f.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory3.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/rihannaPageGrammy.jpg")} /></div>
-                                            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img alt="" className="shelfBook img-responsive" src={require("../img/celebstory4.jpg")} /></div>
-                                            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                                    <div className="row">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/ririBazar.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/tech2.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/travel3.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/ps4.jpg")} /></div>         
+                                    </div></div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="container">
+                                    <div className="row">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/tech1.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/tech3.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/proj2.jpg")} /></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img alt="" className="shelfBook img-responsive" src={require("../img/apple.jpg")} /></div>         
                                     </div></div>
                                 </Carousel.Item>
                             </Carousel>
@@ -62,6 +62,7 @@ class BookShelfNew extends Component {
                     </div>
                 </div>
             </div>
+            
         )
     }
 }
