@@ -259,12 +259,13 @@
         background-position-y: 90%;
       }
       .shelfBook {
-        border: 1px solid rgb(95, 95, 95);
-        margin-bottom: 45%;
+        margin-bottom: 28%;
         margin-top: 10%;
-        width: 200px;
-        height: 240px;
-        bottom: 55px;
+        width: 217px;;
+        height: 296px;
+        border: solid rgb(248, 244, 244) 1px;
+        position: relative;
+       
       }
 /*        .carousel-inner{
         background-image: url("img/fffff.png");
@@ -355,7 +356,7 @@ input#myFile{
 .bookImage{
 	width: 217px;;
   height: 296px;
-	border: solid #979595 2px;
+	border: solid #d4d3d3 2px;
   position: relative;
   bottom: 25px;
 }
@@ -480,7 +481,7 @@ body{
 }
 
 .shelfTitle{
-  background-color: #F6F6F6;
+  background-color: rgb(243, 241, 241);
   background-size: cover;
   font-family: "proxima-nova,sans-serif";
   color:black;
