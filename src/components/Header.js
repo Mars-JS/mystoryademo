@@ -5,7 +5,7 @@ import Search from './landing/Search';
 
 const Nav = () => (
   <div>
-  <Navbar className="navbar-form navbar-fixed-top" style={{ backgroundColor: 'transparent' }}>
+    <Navbar className="navbar-form navbar-fixed-top" style={{ backgroundColor: 'transparent', marginTop: '-2px' }}>
     <Navbar.Header>
       <Navbar.Brand><div className='container'>
         <div className='row'>
@@ -35,7 +35,7 @@ const Nav = () => (
               <div className='col-xs-5 col-sm-5 col-md-5 col-lg-5'></div>
               <div className='col-xs-5 col-sm-5 col-md-5 col-lg-5'></div>
               <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
-                <a href="/"><button type="submit" className="btn" style={{ color: 'white', backgroundColor: 'black', marginTop: '-50%' }}>Logout</button></a>
+                <a href="/"><button type="submit" className="btn" style={{ color: 'white', backgroundColor: 'black', marginTop: '-49%' }}>Logout</button></a>
               </div></div></div>
         </Navbar.Form>
       </Navbar.Collapse>
