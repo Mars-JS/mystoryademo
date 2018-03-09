@@ -216,7 +216,7 @@
 
       } */
       .carousel-inner{
-        background-image: url("img/shelfWood.png");
+        background-image: url("img/lineShelfgrey.png");
         background-repeat: no-repeat;
         background-position-x: 50%;
         background-position-y: 90%;
@@ -235,7 +235,7 @@
         margin-top: 10%;
         width: 217px;;
         height: 296px;
-        border: solid rgb(1, 53, 46) 1px;
+        border: solid rgb(0, 0, 0) 1px;
         position: relative;
        
       }

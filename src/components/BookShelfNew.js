@@ -10,7 +10,7 @@ class BookShelfNew extends Component {
             <div className="container-fluid">
                 <div className="row">
 
-                    <div className="container-fluid">
+                    <div className="container">
                     <div className="row" >
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12" style={{backgroundColor: 'rgb(240, 240, 240)'}} >
                             <h3 className="text-center">New Stories</h3>
