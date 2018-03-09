@@ -701,7 +701,7 @@ body{
 
 .darkBlueST{
   background-image: url("img/darkBlueST.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border: 1px solid #222;
 }
 .darkBlueST2{
@@ -734,9 +734,23 @@ body{
 
 .font1 {
   font-family: 'Bitter', serif;
+  color: rgb(233, 233, 233);
+  font-size: 3em;
+  font-weight: 3em;
+  text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black, 0 0 25px darkblue;
 }
 .font2 {
   font-family: 'Libre Baskerville', serif;
+  color: rgb(233, 233, 233);
+  font-size: 3em;
+  font-weight: 3em;
+  text-shadow: 1px 3px 2px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black, 0 0 25px darkblue;
+}
+.font3 {
+  font-family: 'Libre Baskerville', sans-serif;
+  color: teal;
+  font-size: 1.4em;
+  text-shadow: 1px 1px 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black, 0 0 10px black;
 }
 
 .carousel-indicators li { visibility: hidden; }
@@ -753,7 +767,118 @@ body{
 .carousel:hover .carousel-control {
   visibility: visible;
 }
+.shelfBook2 {
+  margin-bottom: 28%;
+  margin-top: 10%;
+  width: 217px;;
+  height: 296px;
+  border: solid rgb(0, 0, 0) 1px;
+  position: relative;
+  box-shadow: -3px 5px 5px black;
+  
+}
 
+/* Container holding the image and the text */
+.containerText {
+    position: relative;
+    text-align: center;
+}
+
+.bookTitle{
+  position: absolute;
+  left: 39%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(233, 233, 233);
+  font-size: 1.8em;
+  font-weight: 1.5em;
+  text-shadow: 1px 3px 2px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black, 0 0 25px darkblue;
+}
+.bookAuthor{
+  position: absolute;
+  left: 40%;
+  bottom: 7%;
+  transform: translate(-50%, -50%);
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(233, 233, 233);
+  font-size: 1.2em;
+  font-weight: 1.5em;
+  text-shadow: 1px 1px 2px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black, 0 0 25px darkblue;
+}
+.bookTitle2{
+  position: absolute;
+  left: 45%;
+  top: 18%;
+  transform: translate(-50%, -50%);
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(233, 233, 233);
+  font-size: 1.5em;
+  font-weight: 1.5em;
+  text-shadow: 1px 1px 2px black, 0 0 3px black, 0 0 5px darkblue, 0 0 15px black, 0 0 20px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.bookAuthor2{
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(233, 233, 233);
+  font-size: 1.5em;
+  font-weight: 1.5em;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.top-left {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+.top-right {
+    position: absolute;
+    top: 20%;
+    right: 57%;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 20%;
+    right: 57%;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.crossImg{
+  /* background-image: url("img/cross2.png"); */
+  /* background-repeat: no-repeat; */
+  margin: 1%;
+  height: 50%;
+  width: 50%;
+  /*   background-position-x: 50%;
+  background-position-y: 50%; */
+  box-shadow: -3px 5px 5px black;
+}
+.boxShadow{
+  box-shadow: -3px 5px 5px black;
+}
+.crossBG{
+  background-image: url("img/cross2.png");
+  background-repeat: no-repeat;
+  margin: 1%;
+  height: 50%;
+  width: 50%;
+  /*   background-position-x: 50%;
+  background-position-y: 50%; */
+}
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;
