@@ -11,7 +11,7 @@ import ViewProfile from "./components/ViewProfile";
 import Book1 from "./components/Book1";
 import Book2 from "./components/Book2";
 import Book7 from "./components/Book7";
-import BookShelf from "./components/BookShelf";
+import BookShelfControl from "./components/BookShelfControl";
 import Create from "./components/Create";
 /* const Header = 'header'; */
 /* const Book1 = 'book1'; */
@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
     <BrowserRouter>
-      <div>
+      <div className="entireSiteBG">
           <Route exact path="/" component={Landing} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/viewProfile" component={ViewProfile} />
@@ -31,6 +31,7 @@ class App extends Component {
           <Route exact path="/books/7" component={Book7} />
           <Route exact path="/books" component={Landing} />
           <Route exact path="/create" component={Create} />
+          <BookShelfControl />
           <Footer/>
       </div>
     </BrowserRouter>

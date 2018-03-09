@@ -5,6 +5,7 @@ import '../App.css';
 import Nav from "./Header";
 import BookShelfNew from './BookShelfNew';
 import SearchBig from './landing/SearchBig';
+import BookShelfControl from './BookShelfControl';
 
 class Create extends Component {
   constructor(props, context) {
@@ -150,7 +151,7 @@ class Create extends Component {
               <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><h1 className="whiteBG" style={{ textAlign: 'center'}}>{this.state.value}</h1></div></div>
               <div className='row'>
                 <div className='col-sm-12 col-md-12 col-lg-12' style={{marginBottom: '5%'}}>
-                  <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >
+                  <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400'>
                     <article>
                       <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
                         <div className="imgPreview img-responsive">{$imagePreview}</div>
@@ -203,6 +204,7 @@ class Create extends Component {
         </div>
 
         <div className="row"><div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+          <BookShelfControl/>
           <BookShelfNew />
         </div></div>
 

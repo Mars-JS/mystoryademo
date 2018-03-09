@@ -1,19 +1,17 @@
 import React from 'react';
-import '../Footer.css'
+import '../Footer.css';
+
 const footer = () => (
+        <div className="container-fluid footer">
+            <div className="row" style={{marginTop: '1%'}}>
 
-    <footer className="footer">
-        <div className="container-fluid">
-
-            <div className="row">
-
-                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 footer-logo">
-                    <a href='/' className='pull-left'><img alt=""  className="img-responsive" id="footerlogo" src={require("../../img/mysLogo00.png")} /></a>
+                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <a href='/'><img alt="" className="footerLogo img-responsive" src={require("../../img/mysLogo00.png")} /></a>
                 </div>
 
-                <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1  company-info">
+                <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                     <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 company-info-title">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h4>MyStorya Inc.</h4>
                         </div>
                     </div>
@@ -34,20 +32,35 @@ const footer = () => (
                     </div>
                 </div>
 
-                <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5  social-icons ">
-                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xs-offset-9 col-sm-offset-9 col-md-offset-9 col-lg-offset-9">
-                        <a><img alt=""  id="github" className="img-responsive" src={require("../../img/github.png")} /></a>
+                <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                
+                    <div className='row' style={{marginLeft: '55%'}}>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a><img alt="" className="socialIcons" src={require("../../img/github.png")} /></a>
+                        </div>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a href="https://www.linkedin.com/in/pat-hustad-56277b36/"><img alt=""  className="socialIcons" src={require("../../img/linkedin2.png")} /></a>
+                        </div>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a><img alt=""  className="socialIcons" src={require("../../img/stack.png")} /></a>
+                        </div>
                     </div>
-                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
-                        <a href="https://www.linkedin.com/in/pat-hustad-56277b36/"><img alt=""  className="img-responsive" id="linkedin" src={require("../../img/linkedin.png")} /></a>
+                    <div className='row' style={{marginLeft: '55%', marginTop: '5%'}}>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a><img alt="" className="socialIcons" src={require("../../img/insta2.png")} /></a>
+                        </div>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a><img alt=""  className="socialIcons" src={require("../../img/facebook2.png")} /></a>
+                        </div>
+                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                            <a><img alt=""  className="socialIcons" src={require("../../img/googlePlus2.png")} /></a>
+                        </div>
                     </div>
-                    <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
-                        <a><img alt=""  className="img-responsive" id="stack" src={require("../../img/stack.png")} /></a>
-                    </div>
+
                 </div>
 
             </div>
         </div>
-    </footer>
 );
+
 export default footer;

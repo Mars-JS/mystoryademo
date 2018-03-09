@@ -64,7 +64,7 @@ const Splash = () => {
               <br/>
               <div id="row8" className="row">
                 <div className="col-sm-9 col-md-9 col-lg-9">
-                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'black'}}>S I G N U P</button>
+                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'white'}}>S I G N U P</button>
 
                 </div>
               </div>

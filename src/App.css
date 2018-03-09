@@ -31,12 +31,12 @@
 
 .jumbophoto {
 
-    background-image: url("img/ioio.png");
+    background-image: url("img/landingPage.png");
     height: 800px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     border-top: solid 1px lightgrey;
     border-bottom: solid 1px lightgrey;
     background-color: #F6F6F6;
@@ -138,44 +138,6 @@
         box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
       }
 
-      .footer {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        height: 150px;
-        background-color: white;
-        vertical-align: middle;
-
-      }
-
-      .footer-logo{
-        padding-top: 10px;
-        vertical-align: middle;
-        height:80px;
-        margin-top: 20px;
-      }
-
-      .company-info-title{
-        text-decoration: underline;
-
-      }
-
-      .company-info{
-        font-size: 13px;
-        font-family: "proxima-nova,sans-serif";
-        color:black;
-        margin-top: 20px;
-        margin-left: 30px;
-      }
-      .text-muted{
-      padding-top: 10px;
-        margin: 20px 0;
-        vertical-align: middle;
-      }
-
-      .social-icons{
-        margin: 30px 0;
-      }
       .profile{
         background-color: #F6F6F6;
       }
@@ -253,7 +215,7 @@
 
       } */
       .carousel-inner{
-        background-image: url("img/lineShelfgrey.png");
+        background-image: url("img/shelfWood.png");
         background-repeat: no-repeat;
         background-position-x: 50%;
         background-position-y: 90%;
@@ -264,6 +226,15 @@
         width: 217px;;
         height: 296px;
         border: solid rgb(248, 244, 244) 1px;
+        position: relative;
+       
+      }
+      .shelfBook2 {
+        margin-bottom: 28%;
+        margin-top: 10%;
+        width: 217px;;
+        height: 296px;
+        border: solid rgb(1, 53, 46) 1px;
         position: relative;
        
       }
@@ -435,9 +406,9 @@ padding-top: 10px;
   vertical-align: middle;
 }
 
-.social-icons{
+/* .social-icons{
   margin: 30px 0;
-}
+} */
 
 #headerContainer{
   padding-top: 5px;
@@ -629,6 +600,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex: 1,
 }
 
 .fileInput{
@@ -711,19 +683,76 @@ body{
   text-decoration-color: #c2c2c2;
 }
 
+.turquoiseBG{
+  background-image: url("img/turquoiseBG.png");
+  background-repeat: repeat;
+}
+
+.lightBlueBG{
+  background-image: url("img/lightBlueBG.png");
+  background-repeat: repeat;
+}
+
+.darkBlueBG{
+  background-image: url("img/darkBlueBG.png");
+  background-repeat: repeat;
+}
+
+.darkBlueST{
+  background-image: url("img/darkBlueST.png");
+  background-repeat: no-repeat;
+  border: 1px solid #222;
+}
+.darkBlueST2{
+  background-image: url("img/darkBlueST2.png");
+  background-repeat: no-repeat;
+}
+.darkGreyBG{
+  background-color: rgb(63, 63, 63);
+  background-repeat: no-repeat;
+}
+.entireSiteBG{
+  /* affects app.js */
+  /* background-image: url("img/name.png"); */
+  background-color: rgba(243, 243, 243);
+  background-repeat: no-repeat;
+}
+.wallWhite{
+  background-image: url("img/wallWhite.jpg");
+  /* background-position: center; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.paperBG{
+  background-image: url("img/paperBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.font1 {
+  font-family: 'Bitter', serif;
+}
+.font2 {
+  font-family: 'Libre Baskerville', serif;
+}
+
 .carousel-indicators li { visibility: hidden; }
 
 .carousel-control.left, .carousel-control.right {
   background: none !important;
   /* filter: progid none !important; */
-  outline: 0;
+  outline: 1;
  }
 .carousel .carousel-control {
-  visibility: hidden;
+  visibility: visible;
+  color: rgb(0, 55, 128);
 }
 .carousel:hover .carousel-control {
   visibility: visible;
 }
+
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;

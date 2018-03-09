@@ -17,7 +17,7 @@ class BookShelfControl extends Component {
   }
 
   handleSelect(selectedIndex, e) {
-    alert(`selected=${selectedIndex}, direction=${e.direction}`);
+    /* alert(`selected=${selectedIndex}, direction=${e.direction}`); */
     this.setState({
       index: selectedIndex,
       direction: e.direction
@@ -28,35 +28,62 @@ class BookShelfControl extends Component {
     const { index, direction } = this.state;
 
     return (
-      <Carousel
-        activeIndex={index}
-        direction={direction}
-        onSelect={this.handleSelect}
-      >
-        <Carousel.Item>
-          <img width={900} height={500} alt="900x500" src="/carousel.png" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img width={900} height={500} alt="900x500" src="/carousel.png" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img width={900} height={500} alt="900x500" src="/carousel.png" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+            <div className="container-fluid" >
+                <div className="row">
+
+                    <div className="container-fluid">
+                    <div className="row darkBlueST">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 className="centerDiv font2"><strong>New Stories</strong></h3>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                  <Carousel activeIndex={index} direction={direction} onSelect={this.handleSelect} >
+                                <Carousel.Item>
+                                    <div className="container">
+                                        <div className="row" style={{marginLeft: '2%'}}>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory3.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory1.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/food2.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/amazon.jpg")} /></Link></div>         
+                                    </div></div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="container">
+                                    <div className="row" style={{marginLeft: '2%'}}>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/music3.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory2.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/newstory2.png")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/popstory4.jpg")} /></Link></div>         
+                                    </div></div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="container">
+                                    <div className="row" style={{marginLeft: '2%'}}>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/ririBazar.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech2.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/travel3.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/ps4.jpg")} /></Link></div>         
+                                    </div></div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="container">
+                                    <div className="row" style={{marginLeft: '2%'}}>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech1.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech3.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/proj2.jpg")} /></Link></div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><Link to="/books/1"><img alt="" className="shelfBook2 img-responsive" src={require("../img/apple.jpg")} /></Link></div>         
+                                    </div></div>
+                                </Carousel.Item>
+                            </Carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     );
   }
 }
