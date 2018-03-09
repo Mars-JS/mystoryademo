@@ -8,14 +8,14 @@ class Profile extends Component {
 
     render() {
         return (
-            <div className='container' style={{ marginTop: '7%' }}>
+            <div className='container' style={{ marginTop: '11%' }}>
 
                 <Nav />
 
-                <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6' }}>
+                <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '40px'  }}>
 
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
-                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '5px' }} >
+                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '20px' }} >
                         <img id="" className="img-responsive img-circle" src={require("../img/patProfile.png")} alt="profilepic" />
                     </div>
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
@@ -48,8 +48,8 @@ class Profile extends Component {
 
                 <div className="row" style={{ backgroundColor: '#F6F6F6' }}>
                     <div id="col3A" className="col-sm-5 col-md-5 col-lg-5"></div>
-                    <div id="col3A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong>Stories</strong></span></div>
-                    <div id="col4A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong>Saved</strong></span></div>
+                    <div id="col3A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong></strong></span></div>
+                    <div id="col4A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong></strong></span></div>
                     <div id="col3A" className="col-sm-5 col-md-5 col-lg-5"></div>
                 </div>
 
