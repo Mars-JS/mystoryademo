@@ -194,7 +194,7 @@
         margin-bottom: 20px;
       }
 
-      #newStoryButton img{
+      #newStoryButton{
         width: 150px;
       }
       #searchhome{
@@ -610,11 +610,21 @@ body{
   margin: 15px;
   cursor: pointer;
 }
-
 .imgPreview{
   text-align: center;
   height: 720px;
   width: 1280px;
+  background-color: #c2c2c2;
+  background-blend-mode: color-dodge;
+/*   border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid lightgrey; */
+}
+.imgPreview2{
+  text-align: center;
+  height: 195px;
+  width: 480px;
   background-color: #c2c2c2;
   background-blend-mode: color-dodge;
 /*   border-left: 2px solid gray;
@@ -631,13 +641,17 @@ body{
 .submitButton{
   padding: 12px;
   margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   border: 4px solid rgb(0, 0, 0);
   border-radius: 15px;
   font-weight: 700;
   font-size: 10pt;
   cursor: pointer;
   background: #c2c2c2;
+}
+.submitButton2{
+  cursor: pointer;
+  background: #e6e6e6;
 }
 .centerText{
   text-align: center;
@@ -752,7 +766,14 @@ body{
   font-size: 1.4em;
   text-shadow: 1px 1px 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black, 0 0 10px black;
 }
-
+.font4{
+  text-align: center;
+  font-family: "proxima-nova,sans-serif";
+  color: rgb(233, 233, 233);
+  font-size: 1.5em;
+  font-weight: 2em;
+  text-shadow: 1px 1px 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black, 0 0 10px black;
+}
 .carousel-indicators li { visibility: hidden; }
 
 .carousel-control.left, .carousel-control.right {
@@ -865,11 +886,16 @@ body{
   width: 50%;
   /*   background-position-x: 50%;
   background-position-y: 50%; */
-  box-shadow: -3px 5px 5px black;
+  /* box-shadow: -3px 5px 5px black; */
+  box-shadow: 1px 1px 3px 2px #888888;
 }
 .boxShadow{
   box-shadow: -3px 5px 5px black;
 }
+.pictureShadow{
+  border: 1px solid;
+  padding: 1px;
+  box-shadow: 1px 2px 2px 3px #888888;}
 .crossBG{
   background-image: url("img/cross2.png");
   background-repeat: no-repeat;
@@ -879,6 +905,19 @@ body{
   /*   background-position-x: 50%;
   background-position-y: 50%; */
 }
+.pictureShadowSmall{
+  border: 1px solid;
+  box-shadow: 1px 2px 2px 3px #888888;
+  width: 220px;
+  height: 128px;
+}
+.videoPlayer{
+  margin: 'auto';
+  height:'272';
+  width:'480';
+  border: 1px solid black;
+  padding: 1px;
+  box-shadow: 0px 1px 1px 1px #888888;}
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Carousel, Glyphicon, FormGroup, ControlLabel, FormControl, HelpBlock, Tabs, Tab } from "react-bootstrap";
+import { Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
 import FlipPage from 'react-flip-page';
 import '../App.css';
 import Nav from "./Header";
 import BookShelfNew from './BookShelfNew';
-import SearchBig from './landing/SearchBig';
-import BookShelfControl from './BookShelfControl';
+import SelectPage from './SelectPage';
 
 class Create extends Component {
   constructor(props, context) {
@@ -149,35 +148,99 @@ class Create extends Component {
 
             <div className='container'>
               <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><h1 className="whiteBG" style={{ textAlign: 'center'}}>{this.state.value}</h1></div></div>
-              <div className='row'>
-                <div className='col-sm-12 col-md-12 col-lg-12' style={{marginBottom: '5%'}}>
+              <div className='row' style={{ marginBottom: '5%' }}>
+                <div className='col-sm-12 col-md-12 col-lg-12'>
                   <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400'>
-                    <article>
+                    <article> {/* cover page */}
                       <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
                         <div className="imgPreview img-responsive">{$imagePreview}</div>
                       </div>
                       </div>
                     </article>
-                    <article>
-                      <div className='container'>
-                        <div className='row'>
-                          <div className='col-sm-6 col-md-6 col-lg-6'>
 
+                    <article >
+                      <div className='container'>
+                        <div style={{ textAlign: 'left', left: '5%', bottom: '-56px', position: 'absolute' }}>page 1</div>
+                        <div style={{ textAlign: 'right', right: '5%', bottom: '-56px', position: 'absolute' }}>page 2</div>
+                        <div className='row'>
+
+                          <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 1 */}
+                            <div className='row' style={{ margin: '3px' }}>
+                              <p className='font4'>sample title</p>
+                                <img alt="" className="img-responsive pictureShadow" src={require("../img/rihannaPage2.jpg")} />
+                            </div>
+                            <div className='row' >
+                              <div className='col-sm-12 col-md-12 col-lg-12'>
+                              <SelectPage />
+                              </div>
+                            </div>
+                            <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
+                              
+                            </div></div>
                           </div>
-                          <div className='col-sm-6 col-md-6 col-lg-6'>
-                            <p>{this.state.valueBody}</p>
+                          <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 2 */}
+                          <div className='container'>
+
+                              <div className="container-fluid">
+                                <div className='row' style={{marginTop: '5px'}}>
+                                  <div className='col-sm-6 col-md-2 col-lg-3'>
+                                    <img
+                                      className="img-responsive pictureShadowSmall"
+                                      src={require("../img/rihannaPage3.jpg")}
+                                    />
+                                  </div>
+                                  <div className='col-sm-6 col-md-6 col-lg-3'>
+                                    <img
+                                      className="img-responsive pictureShadowSmall"
+                                      src={require("../img/rihannaPage3.jpg")}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div className="container"><div className='row' style={{ margin: '3px' }}>
+                                <div className='col-sm-12 col-md-12 col-lg-12'>
+                                  <p style={{ textAlign: 'left', marginRight: '58%' }}>
+                                  Nibh praesent tristique magna sit amet purus. Ut faucibus 
+                              integer. Volutpat commodo sed egestas egestas fringilla phasellus
+                              faucibus scelerisque.</p></div></div></div>
+                            
+                              <div className='row' style={{}}>
+                                <div className="col-sm-4 col-md-8 col-lg-12">
+                                  <iframe className='videoPlayer' width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" />
+                                </div>
+                              </div>
+                            
+                            <div className="container"> <div className='row' style={{ margin: '3px' }}>
+                                <div className='col-sm-12 col-md-12 col-lg-12'>
+                            <p style={{textAlign: 'left', marginRight: '58%'}}>Massa 
+                            sollicitudin aliquam ultrices sagittis orci a scelerisque 
+                            purus. Quisque sagittis purus sit amet volutpat consequat. 
+                            Vel fringilla est ullamcorper eget nulla. Duis tristique 
+                            sollicitudin nibh sit amet commodo nulla. Odio aenean sed 
+                            adipiscing diam donec adipiscing tristique risus nec. 
+                            Etiam erat velit scelerisque in dictum non consectetur a. 
+                            Neque ornare aenean euismod elementum. </p></div></div></div>
                           </div>
+                            <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
+                              
+                            </div></div>
+                        </div>
+
                         </div>
                       </div>
                     </article>
+
                     <article>
                       <div className="container">
+                        <div style={{ textAlign: 'left', left: '7%', bottom: '-51px', position: 'absolute' }}>page 3</div>
+                        <div style={{ textAlign: 'right', right: '7%', bottom: '-51px', position: 'absolute' }}>page 4</div>
                         <div className="row">
-                          <div className="col-sm-6 col-md-6 col-lg-6"> {/* page 1 */}
+                          <div className="col-sm-6 col-md-6 col-lg-6"> {/* page 3 */}
                             <h1>My awesome 1 article</h1>
                             <p>My awesome 1 content</p>
                           </div>
-                          <div className="col-sm-6 col-md-6 col-lg-6"> {/* page 2 */}
+                          <div className="col-sm-6 col-md-6 col-lg-6"> {/* page 4 */}
                             <h1>My awesome 2 article</h1>
                             <p>My awesome 2 content</p>
                           </div>
@@ -186,11 +249,11 @@ class Create extends Component {
                     </article>
                     <article>
                       <div className='row'>
-                        <div className='col-sm-6 col-md-6 col-lg-6'>
+                        <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 5 */}
                           <h1>definition synopsis</h1>
                           <p>definition synopis</p>
                         </div>
-                        <div className='col-sm-6 col-md-6 col-lg-6'>
+                        <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 6 */}
                           <h1>My awesome synopsis article</h1>
                           <p>My awesome synopsis content</p>
                         </div>
@@ -206,6 +269,7 @@ class Create extends Component {
         <div className="row"><div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
           
           <BookShelfNew />
+
         </div></div>
 
 

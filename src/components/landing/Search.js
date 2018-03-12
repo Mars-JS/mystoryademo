@@ -1,5 +1,4 @@
 import React from 'react';
-import { Jumbotron, FormGroup, FormControl } from 'react-bootstrap';
 
 const Search = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 /* import './Nav.css' */
 import Search from './landing/Search';
 
@@ -43,4 +43,5 @@ const Nav = () => (
   </Navbar>
   </div>
 );
+
 export default Nav;
