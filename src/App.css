@@ -606,8 +606,9 @@ body{
 
 .fileInput{
   border: 1px solid black;
-  padding: 5px;
-  margin: 15px;
+  padding: 1px;
+  margin-left: 18px;
+  margin-top: 5px;
   cursor: pointer;
 }
 .imgPreview{
@@ -650,6 +651,7 @@ body{
   background: #c2c2c2;
 }
 .submitButton2{
+  margin-left: 20px;
   cursor: pointer;
   background: #e6e6e6;
 }

@@ -8,7 +8,7 @@ class Profile extends Component {
 
     render() {
         return (
-            <div className='container' style={{ marginTop: '10%' }}>
+            <div className='container' style={{ marginTop: '7%' }}>
 
                 <Nav />
 
