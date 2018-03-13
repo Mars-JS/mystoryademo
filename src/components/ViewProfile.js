@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import ViewProfileShelf from './ViewProfileShelf'
 import Nav from "./Header";
-import Search from './landing/Search';
+
 class ViewProfile extends Component {
 
     render() {
@@ -18,6 +18,8 @@ class ViewProfile extends Component {
 
                     <Nav />
                     <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6' }}>
+                    <br/>
+                    <br/>
 
                         <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginBottom: '2px'}} >
                             <img id="" className="img-responsive img-rounded" src={require("../img/patProfile.png")} alt="profilepic" />
@@ -43,14 +45,21 @@ class ViewProfile extends Component {
                         </div>
 
                     </div>
+                    <br/>
+                    <br/>
 
                     <div id="save" className="row" style={{ backgroundColor: '#396fc6' }}>
                         <div id="col3A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-right" style={{ color: 'black'}} >Stories</span></div>
                         <div id="col4A" className="col-sm-6 col-md-6 col-lg-6"><span className="pull-left" style={{ color: 'black' }} >Saved</span></div>
                     </div>
+                    <br/>
+                    <br/>
+
+                    <br/>
+
 
                 <div className="row">
-                <Search/>
+              
                 <ViewProfileShelf />
                 </div>
             </div>

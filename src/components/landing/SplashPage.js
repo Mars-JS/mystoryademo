@@ -30,7 +30,7 @@ const Splash = () => {
             <fieldset>
 
               <div id="row10" className="row">
-                <div className="col-sm-9 col-md-9 col-lg-9">
+                <div className="col-sm-8 col-md-8 col-lg-8">
                   <button className="loginBtn loginBtn--facebook"><a className="loginbtn" href="/profile">Login with Facebook</a></button>
                   <button className="loginBtn loginBtn--google"><a className="loginbtn" href="/profile">Login with Google</a></button>
 
@@ -64,7 +64,7 @@ const Splash = () => {
               <br/>
               <div id="row8" className="row">
                 <div className="col-sm-9 col-md-9 col-lg-9">
-                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'white'}}>S I G N U P</button>
+                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'white'}}>Sign Up</button>
 
                 </div>
               </div>

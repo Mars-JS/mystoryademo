@@ -31,30 +31,17 @@ const footer = () => (
                         </div>
                     </div>
                 </div>
-
                 <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                
-                    <div className='row' style={{marginLeft: '55%'}}>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                            <a><img alt="" className="socialIcons" src={require("../../img/github.png")} /></a>
-                        </div>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                            <a href="https://www.linkedin.com/in/pat-hustad-56277b36/"><img alt=""  className="socialIcons" src={require("../../img/linkedin2.png")} /></a>
-                        </div>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                            <a><img alt=""  className="socialIcons" src={require("../../img/stack.png")} /></a>
-                        </div>
+                    <div className='row' style={{marginLeft: '55%'}}>  
                     </div>
                     <div className='row' style={{marginLeft: '55%', marginTop: '5%'}}>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
                             <a><img alt="" className="socialIcons" src={require("../../img/insta2.png")} /></a>
                         </div>
                         <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
                             <a><img alt=""  className="socialIcons" src={require("../../img/facebook2.png")} /></a>
                         </div>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                            <a><img alt=""  className="socialIcons" src={require("../../img/googlePlus2.png")} /></a>
-                        </div>
+                        
                     </div>
 
                 </div>

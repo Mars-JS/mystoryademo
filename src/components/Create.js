@@ -87,7 +87,7 @@ class Create extends Component {
         <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><Nav /></div></div>
         <div className='row darkWood' style={{ marginTop: '7%'}}>
 
-          <div className='col-sm-3 col-md-3 col-lg-3' style={{ marginTop: '1%', marginLeft: '5%' }}> {/* left side controls */}
+        { /* <div className='col-sm-3 col-md-3 col-lg-3' style={{ marginTop: '100%', marginLeft: '5%' }}> 
 
             <div className='container-fluid'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
 
@@ -142,7 +142,7 @@ class Create extends Component {
               </Tabs>
 
             </div></div></div>
-          </div>
+          </div> */}
 
           <div className='col-sm-8 col-md-8 col-lg-8'> { /* right side preview */}
 
@@ -160,14 +160,15 @@ class Create extends Component {
 
                     <article >
                       <div className='container'>
-                        <div style={{ textAlign: 'left', left: '5%', bottom: '-56px', position: 'absolute' }}>page 1</div>
-                        <div style={{ textAlign: 'right', right: '5%', bottom: '-56px', position: 'absolute' }}>page 2</div>
+                        <div style={{ textAlign: 'left', left: '5%', bottom: '-25px', position: 'absolute' }}>page 1</div>
+                        <div style={{ textAlign: 'right', right: '5%', bottom: '-25px', position: 'absolute' }}>page 2</div>
                         <div className='row'>
 
                           <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 1 */}
                             <div className='row' style={{ margin: '3px' }}>
                               <p className='font4'>sample title</p>
-                                <img alt="" className="img-responsive pictureShadow" src={require("../img/rihannaPage2.jpg")} />
+                              <br/>
+                                <img alt="" className="img-responsive " src={require("../img/rihannaPage2.jpg")} />
                             </div>
                             <div className='row' >
                               <div className='col-sm-12 col-md-12 col-lg-12'>
@@ -183,34 +184,15 @@ class Create extends Component {
 
                               <div className="container-fluid">
                                 <div className='row' style={{marginTop: '5px'}}>
-                                  <div className='col-sm-6 col-md-2 col-lg-3'>
-                                    <img
-                                      className="img-responsive pictureShadowSmall"
-                                      src={require("../img/rihannaPage3.jpg")}
-                                    />
-                                  </div>
-                                  <div className='col-sm-6 col-md-6 col-lg-3'>
-                                    <img
-                                      className="img-responsive pictureShadowSmall"
-                                      src={require("../img/rihannaPage3.jpg")}
-                                    />
-                                  </div>
+                                 
+                                 
                                 </div>
                               </div>
                           
-                              <div className="container"><div className='row' style={{ margin: '3px' }}>
-                                <div className='col-sm-12 col-md-12 col-lg-12'>
-                                  <p style={{ textAlign: 'left', marginRight: '58%' }}>
-                                  Nibh praesent tristique magna sit amet purus. Ut faucibus 
-                              integer. Volutpat commodo sed egestas egestas fringilla phasellus
-                              faucibus scelerisque.</p></div></div></div>
                             
-                              <div className='row' style={{}}>
-                                <div className="col-sm-4 col-md-8 col-lg-12">
-                                  <iframe className='videoPlayer' width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" />
-                                </div>
-                              </div>
-                            
+                           
+                              <br/>
+                              <br/>
                             <div className="container"> <div className='row' style={{ margin: '3px' }}>
                                 <div className='col-sm-12 col-md-12 col-lg-12'>
                             <p style={{textAlign: 'left', marginRight: '58%'}}>Massa 
@@ -220,7 +202,21 @@ class Create extends Component {
                             sollicitudin nibh sit amet commodo nulla. Odio aenean sed 
                             adipiscing diam donec adipiscing tristique risus nec. 
                             Etiam erat velit scelerisque in dictum non consectetur a. 
+                            Neque ornare aenean euismod elementum. </p>
+                            <p style={{textAlign: 'left', marginRight: '58%'}}>Massa 
+                            sollicitudin aliquam ultrices sagittis orci a scelerisque 
+                            purus. Quisque sagittis purus sit amet volutpat consequat. 
+                            Vel fringilla est ullamcorper eget nulla. Duis tristique 
+                            sollicitudin nibh sit amet commodo nulla. Odio aenean sed 
+                            adipiscing diam donec adipiscing tristique risus nec. 
+                            Etiam erat velit scelerisque in dictum non consectetur a. 
                             Neque ornare aenean euismod elementum. </p></div></div></div>
+                            <br/>
+                            <div className='row' style={{}}>
+                                <div className="col-sm-4 col-md-8 col-lg-12">
+                                  <iframe className='videoPlayer' width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" />
+                                </div>
+                              </div>
                           </div>
                             <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
                               
@@ -269,7 +265,7 @@ class Create extends Component {
         <div className="row"><div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
           
           <BookShelfNew />
-
+          <BookShelfNew />
         </div></div>
 
 

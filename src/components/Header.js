@@ -11,7 +11,7 @@ const Nav = () => (
         <div className='row'>
           <div className='col-xs-4 col-sm-6 col-md-12 col-lg-12'>
             <a href="/"><img src={require("../img/mysLogo00.png")} alt="logo" /></a>
-            <a href="/"><img src={require("../img/mystolo.png")} alt="my storya" /></a>
+           {/* <a href="/"><img src={require("../img/mystolo.png")} alt="my storya" /></a>*/}
           </div>
         </div>
       </div>

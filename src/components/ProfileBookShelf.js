@@ -74,7 +74,7 @@ class ProfileBookShelf extends Component {
                                     <div className="books">
                                         <div className="book">
 
-                                            <img className="bookImage img-responsive" src={require("../img/linkedin.png")} />
+                                            <img className="bookImage img-responsive" src={require("../img/linkedin3.png")} />
                                             <div className="overlay">
                                                 <div className="text">Open Story</div>
                                             </div>
@@ -98,7 +98,7 @@ class ProfileBookShelf extends Component {
                                 <Link to="/books/1" className="">
                                     <div className="books">
                                         <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/insta.png")} />
+                                            <img className="bookImage img-responsive" src={require("../img/insta3.png")} />
                                             <div className="overlay">
                                                 <div className="text">Open Story</div>
                                             </div>

@@ -7,7 +7,12 @@ class ReadBookShelf extends Component {
            
            <div className="container" >
                 <div className="row">
-                    <h3 className="shelfTitle text-center">OTHER STORIES FROM @BADGALRIRI</h3>
+                <br/>
+                <br/>
+                <h2 className=" text-center">Life on Tour by @badgalriri</h2>
+                <br/>
+                <br/>
+                    <h3 className="shelfTitle text-center">Other Stories by @badgalriri</h3>
                     <div id="latestStories" className="row shelf">
                         <div className="container" style={{ paddingBottom: "17px" }}>
                             <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
