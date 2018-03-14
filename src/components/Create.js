@@ -88,35 +88,39 @@ class CreateTemp extends Component {
   renderMenu() {
     if (this.state.show) {
       return (
-        <div>
-          <Button onClick={this.handleDismiss}>Hide</Button>
+        <div className='container'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
+          <Button onClick={this.handleDismiss} className="hideButton" style={{ marginBottom: '1%', marginTop: '1%' }} >Hide the update menu (click)</Button>
+          <div className='container'><div className='row' style={{ backgroundColor:'lightgrey', width: '1280px'}}><div className='col-sm-12 col-md-12 col-lg-12'>
           <Alert bsStyle="" onDismiss={this.handleDismiss}>
-            <div className='row'><div className='col-sm-3 col-md-4 col-lg-4'>
-              <div className="previewComponent">
+            <div className='row'><div className='col-sm-1 col-md-2 col-lg-3'>
+                <div className='row' style={{ marginTop: '1%', marginLeft:'7%' }}><strong>Add cover art:</strong></div>
+                <div className="previewComponent">
                 <form onSubmit={(e) => this._handleSubmit(e)}>
                   <input className="fileInput"
                     type="file"
                     onChange={(e) => this._handleImageChange(e)} />
-                  <button className="submitButton2"
+                  <Button className="submitButton"
                     type="submit"
-                    onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
+                    onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
                 </form>
               </div>
             </div>
-              <div className='col-sm-3 col-md-4 col-lg-4' style={{ textAlign: 'left', textColor: 'white' }}>
-                <form>
+              <div className='col-sm-3 col-md-4 col-lg-5' >
+                <form >
                   <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
                     <ControlLabel>New Title:</ControlLabel>
                     <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange} />
                     <FormControl.Feedback />
                   </FormGroup>
                 </form>
-              </div></div>
+              </div>
+              </div>
           </Alert>
-        </div>
+          </div></div></div>
+        </div></div></div>
       );
     }
-    return <Button onClick={this.handleShow}>Change cover & title</Button>;
+    return (<div className='container'><Button className="hideButton" style={{ backgroundColor: 'black', color: 'white', marginTop: '1%'}} onClick={this.handleShow}>Update cover & title (click)</Button></div>);
   }
 
   render() {
@@ -125,20 +129,20 @@ class CreateTemp extends Component {
       if (imagePreviewUrl) {
           $imagePreview = (<img style={{ width: '1280px', height: '720px' }} src={imagePreviewUrl} />);
       } else {
-          $imagePreview = (<div className="previewText">Preview your book here as you create</div>);
+        $imagePreview = (<div className="previewText" style={{ width: '1280px', height: '720px' }}>Preview your story here as you create</div>);
       }
       return (
           <div className="container-fluid">
-              <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><Nav /></div></div>
-              <div className='row darkWood' style={{ marginTop: '7%' }}>
-            <div className='container'>
-              <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>{this.renderMenu()}</div></div></div>
-                  <div className='container'>
-
-                  <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><h1 className="whiteBG" style={{ textAlign: 'center' }}>{this.state.value}</h1></div></div>
-                  <div className='row' style={{ marginBottom: '5%' }}>
+            <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><Nav /></div></div>
+            <div className='row darkWood' style={{ marginTop: '7%' }}>
+            
+              <div className='container-fluid'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>{this.renderMenu()}</div></div></div>
+              <div className='container'>
+              <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><h1 className="whiteBG" style={{width: '1280px', textAlign: 'center' }}>{this.state.value}</h1></div></div>
+                  
+                <div className='row flip' style={{ marginBottom: '1%', marginLeft: '-14px'}}>
                       <div className='col-sm-12 col-md-12 col-lg-12'>
-                          <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400'>
+                  <FlipPage pageBackground='#fff' flipOnTouch='true' loopForever='true' height='720' width='1280' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' showSwipeHint='true' threshhold='800'>
                               
                               <article> {/* cover page */}
                                   <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
@@ -154,30 +158,35 @@ class CreateTemp extends Component {
                                       <div className='row'>
 
                                           <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 1 */}
-                                              <div className='row' style={{ margin: '3px' }}>
+                                              <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
                                                   <p className='font4'>sample title</p>
                                                   <img alt="" className="img-responsive pictureShadow" src={require("../img/rihannaPage2.jpg")} />
-                                              </div>
-                                              <div className='row' >
-                                                  <div className='col-sm-12 col-md-12 col-lg-12'>
-                                                      <SelectPage />
-                                                  </div>
-                                              </div>
+                                              </div></div>
+                                            <div className='row' >
+                                              <div className='col-sm-12 col-md-12 col-lg-12'>
+                                                <SelectPage />
+                                            </div></div>
                                           </div>
 
                                           <div className='col-sm-6 col-md-6 col-lg-6'> {/* page 2 */}
-                                              <div className='container'>
+                                              <div className='container-fluid'>
 
-                                                  <div className="container"><div className='row' style={{ margin: '3px' }}>
+                                                  <div className="container"><div className='row' style={{ marginTop: '1%' }}>
                                                       <div className='col-sm-12 col-md-12 col-lg-12'>
-                                                          <p style={{ textAlign: 'left', marginRight: '58%' }}>
+                                                          <p style={{ textAlign: 'left', marginRight: '54%' }}>
                                                               Nibh praesent tristique magna sit amet purus. Ut faucibus
                                                           integer. Volutpat commodo sed egestas egestas fringilla phasellus
-                                                          faucibus scelerisque.</p></div></div></div>
+                                                          faucibus scelerisque.Euismod in pellentesque massa placerat duis 
+                                                          ultricies lacus sed turpis. Ut tortor pretium viverra suspendisse 
+                                                          potenti nullam ac. Mauris pellentesque pulvinar pellentesque 
+                                                          habitant morbi tristique senectus et netus. Libero enim sed 
+                                                          faucibus turpis. Orci ac auctor augue mauris. A condimentum 
+                                                          vitae sapien pellentesque. Amet facilisis magna etiam tempor orci.
+                                                           Orci dapibus ultrices in iaculis nunc sed augue lacus.</p></div></div></div>
 
-                                                  <div className="container"> <div className='row' style={{ margin: '3px' }}>
+                                                  <div className="container"> <div className='row' style={{ marginTop: '1%' }}>
                                                       <div className='col-sm-12 col-md-12 col-lg-12'>
-                                                          <p style={{ textAlign: 'left', marginRight: '58%' }}>Massa
+                                                          <p style={{ textAlign: 'left', marginRight: '54%' }}>Massa
                                                           sollicitudin aliquam ultrices sagittis orci a scelerisque
                                                           purus. Quisque sagittis purus sit amet volutpat consequat.
                                                           Vel fringilla est ullamcorper eget nulla. Duis tristique
@@ -187,11 +196,12 @@ class CreateTemp extends Component {
                                                           Neque ornare aenean euismod elementum. </p></div></div></div>
                                             </div>
 
-                                              <div className='row'>
-                                                <div className="col-sm-4 col-md-8 col-lg-12">
-                                                  <iframe className='videoPlayer' width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" />
-                                                </div>
-                                              </div>
+                                            <div className="container-fluid">
+                                            <div className='row' style={{ marginLeft: "7%", marginTop: "1%"}}>
+                                            <div className="col-sm-4 col-md-8 col-lg-12">
+                                              <p className='font4'>Rihanna- Love On The Brain</p>
+                                              <iframe className='videoPlayer' height='320px' width='480px' src="https://www.youtube.com/embed/0RyInjfgNc4" />
+                                            </div></div></div>
 
                                           </div>
 

@@ -44,7 +44,7 @@ class ViewProfile extends Component {
                                 <br />
                             </div>
                         </div>
-                        <a href="/create"><button type="submit" style={{ backgroundColor: 'black' }} className="btn-primary btn"><Glyphicon glyph="glyphicon glyphicon-plus" />Follow</button></a>
+                        <a href=""><button type="submit" style={{ backgroundColor: 'black' }} className="btn-primary btn"><Glyphicon glyph="glyphicon glyphicon-plus" />Follow</button></a>
                     </div>
 
                 </div>
