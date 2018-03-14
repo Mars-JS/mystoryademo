@@ -92,29 +92,32 @@ class CreateTemp extends Component {
           <Button onClick={this.handleDismiss} className="hideButton" style={{ marginBottom: '1%', marginTop: '1%' }} >Hide the update menu (click)</Button>
           <div className='container'><div className='row' style={{ backgroundColor:'lightgrey', width: '1280px'}}><div className='col-sm-12 col-md-12 col-lg-12'>
           <Alert bsStyle="" onDismiss={this.handleDismiss}>
-            <div className='row'><div className='col-sm-1 col-md-2 col-lg-3'>
-                <div className='row' style={{ marginTop: '1%', marginLeft:'7%' }}><strong>Add cover art:</strong></div>
-                <div className="previewComponent">
-                <form onSubmit={(e) => this._handleSubmit(e)}>
-                  <input className="fileInput"
-                    type="file"
-                    onChange={(e) => this._handleImageChange(e)} />
-                  <Button className="submitButton"
-                    type="submit"
-                    onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
-                </form>
+            <div className='row'>
+              <div className='col-sm-3 col-md-3 col-lg-3'>
+                  <div className='row' style={{ marginTop: '1%', marginLeft:'7%' }}><strong>Add cover art:</strong></div>
+                  <div className="previewComponent">
+                  <form onSubmit={(e) => this._handleSubmit(e)}>
+                    <input className="fileInput"
+                      type="file"
+                      onChange={(e) => this._handleImageChange(e)} />
+                    <Button className="uploadImgButton"
+                      type="submit"
+                      onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
+                  </form>
+                </div>
               </div>
-            </div>
-              <div className='col-sm-3 col-md-4 col-lg-5' >
+              <div className='col-sm-3 col-md-3 col-lg-3'>
                 <form >
                   <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
                     <ControlLabel>New Title:</ControlLabel>
-                    <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange} />
+                      <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange} />
+                        <Button className="uploadButton" type="submit" onClick={(e) => this._handleSubmit(e)}>Update Title</Button>
                     <FormControl.Feedback />
                   </FormGroup>
                 </form>
               </div>
-              </div>
+                <div className='col-sm-6 col-md-6 col-lg-6'></div>
+            </div>
           </Alert>
           </div></div></div>
         </div></div></div>
