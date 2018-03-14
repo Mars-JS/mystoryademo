@@ -16,7 +16,7 @@ class ViewProfile extends Component {
 
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px', marginBottom: '50px', }} >
-                        <img id="" className="img-responsive img-circle" src={require("../img/patProfile.png")} alt="profilepic" />
+                        <img id="" className="img-responsive img-circle profImg" src={require("../img/profileBrian2.png")} alt="profilepic" />
                     </div>
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col2A" className="col-sm-6 col-md-6 col-lg-6">
@@ -24,26 +24,27 @@ class ViewProfile extends Component {
                         <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '10px' }}>
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <br />
-                                <h2>pat_hustad <Button style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
+                                <br />
+                                <h2>Brian Helm<Button style={{ backgroundColor: 'black', marginLeft: '2%' }} className="btn-primary btn btn-xs"><Glyphicon glyph="glyphicon glyphicon-plus" style={{ color: 'White', margin: '2%' }} />Add</Button></h2>
                             </div>
                         </div>
 
                         <div id="2B" className="row" style={{ backgroundColor: '#F6F6F6(157, 156, 228)', marginBottom: '10px' }}>
-                            <div id="col1C" className="col-sm-4 col-md-4 col-lg-4"><a href="" style={{ color: 'black' }} ><h4>521 Stories </h4></a>    <a href="" style={{ color: 'black' }} ><h4>12.4k Followers</h4></a>    <a href="" style={{ color: 'black' }} ><h4>2,759 Following</h4></a></div>
+                            <div id="col1C" className="col-sm-4 col-md-4 col-lg-4"><a href="" style={{ color: 'black' }} ><h4>53 Stories </h4></a>    <a href="" style={{ color: 'black' }} ><h4>7.2k Followers</h4></a>    <a href="" style={{ color: 'black' }} ><h4>2,547 Following</h4></a></div>
                             <div id="col2C" className="col-sm-2 col-md-2 col-lg-2"></div>
                             <div id="col3C" className="col-sm-2 col-md-2 col-lg-2"></div>
                         </div>
 
                         <div id="3B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '10px' }}>
-                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4>🌴🌴Software + Design + Surfing🌴🌴</h4></span>
+                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4>Software Development</h4></span>
                             </div>
                         </div>
                         <div id="4B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '12px' }}>
-                            <div id="col1E" className="col-sm-12 col-md-12 col-lg-12"><a href="" style={{ color: 'black' }} ><h4>www.pathustad.com</h4></a>
+                            <div id="col1E" className="col-sm-12 col-md-12 col-lg-12"><a href="" style={{ color: 'black' }} ><h4>www.website.com</h4></a>
                                 <br />
                             </div>
                         </div>
-                        <a href="/create"><button type="submit" style={{ backgroundColor: 'black' }} className="btn-primary btn"> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus" /></button></a>
+                        <a href="/create"><button type="submit" style={{ backgroundColor: 'black' }} className="btn-primary btn"><Glyphicon glyph="glyphicon glyphicon-plus" />Follow</button></a>
                     </div>
 
                 </div>
