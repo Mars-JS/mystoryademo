@@ -1,16 +1,70 @@
 import React, { Component } from 'react';
-import {Button, Glyphicon} from 'react-bootstrap';
+import {Button, Glyphicon, Popover, Modal, OverlayTrigger, Tooltip} from 'react-bootstrap';
 /* import '../App.css'; */
 import ProfileBookShelf from './ProfileBookShelf';
 import Nav from "./Header";
 
 class Profile extends Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+
+        this.state = {
+            show: false
+        };
+    }
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+        this.setState({ show: true });
+    }
 
     render() {
+        let tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
+        let popover = (
+        <Popover id="modal-popover" title="popover">
+                very popover. such engagement
+        </Popover>
+        );
+
         return (
             <div className='container' style={{ marginTop: '7%' }}>
-
                 <Nav />
+                <Modal show={this.state.show} onHide={this.handleClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <h4>Text in a modal</h4>
+                        <p>
+                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        </p>
+                        <h4>Popover in a modal</h4>
+                        <p>
+                            there is a{' '}
+                            <OverlayTrigger overlay={popover}>
+                                <a href="#popover">popover</a>
+                            </OverlayTrigger>{' '}
+                            here
+                         </p>
+                        <h4>Tooltips in a modal</h4>
+                        <p>
+                            there is a{' '}
+                            <OverlayTrigger overlay={tooltip}>
+                                <a href="#tooltip">tooltip</a>
+                            </OverlayTrigger>{' '}
+                            here
+                        </p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.handleClose}>Cancel</Button>
+                        <Button onClick={this.handleClose}>Save</Button>
+                    </Modal.Footer>
+                </Modal>
 
                 <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '50px'  }}>
 
@@ -24,7 +78,7 @@ class Profile extends Component {
                         <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '10px' }}>
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
-                                <h2>pat_hustad <Button style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
+                                <h2>pat_hustad <Button onClick={this.handleShow} style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
                             </div>
                         </div>
 

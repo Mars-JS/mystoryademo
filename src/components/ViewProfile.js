@@ -7,6 +7,7 @@ import Nav from "./Header";
 class ViewProfile extends Component {
 
     render() {
+
         return (
             <div className='container' style={{ marginTop: '7%' }}>
 
@@ -16,7 +17,7 @@ class ViewProfile extends Component {
 
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px', marginBottom: '50px', }} >
-                        <img id="" className="img-responsive img-circle profImg" src={require("../img/profileBrian2.png")} alt="profilepic" />
+                        <img id="" className="img-responsive img-circle" src={require("../img/profileBrian.png")} alt="profpic" />
                     </div>
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col2A" className="col-sm-6 col-md-6 col-lg-6">
@@ -25,7 +26,7 @@ class ViewProfile extends Component {
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <br />
                                 <br />
-                                <h2>Brian Helm<Button style={{ backgroundColor: 'black', marginLeft: '2%' }} className="btn-primary btn btn-xs"><Glyphicon glyph="glyphicon glyphicon-plus" style={{ color: 'White', margin: '2%' }} />Add</Button></h2>
+                                <h2>Brian Helm<Button style={{marginLeft: '2%' }} className="btn-xs blackButtonSm"><Glyphicon glyph="glyphicon glyphicon-plus" style={{ margin: '2%' }} />Add</Button></h2>
                             </div>
                         </div>
 
@@ -44,7 +45,7 @@ class ViewProfile extends Component {
                                 <br />
                             </div>
                         </div>
-                        <a href=""><button type="submit" style={{ backgroundColor: 'black' }} className="btn-primary btn"><Glyphicon glyph="glyphicon glyphicon-plus" />Follow</button></a>
+                        <a href=""><Button type="submit" className="blackButton"><Glyphicon glyph="glyphicon glyphicon-plus" />Follow</Button></a>
                     </div>
 
                 </div>
