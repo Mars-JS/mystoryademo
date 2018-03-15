@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Button, Glyphicon, Popover, Modal, OverlayTrigger, Tooltip} from 'react-bootstrap';
 /* import '../App.css'; */
 import ProfileBookShelf from './ProfileBookShelf';
-import Nav from "./Header";
+
 
 class Profile extends Component {
     constructor(props, context) {
@@ -24,6 +24,7 @@ class Profile extends Component {
     }
 
     render() {
+
         let tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
         let popover = (
         <Popover id="modal-popover" title="popover">
@@ -33,7 +34,7 @@ class Profile extends Component {
 
         return (
             <div className='container' style={{ marginTop: '7%' }}>
-                <Nav />
+                
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Modal heading</Modal.Title>

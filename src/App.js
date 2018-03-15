@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-
+import Header from './components/Header';
 import Footer from "./components/landing/Footer";
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
@@ -23,7 +23,8 @@ class App extends Component {
   render() {
     return (
     <BrowserRouter>
-      <div className="entireSiteBG">
+      <div className="">
+          <Header />
           <Route exact path="/" component={Landing} />
           <Route exact path="/books" component={Landing} />
           <Route exact path="/profile" component={Profile} />

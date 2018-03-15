@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Alert, Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
 import FlipPage from 'react-flip-page';
 import '../App.css';
-import Nav from "./Header";
+
 import BookShelfNew from './BookShelfNew';
 import SelectPage from './SelectPage';
 
@@ -136,7 +136,7 @@ class CreateTemp extends Component {
       }
       return (
           <div className="container-fluid">
-            <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'><Nav /></div></div>
+            <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'></div></div>
             <div className='row darkWood' style={{ marginTop: '7%' }}>
             
               <div className='container-fluid'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>{this.renderMenu()}</div></div></div>

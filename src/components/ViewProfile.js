@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
 /* import '../App.css'; */
 import ViewProfileShelf from './ViewProfileShelf';
-import Nav from "./Header";
+
 
 class ViewProfile extends Component {
 
@@ -11,7 +11,7 @@ class ViewProfile extends Component {
         return (
             <div className='container' style={{ marginTop: '7%' }}>
 
-                <Nav />
+                
 
                 <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '50px' }}>
 

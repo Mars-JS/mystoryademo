@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 /* import './Nav.css' */
 import Search from './landing/Search';
 
-const Nav = () => (
+const Header = () => (
   <div>
     <Navbar className="navbar-form navbar-fixed-top" style={{ backgroundColor: 'transparent', marginTop: '-2px' }}>
     <Navbar.Header>
@@ -44,4 +44,4 @@ const Nav = () => (
   </div>
 );
 
-export default Nav;
+export default Header;
