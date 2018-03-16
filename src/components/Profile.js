@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Glyphicon, Popover, Modal, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import { Button, ControlLabel, FormGroup, Glyphicon, FormControl, Popover, Modal, OverlayTrigger, Tooltip} from 'react-bootstrap';
 /* import '../App.css'; */
 import ProfileBookShelf from './ProfileBookShelf';
 
@@ -10,17 +10,40 @@ class Profile extends Component {
 
         this.handleShow = this.handleShow.bind(this);
         this.handleClose = this.handleClose.bind(this);
+        this.handleCloseSave = this.handleCloseSave.bind(this);
+        this.handleChangeDisplayName = this.handleChangeDisplayName.bind(this);
+        this.handleChangeAboutMe = this.handleChangeAboutMe.bind(this);
 
         this.state = {
-            show: false
+            show: false,
+            valueDisplayName: 'pat_hustad',
+            valueAboutMe: '🌴🌴Software + Design + Surfing🌴🌴'
         };
     }
     handleClose() {
         this.setState({ show: false });
+        this.setState({ valueDisplayName: 'pat_hustad' })
     }
-
     handleShow() {
         this.setState({ show: true });
+    }
+    handleCloseSave() {
+        this.setState({ show: false });
+        //save to DB
+    }
+    getValidationStateBody() {
+        const length = this.state.valueDisplayName.length;
+        if (length > 3) return 'success';
+        else if (length > 1) return 'warning';
+        else if (length > 0) return 'error';
+        else if (length < 10) return 'error';
+        return null;
+    }
+    handleChangeDisplayName(e) {
+        this.setState({ valueDisplayName: e.target.value });
+    }
+    handleChangeAboutMe(e) {
+        this.setState({ valueAboutMe: e.target.value });
     }
 
     render() {
@@ -34,38 +57,57 @@ class Profile extends Component {
 
         return (
             <div className='container' style={{ marginTop: '7%' }}>
+
                 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal bsSize='sm' show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Profile: Pat Hustad</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>Text in a modal</h4>
-                        <p>
-                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                        </p>
-                        <h4>Popover in a modal</h4>
-                        <p>
-                            there is a{' '}
-                            <OverlayTrigger overlay={popover}>
-                                <a href="#popover">popover</a>
-                            </OverlayTrigger>{' '}
-                            here
-                         </p>
-                        <h4>Tooltips in a modal</h4>
-                        <p>
-                            there is a{' '}
-                            <OverlayTrigger overlay={tooltip}>
-                                <a href="#tooltip">tooltip</a>
-                            </OverlayTrigger>{' '}
-                            here
-                        </p>
+                        <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
+                        <form onSubmit={this.handleSubmit}>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                                <label>
+                                    <p>Display Name:</p>
+                                    <input type="text"
+                                        value={this.state.valueDisplayName}
+                                        placeholder={this.state.valueDisplayName}
+                                        onChange={this.handleChangeDisplayName} />
+                                </label>
+                            </div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>About me:</p>
+                                <textarea type="textarea" rows={9} cols={22}
+                                    value={this.state.valueAboutMe}
+                                    placeholder={this.state.valueAboutMe}
+                                    onChange={this.handleChangeAboutMe} />
+                            </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>First Name:</p>
+                                <input type="text" rows={1} cols={10} placeholder='pat'/>
+                            </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Last Name:</p>
+                                <input type="text" rows={1} cols={10} placeholder='hustad' />
+                            </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Location:</p>
+                                <input type="text" rows={1} cols={10} placeholder='Palo Alto' />
+                            </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Website:</p>
+                                <input type="text" rows={1} cols={10} placeholder='www.pathustad.com' />
+                            </label></div></div>
+                        </form>
+                        </div></div>
                     </Modal.Body>
+                    
                     <Modal.Footer>
                         <Button onClick={this.handleClose}>Cancel</Button>
-                        <Button onClick={this.handleClose}>Save</Button>
+                        <Button onClick={this.handleCloseSave} type="submit" value="Submit">Save</Button>
                     </Modal.Footer>
                 </Modal>
+                
 
                 <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '50px'  }}>
 
@@ -79,7 +121,7 @@ class Profile extends Component {
                         <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '10px' }}>
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
-                                <h2>pat_hustad <Button onClick={this.handleShow} style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
+                                <h2>{this.state.valueDisplayName}<Button onClick={this.handleShow} style={{ backgroundColor: 'black' }} className="btn-primary btn btn-xs">Edit Profile </Button><Glyphicon glyph="glyphicon glyphicon-cog" style={{ color: 'black', margin: '2%' }} /></h2>
                             </div>
                         </div>
 
@@ -90,7 +132,7 @@ class Profile extends Component {
                         </div>
 
                         <div id="3B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '10px' }}>
-                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4>🌴🌴Software + Design + Surfing🌴🌴</h4></span>
+                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4>{this.state.valueAboutMe}</h4></span>
                             </div>
                         </div>
                         <div id="4B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '12px' }}>
