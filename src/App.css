@@ -607,14 +607,58 @@ body{
 .fileInput{
   border: 1px solid black;
   padding: 1px;
-  margin-left: 18px;
+  margin-left: -18px;
   margin-top: 7px;
   cursor: pointer;
 }
+
 .uploadImgButton{
   padding: 6px;
-  margin-left: 15px;
+  margin-left: -15px;
   margin-top: 7px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);;
+  font-weight: 900;
+  font-size: 10pt;
+  cursor: pointer;
+  background: #000000;
+}
+.uploadButton{
+  padding: 6px;
+  margin-left: -2px;
+  margin-top: 7px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);;
+  font-weight: 900;
+  font-size: 11pt;
+  cursor: pointer;
+  background: #000000;
+}
+.uploadButton22{
+  padding: 6px;
+  margin-left: -17px;
+  margin-top: 7px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);;
+  font-weight: 900;
+  font-size: 11pt;
+  cursor: pointer;
+  background: #000000;
+}
+.fileInput2{
+  border: 1px solid black;
+  padding: 3px;
+  margin-left: 1px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+.uploadImgButton2{
+  padding: 3px;
+  margin-left: 1px;
+  margin-top: 1px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   color: rgb(255, 255, 255);;
@@ -625,7 +669,6 @@ body{
 }
 .imgPreview{
   text-align: center;
-
   background-color: #c2c2c2;
   background-blend-mode: color-dodge;
 /*   border-left: 2px solid gray;
@@ -645,11 +688,11 @@ body{
   border-bottom: 2px solid lightgrey; */
 }
 
-.previewText{
+/* .previewText{
   width: 100%;
-  /* margin-top: 20px; */
-  }
-.hideButton, .uploadButton{
+  margin-top: 120px;
+  } */
+.hideButton{
   padding: 6px;
   margin-top: 1%;
   border: 2px solid rgb(0, 0, 0);
@@ -958,9 +1001,7 @@ body{
   width: 360px;
 }
 
-.halfPage{
-  margin-left: '50%';
-}
+
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;
