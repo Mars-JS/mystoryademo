@@ -3,37 +3,28 @@ import { Alert, Button, Glyphicon, Navbar, Nav, MenuItem, NavDropdown } from 're
 import Search from './landing/Search';
 
 
-class Header extends Component {
+class HeaderNew extends Component {
     constructor(props, context) {
         super(props, context);
 
         this.handleDismiss = this.handleDismiss.bind(this);
         this.handleShow = this.handleShow.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
-        
+
         this.state = {
-            show: false,
-            navScroll: 'transparent'
+           show: false
         };
     }
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll)
-    }
-
-    handleScroll(event) {
-        // access window.scrollY etc
-        let y = window.scrollY;
-        if (y<50){
-            this.setState({ navScroll: 'transparent' })
-        }else{
-            this.setState({ navScroll: 'white' })
+        {
+            document.documentElement.addEventListener('scroll', this.handleScroll);
         }
-        console.log(this.state.navScroll);
-        /* console.log(y); */
+    }
+    componentWillUnmount() {
+        document.documentElement.removeEventListener('scroll', this.handleScroll);
+    }
+    handleScroll() {
+        this.refs.nav.getDOMNode().style.top = document.documentElement.scrollTop + 'px';
     }
 
     handleDismiss() {
@@ -50,12 +41,12 @@ class Header extends Component {
                     <div className='row'>
                         <img src={require("../img/menuHam3.png")}
                             className="menuHam2"
-                            onClick={this.handleDismiss} alt="logo" />
+                            onClick={this.handleDismiss} alt="logo" />            
                     </div>
                     <div className='row'>
                         <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
-                    </div>
+                        </div>
                     <div className='row'>
                         <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-user' /> Profile</Button>
@@ -81,38 +72,33 @@ class Header extends Component {
         }
         return (
             <div className='container-fluid'><div className='row' >
-                <img src={require("../img/menuHam2.png")}
-                    className="menuHam2"
-                    onClick={this.handleShow} alt="logo" />
-            </div></div>
-        );
-
+                <img src={require("../img/menuHam2.png")} 
+                className="menuHam2"
+                onClick={this.handleShow} alt="logo" />
+                </div></div>
+                    );
+            
     }
     render() {
-        let styles = this.state.navScroll;
-        let {navStyle} = styles;
         return (
-            <div className='container-fluid'><div className='row'>
-                <div className={navStyle}>
-                <Navbar fixedTop='true' fluid='true' href='nav'
-                        style={{ background: this.state.navScroll, border: '0px', paddingLeft: '50px', paddingRight: '50px', paddingTop: '25px', paddingBottom: '30px'}}>
+            <div className='container-fluid'><div className='row navRow'>
+                <Navbar fixedTop='true' fluid='true' href='nav' className={}>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/"><img className='img-responsive mysLogo' src={require("../img/mysLogo00.png")} alt="logo" /></a>
+                            <a href="/"><img src={require("../img/mysLogo00.png")} alt="logo" /></a>
                         </Navbar.Brand>
                     </Navbar.Header>
-                    <Nav pullRight>
-                        <Navbar.Toggle />
+                        <Nav pullRight>
+                        <Navbar.Toggle/>
                         <Navbar.Collapse>
                             <Navbar.Form>
                                 {this.renderMenuHam()}
                             </Navbar.Form>
                         </Navbar.Collapse>
-                    </Nav>
+                        </Nav>
                 </Navbar>
-                </div>
             </div></div>
         )
     }
 }
-export default Header;
+export default HeaderNew;

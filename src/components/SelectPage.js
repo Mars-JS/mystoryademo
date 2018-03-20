@@ -185,46 +185,7 @@ class SelectPage extends Component {
 
     render() {
         return (
-            <div className='container'><div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>{this.renderContent()}</div></div>
-            
-                {/* <div className='row' style={{margin: '1%'}}>
-
-                    <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 containerText' style={{ width: '480px' }}>
-                        <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} />
-                        <div class="top-left"><button onClick={this.handleClick} value='textInput'>{this.state.isToggleOn ? 'ON' : 'OFF'}<Glyphicon glyph="glyphicon glyphicon-pencil" /></button></div>
-                        <div class="bottom-left"><button onClick={this.handleClick} value='audioInput'><Glyphicon glyph="glyphicon glyphicon-volume-up" /></button></div>
-                        <div class="top-right"><button onClick={this.handleClick} value='imgInput'><Glyphicon glyph="glyphicon glyphicon-picture" /></button></div>
-                        <div class="bottom-right"><button onClick={this.handleClick} value='videoInput'><Glyphicon glyph="glyphicon glyphicon-facetime-video" /></button></div>
-                    </div>{this.renderContent()}
-
-                </div>
-                <div className='container'><div className='row'><div className='previewComponent col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                    <form onSubmit={(e) => this._handleSubmit(e)}>
-                        <input className="fileInput"
-                            type="file"
-                            onChange={(e) => this._handleImageChange(e)} />
-                        <button className="submitButton"
-                            type="submit"
-                            onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
-                    </form>
-                </div></div></div>
-                <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
-                    <ControlLabel>New Title:</ControlLabel>
-                    <FormControl type="text" value={this.state.valueText} placeholder="Enter text" onChange={this.handleChangeText} />
-                    <FormControl.Feedback />
-                </FormGroup>
-                <FormGroup controlId="formBasicText" validationState={this.getValidationStateBody()}>
-                    <ControlLabel>Continue Writing Here:</ControlLabel>
-                    <FormControl componentClass="textarea" rows={30} value={this.state.valueBody} placeholder="Enter text" onChange={this.handleChangeBody} />
-                    <FormControl.Feedback />
-                </FormGroup>
-                <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
-                    <div className="imgPreview img-responsive">{$imagePreview}</div>
-                    <div>{this.state.valueBody}</div>
-                </div>
-                </div> */}
-                
-            </div>
+            <div className='container'><div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>{this.renderContent()}</div></div></div>
         );
     }
 }

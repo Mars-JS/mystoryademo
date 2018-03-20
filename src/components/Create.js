@@ -93,20 +93,6 @@ class Create extends Component {
                     <div className='container'><div className='row' style={{ backgroundColor: 'lightgrey', width: '400px' }}>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <Alert bsStyle="" onDismiss={this.handleDismiss}>
-                            <div className='row'>
-                                <div className='col-sm-12 col-md-12 col-lg-12'>
-                                    <div className='row'><strong>Add cover art:</strong></div>
-                                    <div className="previewComponent">
-                                        <form onSubmit={(e) => this._handleSubmit(e)}>
-                                            <input className="fileInput"
-                                                type="file"
-                                                onChange={(e) => this._handleImageChange(e)} />
-                                            <Button className="uploadImgButton"
-                                                type="submit"
-                                                onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
-                                        </form>
-                                    </div>
-                                </div></div>
                             <div className='row' >
                                 <div className='row'>
                                 <div className='col-sm-12 col-md-12 col-lg-12'>
@@ -119,6 +105,20 @@ class Create extends Component {
                                         </FormGroup>
                                     </form>
                                 </div></div>
+                                    <div className='row' style={{marginBottom: '1%'}}>
+                                    <div className='col-sm-12 col-md-12 col-lg-12'>
+                                            <div className='row' style={{ marginLeft: '1%' }}><strong>Add cover art:</strong></div>
+                                        <div className="previewComponent">
+                                            <form onSubmit={(e) => this._handleSubmit(e)}>
+                                                <input className="fileInput2"
+                                                    type="file"
+                                                    onChange={(e) => this._handleImageChange(e)} />
+                                                <Button className="uploadImgButton2"
+                                                    type="submit"
+                                                    onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
+                                            </form>
+                                        </div>
+                                    </div></div>
                                 <div className='row'>
                                 <div className='col-sm-12 col-md-12 col-lg-12'>
                                         <div className='container'>
