@@ -26,23 +26,22 @@ class Header extends Component {
 
     handleScroll(event) {
         // access window.scrollY etc
-        let y = window.scrollY;
-        if (y<50){
+        this.setState({ show: false });
+        if (window.scrollY<50){
             this.setState({ navScroll: 'transparent' })
         }else{
             this.setState({ navScroll: 'white' })
         }
         /* console.log(this.state.navScroll); */
-        /* console.log(y); */
     }
 
     handleDismiss() {
         this.setState({ show: false });
-        if (this.state.navScroll=='transparent')this.setState({ navScroll: 'white' })
+        /* if (this.state.navScroll=='transparent'&& window.scrollY !== 0)this.setState({ navScroll: 'white' }); */
     }
 
     handleShow() {
-        this.setState({ navScroll: 'transparent' })
+        if (window.scrollY > 49)this.setState({ navScroll: 'transparent' });
         this.setState({ show: true });
     }
     renderMenuHam() {
@@ -54,30 +53,32 @@ class Header extends Component {
                             className="menuHam2"
                             onClick={this.handleDismiss} alt="logo" />
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                    
+                    <div className='row' style={{marginTop: '2px'}}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
                     </div>
                     <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-user' /> Profile</Button>
                     </div>
                     <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-edit' /> My Stories</Button>
                     </div>
                     <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
                     </div>
                     <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-bookmark' /> Bookmarks</Button>
                     </div>
                     <div className='row'>
-                        <Button type="submit" className="btn blackButton" style={{ width: '128px', marginLeft: '50%' }}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-book' /> Create New</Button>
                     </div>
+                    
                 </div>
             );
         }
@@ -91,22 +92,23 @@ class Header extends Component {
 
     }
     render() {
-        let styles = this.state.navScroll;
-        let {navStyle} = styles;
+
         return (
             <div className='container-fluid'><div className='row'>
-                <div className={navStyle}>
+                <div>
                 <Navbar fixedTop='true' fluid='true' href='nav'
-                        style={{ background: this.state.navScroll, border: '0px', paddingLeft: '50px', paddingRight: '50px', paddingTop: '25px', paddingBottom: '30px'}}>
+                        style={{ background: this.state.navScroll, border: '0px', paddingTop: '40px' }}>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/"><img className='img-responsive mysLogo' src={require("../img/mysLogo00.png")} alt="logo" /></a>
+                            <a href="/"><img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" />
+                                        {/* <img className='img-responsive ' src={require("../img/logoText.png")} alt="logo" /> */}
+                            </a>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav pullRight>
                         <Navbar.Toggle />
-                        <Navbar.Collapse>
-                            <Navbar.Form>
+                            <Navbar.Collapse >
+                            <Navbar.Form >
                                 {this.renderMenuHam()}
                             </Navbar.Form>
                         </Navbar.Collapse>

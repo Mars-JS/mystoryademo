@@ -37,7 +37,7 @@ const Splash = () => {
 
               <div id="row10c" className="row" style={{ marginBottom: '2%', marginLeft: '30%' }}>
                 <div className="col-sm-8 col-md-8 col-lg-8">
-                  <button className="loginBtn loginBtn--custom"><a className="loginbtn" href="/profile">Sign up with email</a></button>
+                  <button className="loginBtn loginBtn--custom"><a className="loginbtn" href="/profile">Login with email</a></button>
                 </div>
               </div>
 

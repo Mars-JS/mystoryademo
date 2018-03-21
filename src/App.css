@@ -76,7 +76,7 @@
       .loginBtn--custom:hover,
       .loginBtn--custom:focus {
         background-color: rgb(100, 130, 175);
-        background-image: linear-gradient(rgb(133, 153, 207), #3f4957);
+        background-image: linear-gradient(rgb(133, 153, 207), #263449);
       }
       .loginBtn--custom {
         background-color: rgb(114, 130, 175);
@@ -90,8 +90,9 @@
       }
       .loginBtn--facebook:hover,
       .loginBtn--facebook:focus {
-        background-color: #5B7BD5;
-        background-image: linear-gradient(#5B7BD5, #4864B1);
+        background-color: rgb(0, 41, 153);
+        /* background-color: #5B7BD5; */
+        background-image: linear-gradient(#5B7BD5, rgb(9, 27, 78));
       }
       .loginBtn--facebook {
         background-color: #4C69BA;
@@ -114,7 +115,7 @@
       .loginBtn--google:hover,
       .loginBtn--google:focus {
         background-color: #dd4b39;
-        background-image: linear-gradient(#dd4b39, red);
+        background-image: linear-gradient(red,#750000);
       }
       .loginbtn:hover{
         color: white;
@@ -132,7 +133,7 @@
         text-align: left;
         line-height: 34px;
         white-space: nowrap;
-        border-radius: 0.2em;
+        border-radius: 1px;
         font-size: 16px;
       }
       .loginBtn:before {
@@ -729,6 +730,16 @@ body{
   cursor: pointer;
   background: #e6e6e6;
 }
+.blueButton{
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid rgb(23, 50, 70);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);;
+  font-weight: 800;
+  font-size: 10pt;
+  background: rgb(23, 50, 70);
+}
 .blackButton{
   cursor: pointer;
   padding: 5px;
@@ -754,7 +765,16 @@ body{
   text-align: center;
   width: 500px;
 }
-
+.menuButton{
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid rgb(23, 50, 70);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);;
+  font-weight: 800;
+  font-size: 10pt;
+  background: rgb(23,50,70);
+}
 .darkWood{
   background-image: url("img/deskBackground.jpg");
   background-position: center;
@@ -762,33 +782,6 @@ body{
   background-repeat: no-repeat;
 }
 
-.notePad{
-  background-image: url("img/notePad.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.greydient{
-  background-color: rgb(145, 145, 145);
-  background-blend-mode: color-dodge;
-}
-
-.whiteBG{
-  background: gray;
-  border:'0px';
-  padding-left: '50px';
-  padding-right:'50px';
-  padding-top: '25px'
-  /* background-blend-mode: color-dodge; */
-}
-.transBG{
-  background:'transparent';
-  border:'0px';
-  padding-left: '50px';
-  padding-right:'50px';
-  padding-top: '25px'
-}
 /* controls for shelf */
 .tabsClass ul > li > a {
     background-color:rgb(65, 101, 148);
@@ -806,54 +799,19 @@ body{
   text-decoration-color: #c2c2c2;
 }
 
-.turquoiseBG{
-  background-image: url("img/turquoiseBG.png");
-  background-repeat: repeat;
-}
-
-.lightBlueBG{
-  background-image: url("img/lightBlueBG.png");
-  background-repeat: repeat;
-}
-
-.darkBlueBG{
-  background-image: url("img/darkBlueBG.png");
-  background-repeat: repeat;
-}
-
-.darkBlueST{
-  background-image: url("img/darkBlueST.png");
-  background-repeat: repeat;
-  border: 1px solid #222;
-}
-.darkBlueST2{
-  background-image: url("img/darkBlueST2.png");
-  background-repeat: no-repeat;
-}
-.darkGreyBG{
-  background-color: rgb(63, 63, 63);
-  background-repeat: no-repeat;
-}
-.entireSiteBG{
-  /* affects app.js */
-  /* background-image: url("img/name.png"); */
-  background-color: rgba(243, 243, 243);
-  background-repeat: no-repeat;
-}
 .wallWhite{
   background-image: url("img/wallWhite.jpg");
   /* background-position: center; */
   background-size: cover;
   /* background-repeat: no-repeat; */
 }
-
-.paperBG{
-  background-image: url("img/paperBackground.jpg");
-  background-position: center;
-  background-size: cover;
-  /* background-repeat: no-repeat; */
+.entireSiteBG{
+  /* affects app.js */
+  /* background-image: url("img/name.png"); */
+  background-color: rgb(182, 186, 190);
+  background-repeat: no-repeat;
 }
-
+/* custom fonts */
 .font1 {
   font-family: 'Bitter', serif;
   color: rgb(233, 233, 233);
@@ -899,18 +857,35 @@ body{
   text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black;
 }
 .carousel-indicators li { visibility: hidden; }
-
-.carousel-control.left, .carousel-control.right {
-  background: none !important;
+.carousel-control.right {
+  background-image: url("img/blueCircle.png");
+  margin-right: 5%;
+  background-repeat: no-repeat;
+  background-position-x: 66px;
+  /* background: none !important; */
   /* filter: progid none !important; */
   outline: 1;
  }
-.carousel .carousel-control {
-  visibility: visible;
+.carousel-control.left{
+  background-image: url("img/blueCircle.png");
+  margin-left: 5%;
+  background-repeat: no-repeat;
+  background-position-x: 76px;
+  /* background: none !important; */
+  /* filter: progid none !important; */
+  outline: 1;
+ }
+.carousel-control {
+  background-size: 50%;
+  background-position-y: 178px;
+  margin-top: -5%;
+  /* visibility: visible; */
   color: rgb(0, 55, 128);
 }
+
 .carousel:hover .carousel-control {
-  visibility: visible;
+  /* visibility: visible; */
+  /* color: rgb(255, 81, 0); */
 }
 .shelfBook2 {
   margin-bottom: 28%;
@@ -1098,9 +1073,10 @@ body{
   margin-top: '1px';
   position: 'fixed' 
 }
+
 .menuHam{
-  height: 19%;
-  width: 19%;
+  height: 128px;
+  width: 128px;
   margin-left: 15%;
   margin-top: 5%;
   float: right;
@@ -1109,14 +1085,19 @@ body{
 .menuHam2{
   height: 25%;
   width: 25%;
-  margin-left: 6%;
-  margin-top: 6%;
+  margin-right: 155%;
+  margin-top: -10%;
   float: right;
   cursor: pointer;
 }
 .mysLogo{
   height: 350%;
   margin-top: -35%;
+}
+.logoBlue{
+  height: 550%;
+  margin-top: -58%;
+  margin-left: 235%;
 }
 .jumboSearch{
   background-image: url("img/waterBG.png");
@@ -1125,14 +1106,27 @@ body{
   background-repeat: no-repeat;
 }
 .boxWhite{
-  border:  2px solid #CACACA;
-  margin-top: 20px;
+  cursor:pointer;
+  border:  6px solid #CACACA;
+  border-style: double;
+  box-shadow: 1px 1px 1px 1px #000000;
   color: white;
+  margin-top: 15px;
   text-align: center;
   font-family: "proxima-nova,sans-serif";
   font-size: 1.4em;
   font-weight: 1.4em;
-  
+  text-shadow: 1px 1px 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black, 0 0 10px black;
+}
+.boxWhite:hover{
+  border: 6px solid rgb(23,50,70);
+  border-style: ridge;
+  box-shadow: 1px 1px 1px 1px black;
+  text-align: center;
+  font-family: "proxima-nova";
+  font-size: 1.4em;
+  font-weight: 1.4em;
+  text-shadow: 1px 1px 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black, 0 0 10px black;
 }
 /* @media(max-width: 720px){
     h1, p, h2, row {
