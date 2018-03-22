@@ -105,7 +105,7 @@ class Profile extends Component {
 
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px' , marginBottom: '50px', }} >
-                        <img id="" className="img-responsive img-circle" src={require("../img/patProfile.png")} alt="profilepic" />
+                        <img id="" className="img-responsive img-circle" src={require("../img/patProfile.png")} alt="" />
                     </div>
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col2A" className="col-sm-6 col-md-6 col-lg-6">

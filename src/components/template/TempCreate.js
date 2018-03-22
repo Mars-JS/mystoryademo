@@ -135,7 +135,7 @@ class CreateTemp extends Component {
         return (
             <div className="container-fluid">
                 <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'></div></div>
-                <div className='row darkWood' style={{ marginTop: '7%' }}>
+                <div className='row darkWoodBG' style={{ marginTop: '7%' }}>
 
                     <div className='container-fluid'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>{this.renderMenu()}</div></div></div>
                     <div className='container'>
