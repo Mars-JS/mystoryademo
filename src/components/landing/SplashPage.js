@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 
 const Splash = () => {
   return (
@@ -54,7 +53,7 @@ const Splash = () => {
 
 export default Splash;
 
-/*
+/* old splash
               <div id="row4" className="row">
                 <div className="col-sm-9 col-md-9 col-lg-9">
                   <input className="form-control input-sm" type="text" placeholder="Username"/>
@@ -81,7 +80,7 @@ export default Splash;
               <br/>
               <div id="row8" className="row">
                 <div className="col-sm-9 col-md-9 col-lg-9">
-                  <button className="signupBtn" type="submit" className="signUpBtn btn" style={{color: 'white'}}>Sign Up</button>
+                  <button type="submit" className="btn" style={{color: 'white'}}>Sign Up</button>
 
                 </div>
               </div> */
