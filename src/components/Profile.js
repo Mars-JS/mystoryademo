@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Button, ControlLabel, FormGroup, Glyphicon, FormControl, Popover, Modal, OverlayTrigger, Tooltip} from 'react-bootstrap';
-/* import '../App.css'; */
+import { Button, Glyphicon, Modal } from 'react-bootstrap';
 import ProfileBookShelf from './ProfileBookShelf';
 
 
@@ -47,13 +46,6 @@ class Profile extends Component {
     }
 
     render() {
-
-        let tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
-        let popover = (
-        <Popover id="modal-popover" title="popover">
-                very popover. such engagement
-        </Popover>
-        );
 
         return (
             <div className='container' style={{ marginTop: '7%' }}>

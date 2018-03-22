@@ -34,7 +34,7 @@ class SearchBig extends Component {
             <i className="glyphicon glyphicon-search form-control-feedback"></i>
           </FormGroup>{' '}
           </div>
-          <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 boxWhite' onClick={this.handleShow}>SEARCH GENRES</div>
+          <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 whiteButton' onClick={this.handleShow}>SEARCH GENRES</div>
           <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
         </div></div>
     </Jumbotron>

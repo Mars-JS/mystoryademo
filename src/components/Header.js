@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Alert, Button, Glyphicon, Navbar, Nav, MenuItem, NavDropdown } from 'react-bootstrap';
-import Search from './landing/Search';
-
+import { Button, Glyphicon, Navbar, Nav} from 'react-bootstrap';
 
 class Header extends Component {
     constructor(props, context) {

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Alert, Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
+import { Alert, Button, FormGroup, ControlLabel, FormControl } from "react-bootstrap";
 import FlipPage from 'react-flip-page';
-import '../App.css';
-
-import BookShelfNew from './BookShelfNew';
 import SelectPage from './SelectPage';
 
 class Create extends Component {

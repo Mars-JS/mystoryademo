@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
+import { Button, Glyphicon, FormGroup, ControlLabel, FormControl } from "react-bootstrap";
 import "../App.css";
-
 
 class SelectPage extends Component {
     constructor(props, context) {

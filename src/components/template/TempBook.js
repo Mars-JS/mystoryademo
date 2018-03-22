@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../App.css";
 import ReadBookShelf from './ReadBookShelf';
 import Search from './landing/Search';
-import { Textfit } from 'react-textfit';
 import FlipPage from 'react-flip-page';
 
 class Book7 extends Component {

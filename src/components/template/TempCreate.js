@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import { Alert, Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
 import FlipPage from 'react-flip-page';
 import '../App.css';
-
-import BookShelfNew from './BookShelfNew';
 import SelectPage from './SelectPage';
 
-class Create extends Component {
+class CreateTemp extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -246,15 +244,9 @@ class Create extends Component {
 
                 </div>
 
-                <div className="row"><div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                    <BookShelfNew />
-                    <BookShelfNew />
-                </div></div>
-
-
             </div>
         )
     }
 }
 
-export default Create;
+export default CreateTemp;

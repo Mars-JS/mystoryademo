@@ -26,7 +26,7 @@ class ViewProfile extends Component {
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <br />
                                 <br />
-                                <h2>Brian Helm<Button style={{marginLeft: '2%' }} className="btn-xs blackButtonSm"><Glyphicon glyph="glyphicon glyphicon-plus" style={{ margin: '2%' }} />Add</Button></h2>
+                                <h2>Brian Helm<Button style={{marginLeft: '2%' }} className="btn-xs blueButtonSm"><Glyphicon glyph="glyphicon glyphicon-plus" style={{ margin: '2%' }} />Add</Button></h2>
                             </div>
                         </div>
 
