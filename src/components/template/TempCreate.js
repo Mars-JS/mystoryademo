@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Alert, Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, Tab } from "react-bootstrap";
 import FlipPage from 'react-flip-page';
-import '../App.css';
 import SelectPage from './SelectPage';
 
 class CreateTemp extends Component {

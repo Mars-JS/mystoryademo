@@ -37,13 +37,14 @@ class SelectPage extends Component {
             case 'textInput':
                 return [
                     <div className='container'>
-                        <div className='row' style={{ marginLeft: '-4%', marginTop: '-3%' }}><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                        <div className='row' style={{ marginLeft: '-144px', marginTop: '-34px' }}><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                             <Button onClick={this.handleSelected} value=''><Glyphicon glyph="glyphicon glyphicon-remove" /></Button>
                         </div></div>
-                    <div className='row' style={{marginLeft: '1%', marginBottom:'1%'}}><div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-                            <FormGroup style={{ marginLeft: '-5%', marginTop: '-4%' }} controlId="formBasicText" validationState={this.getValidationStateBody()}>
-                                <ControlLabel style={{ marginLeft: '8%' }} >Continue Writing Here:</ControlLabel>
-                            <FormControl componentClass="textarea" autofocus='true' rows={15} cols={5} value={this.state.valueBody} placeholder="Enter text" onChange={this.handleChangeBody} />
+                    <div className='row'>
+                    <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                            <FormGroup style={{ marginLeft: '-13%', marginTop: '-6%' }} controlId="formBasicText" validationState={this.getValidationStateBody()}>
+                                    <ControlLabel style={{ marginLeft: '20%'}}>Continue Writing Here:</ControlLabel>
+                            <FormControl componentClass="textarea" autofocus='true' rows={32} cols={5} value={this.state.valueBody} placeholder="Enter text" onChange={this.handleChangeBody} />
                             <FormControl.Feedback />
                         </FormGroup>
                     </div></div>
@@ -52,9 +53,9 @@ class SelectPage extends Component {
             case 'imgInput':
                 return [
                     <div className='container-fluid'>
-                        <div className="imgPreview2 img-responsive" style={{ marginLeft: '1%'}}>{$imagePreview}</div>
+                        <div className="imgPreview2 img-responsive" style={{ marginLeft: '1%' }}>{$imagePreview}</div>
                         <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
-                            <div className='previewComponent' style={{ marginLeft: '10%'}}>
+                            <div className='previewComponent' style={{ marginLeft: '10%' }}>
                                 <form onSubmit={(e) => this._handleSubmit(e)}>
                                     <input className="fileInput"
                                         type="file"
@@ -90,10 +91,10 @@ class SelectPage extends Component {
                             <FormControl type="text" value={this.state.valueText} placeholder="Enter text" onChange={this.handleChangeText} />
                             <FormControl.Feedback />
                         </FormGroup>
-                        </div>
                     </div>
-                        <div className='row' style={{ marginLeft: '15%'}}><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                        <Button onClick={this.handleSelected} value=''><Glyphicon glyph="glyphicon glyphicon-remove" /></Button>
+                    </div>
+                        <div className='row' style={{ marginLeft: '15%' }}><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                            <Button onClick={this.handleSelected} value=''><Glyphicon glyph="glyphicon glyphicon-remove" /></Button>
                         </div></div>
                     </div>
                 ];
@@ -163,7 +164,7 @@ class SelectPage extends Component {
     handleChangeBody(e) {
         this.setState({ valueBody: e.target.value });
     }
-    
+
     handleSelected(e) {
         this.setState({ isSelected: e.target.value });
         /* this.setState({ isLoading: true });
@@ -175,7 +176,7 @@ class SelectPage extends Component {
         }, 2000); */
         console.log(this.state.isSelected)
     }
-    
+
     handleClick() {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
@@ -184,7 +185,9 @@ class SelectPage extends Component {
 
     render() {
         return (
-            <div className='container'><div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>{this.renderContent()}</div></div></div>
+            <div className='container'><div className='row'>
+                <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>{this.renderContent()}</div>
+            </div></div>
         );
     }
 }

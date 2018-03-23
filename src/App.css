@@ -221,6 +221,14 @@
 }
 
 /* //////////// Create.CSS SelectPage.CSS ///////////// */
+.createStory{
+  background-color: rgb(143, 143, 145);
+  height: 720px;
+  width: 1280px;
+  margin-left: 14%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
 .boxShadow{
   box-shadow: -3px 5px 5px black;
 }
@@ -343,17 +351,19 @@
   border-bottom: 2px solid lightgrey; */
 }
 
-/* .previewText{
-  width: 100%;
-  margin-top: 120px;
-  } */
+.previewText{
+  color: white;
+  width: 1280px;
+  height: 720px;
+  background-color: rgb(57, 64, 71);
+  }
 .hideButton{
   padding: 6px;
   margin-top: 1%;
-  margin-left: 45%;
+  margin-left: 1%;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  color: rgb(255, 255, 255);;
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
   font-weight: 900;
   font-size: 10pt;
   cursor: pointer;
@@ -364,8 +374,8 @@
   margin-top: 1%;
   margin-left: 7%;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  color: rgb(255, 255, 255);;
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
   font-weight: 900;
   font-size: 10pt;
   cursor: pointer;
@@ -494,6 +504,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.whiteBG{
+  background-color: rgb(238, 238, 238);
 }
 .entireSiteBG{
   /* affects app.js */
