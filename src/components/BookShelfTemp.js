@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
 import "../App.css";
 
-class BookShelfDisplay extends Component {
+class BookShelfTemp extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -30,9 +30,9 @@ class BookShelfDisplay extends Component {
                 <div className="row" style={{ marginTop: '1%' }}>
 
                     <div className="container">
-                        <div className="row darkBlueST boxShadow">
+                        <div className="row titleRow">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div style={{ textAlign: 'center' }} className="font1">Popular Stories</div>
+                                <div className="font3 shelfTitle">Popular Stories</div>
                             </div>
                         </div>
                     </div>
@@ -43,64 +43,100 @@ class BookShelfDisplay extends Component {
                                 <Carousel.Item>
                                     <div className="container">
                                         <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                                <div className='containerText'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory3.jpg")} />
-                                                    <div class="bookTitle">Road to Victory</div>
-                                                    <div class="bookAuthor">Tom Brady</div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                                <div className='containerText'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory1.jpg")} />
-                                                    <div class="bookTitle">My Life</div>
-                                                    <div class="bookAuthor">Kim</div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                                <div className='containerText'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/food2.jpg")} />
-                                                    <div class="bookTitle">Born a Chef</div>
-                                                    <div class="bookAuthor">Gordan Ramsey</div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className='containerText'>
-                                                <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/amazon.jpg")} /><div class="bookTitle2">Shop Amazon</div><div class="bookAuthor2"></div></div></div>
                                         </div></div>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <div className="container">
                                         <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/music3.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/celebstory2.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/newstory2.png")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/popstory4.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor2">Tom Brady</div></div></div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div></div>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <div className="container">
                                         <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/ririBazar.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech2.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/travel3.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/ps4.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor2">Tom Brady</div></div></div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div></div>
                                 </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className="container">
-                                        <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech1.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/tech3.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div className='containerText'><img alt="" className="shelfBook2 img-responsive" src={require("../img/proj2.jpg")} /><div class="bookTitle">Road to Victory</div><div class="bookAuthor2">Tom Brady</div></div></div>
-                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                                <div className='containerText'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/apple.jpg")} />
-                                                    <div class="bookTitle">Road to Victory</div>
-                                                    <div class="bookAuthor2">Tom Brady</div>
-                                                </div></div>
-                                        </div></div>
-                                </Carousel.Item>
+                                
                             </Carousel>
                         </div>
                     </div>
@@ -111,4 +147,4 @@ class BookShelfDisplay extends Component {
     }
 }
 
-export default BookShelfDisplay;
+export default BookShelfTemp;

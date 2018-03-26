@@ -11,7 +11,8 @@ class Header extends Component {
         
         this.state = {
             show: false,
-            navScroll: 'transparent'
+            navScroll: 'transparent',
+            logoColor: require("../img/logoWhite.png")
         };
     }
     componentDidMount() {
@@ -26,20 +27,23 @@ class Header extends Component {
         // access window.scrollY etc
         this.setState({ show: false });
         if (window.scrollY<50){
+            this.setState({ logoColor: require("../img/logoWhite.png") })
             this.setState({ navScroll: 'transparent' })
         }else{
             this.setState({ navScroll: 'white' })
+            this.setState({ logoColor: require("../img/logoBlue.png") })
         }
         /* console.log(this.state.navScroll); */
     }
 
     handleDismiss() {
         this.setState({ show: false });
+        if (window.scrollY !== 0)this.setState({ navScroll: 'white' });
         /* if (this.state.navScroll=='transparent'&& window.scrollY !== 0)this.setState({ navScroll: 'white' }); */
     }
 
     handleShow() {
-        if (window.scrollY > 49)this.setState({ navScroll: 'transparent' });
+        if (window.scrollY > 49) this.setState({ navScroll: 'transparent' });
         this.setState({ show: true });
     }
     renderMenuHam() {
@@ -52,7 +56,7 @@ class Header extends Component {
                             onClick={this.handleDismiss} alt="logo" />
                     </div>
                     
-                    <div className='row' style={{marginTop: '2px'}}>
+                    <div className='row' style={{marginTop: '1%'}}>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
                             <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
                     </div>
@@ -81,7 +85,7 @@ class Header extends Component {
             );
         }
         return (
-            <div className='container-fluid'><div className='row' >
+            <div className='container-fluid'><div className='row'>
                 <img src={require("../img/menuHam2.png")}
                     className="menuHam2"
                     onClick={this.handleShow} alt="logo" />
@@ -90,18 +94,19 @@ class Header extends Component {
 
     }
     render() {
-
         return (
+            
             <div className='container-fluid'><div className='row'>
                 <div>
                 <Navbar fixedTop='true' fluid='true' href='nav'
-                        style={{ background: this.state.navScroll, border: '0px', paddingTop: '40px' }}>
+                        style={{ background: this.state.navScroll, border: '1px transparent'}}>
                     <Navbar.Header>
-                        <Navbar.Brand>
-                            <a href="/"><img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" />
+                        <Nav>
+                                <a href="/"><img style={{height:'100px'}} className='img-responsive logoBlue' src={this.state.logoColor} alt="logo" />
+                                        {/* <img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" /> */}
                                         {/* <img className='img-responsive ' src={require("../img/logoText.png")} alt="logo" /> */}
                             </a>
-                        </Navbar.Brand>
+                        </Nav>
                     </Navbar.Header>
                     <Nav pullRight>
                         <Navbar.Toggle />

@@ -24,7 +24,7 @@ class SearchBig extends Component {
   
   render(){
     return(
-    <div style={{marginTop: '-8%'}}>
+    <div>
     <Jumbotron className="jumboSearch">
         <div className='container-fluid'><div className='row'>
           <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
@@ -75,7 +75,7 @@ class SearchBig extends Component {
             
         </Modal.Body>
         <Modal.Footer>
-          <Button type="submit" value="Submit">Search</Button>
+          <Button type="submit" className='blueButton' value="Submit">Search</Button>
         </Modal.Footer>
       </Modal>
     </div>
