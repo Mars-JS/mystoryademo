@@ -1,29 +1,65 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 
-const Splash = () => {
+class Splash extends Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.handleShowSearch = this.handleShowSearch.bind(this);
+        this.handleCloseSearch = this.handleCloseSearch.bind(this);
+
+        this.state = {
+            showSearch: false
+        };
+    }
+
+    handleCloseSearch() {
+        this.setState({ showSearch: false });
+    }
+
+    handleShowSearch() {
+        this.setState({ showSearch: true });
+    }
+  render(){
   return (
   <div className="container-fluid">
+              <div>
+                <Modal show={this.state.showSearch} onHide={this.handleCloseSearch}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Log in with email</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
+                        <form >
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Display Name:</p>
+                                <input type="text" placeholder='display name' />
+                                </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Email:</p>
+                                <input type="text" rows={1} cols={10} placeholder='email' />
+                            </label></div></div>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <p>Password:</p>
+                                <input type="text" rows={1} cols={10} placeholder='*********' />
+                            </label></div></div>
+                        </form>
+                        </div></div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.handleCloseSearch}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+            </div>
       <div className="row jumbophoto">
       
         <div className="col-xs-1 col-sm-2 col-md-8 col-lg-8"></div>
 
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-{/* 
-          <div id="row1" className="row" style={{marginTop: '19%'}}>
-            <div className="col-sm-12 col-md-12 col-lg-12">
-              <h1 className='font5'></h1>
-                <h2 className='font6' style={{ marginTop: '20%' }}>Inspiring <strong>PEOPLE</strong> to </h2>
-              <h2 className='font6'>Create Stories </h2> 
-
-            </div>
-          </div>  */}
-
-          
-
-                
-          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '30%', marginTop: '105%' }}>
+         
+          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '30%', marginTop: '75%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
-              <button className="loginBtn loginBtn--custom"><a className="loginbtn" href="/profile">Login with email</a></button>
+              <button onClick={this.handleShowSearch} className="loginBtn loginBtn--custom"><a className="loginbtn" onClick={this.handleShowSearch}>Login with email</a></button>
             </div>
           </div>
 
@@ -54,6 +90,7 @@ const Splash = () => {
 
     </div>
   </div>);
+  }
 };
 
 export default Splash;

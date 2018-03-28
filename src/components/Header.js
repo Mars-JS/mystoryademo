@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Glyphicon, Navbar, Nav} from 'react-bootstrap';
+import { Button, Glyphicon, Modal, Navbar, Nav} from 'react-bootstrap';
 
 class Header extends Component {
     constructor(props, context) {
@@ -8,11 +8,15 @@ class Header extends Component {
         this.handleDismiss = this.handleDismiss.bind(this);
         this.handleShow = this.handleShow.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.handleShowSearch = this.handleShowSearch.bind(this);
+        this.handleCloseSearch = this.handleCloseSearch.bind(this);
         
         this.state = {
             show: false,
             navScroll: 'transparent',
-            logoColor: require("../img/logoWhite.png")
+            logoColor: require("../img/logoWhite.png"),
+            searchColor: 'searchCSSwhite',
+            showSearch: false
         };
     }
     componentDidMount() {
@@ -22,16 +26,26 @@ class Header extends Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
     }
+    
+    handleCloseSearch() {
+        this.setState({ showSearch: false });
+    }
+
+    handleShowSearch() {
+        this.setState({ showSearch: true });
+    }
 
     handleScroll(event) {
         // access window.scrollY etc
         this.setState({ show: false });
         if (window.scrollY<50){
             this.setState({ logoColor: require("../img/logoWhite.png") })
+            this.setState({ searchColor: 'searchCSSwhite' })
             this.setState({ navScroll: 'transparent' })
         }else{
-            this.setState({ navScroll: 'white' })
             this.setState({ logoColor: require("../img/logoBlue.png") })
+            this.setState({ searchColor: 'searchCSSblue' })
+            this.setState({ navScroll: 'white' })
         }
         /* console.log(this.state.navScroll); */
     }
@@ -45,6 +59,30 @@ class Header extends Component {
     handleShow() {
         if (window.scrollY > 49) this.setState({ navScroll: 'transparent' });
         this.setState({ show: true });
+    }
+    renderSearchModal(){
+        return(
+        <div>
+        <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div>
+        <Modal show={this.state.showSearch} onHide={this.handleCloseSearch}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Search Mystorya</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
+                        <form onSubmit=''>
+                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
+                                <input type="text" rows={1} cols={10} placeholder='Search Mystorya' autofocus='true' />
+                            </label></div></div>
+                        </form>
+                        </div></div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.handleCloseSearch}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+        </div>
+        );
     }
     renderMenuHam() {
         if (this.state.show) {
@@ -113,6 +151,8 @@ class Header extends Component {
                             <Navbar.Collapse >
                             <Navbar.Form >
                                 {this.renderMenuHam()}
+                                {this.renderSearchModal()}
+                                    {/* <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div> */}
                             </Navbar.Form>
                         </Navbar.Collapse>
                     </Nav>

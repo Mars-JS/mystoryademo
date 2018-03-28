@@ -2,7 +2,7 @@
 /* ///////////////// Landing.CSS /////////// */
 .jumbophoto {
     /* background-image: url("img/landingPage.png"); */
-    background-image: url("img/jumboMystorya.png");
+    background-image: url("img/landing1.png");
     height: 1080px;
     background-position: center;
     background-size: cover;
@@ -12,14 +12,6 @@
     border-bottom: solid 1px lightgrey; */
     background-color: #F6F6F6;
   }
-.jumboImg {
-  margin-left: 75px;
-  margin-top: 45px;
-}
-.jumboImg2 {
-    margin-left: 70px;
-    padding-top: 50px;
-    }
 
 .loginbtn:hover{
   color: white;
@@ -117,7 +109,8 @@
   text-align: center;
 }
 .jumboSearch{
-  background-image: url("img/waterBG.png");
+  /* background-image: url("img/waterBG.png"); */
+  background-image: url("img/BG_blue.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -441,10 +434,27 @@
   /* font-weight: 1.4em; */
   text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
+.outlineButton{ /* searchwhitebutton */
+  cursor:pointer;
+  padding: 5px;
+  border:  2px solid rgb(23,50,70);
+  border-radius: 1px;
+  background-color: none;
+  color: rgb(23,50,70);
+  text-align: center;
+  /* font-family: "Oswald";
+  font-size: 16pt; */
+  font-size: 10pt;
+  font-weight: 800;
+}
+.outlineButton:hover{
+  border: 2px solid rgb(255,71,23);
+  background-color: rgb(255,71,23);
+}
 .blueButton{
   cursor: pointer;
   padding: 5px;
-  border: 2px solid rgb(23, 50, 70);
+  border: 0px solid rgb(23, 50, 70);
   border-radius: 1px;
   color: rgb(255, 255, 255);
   font-weight: 800;
@@ -452,11 +462,11 @@
   background: rgb(23, 50, 70);
 }
 .blueButton:hover, .blueButton:focus{
-  border: 2px solid rgb(10,147,185);
-  color: rgb(0, 0, 0);
+  border: 0px solid rgb(10,147,185);
+  color: rgb(255,255,255);
   font-weight: 800;
   font-size: 10pt;
-  background: rgb(10,147,185);
+  background: linear-gradient(rgb(10,147,185), rgb(23,50,70));
 }
 .blueButtonSm:hover, .blueButton:focus{
   border: 0px solid rgb(23, 50, 70);
@@ -471,7 +481,7 @@
   border-radius: 1px;
   color: rgb(255, 255, 255);
   font-weight: 745;
-  font-size: 8pt;
+  font-size: 9pt;
   background: rgb(23, 50, 70);
 }
 .picButton{
@@ -548,7 +558,24 @@
   /*   background-position-x: 50%;
   background-position-y: 50%; */
 }
-
+.searchCSSwhite{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -20%;
+  margin-left: -46%;
+  background-image: url("img/magnifyGlass2.png");
+  background-repeat: no-repeat;
+}
+.searchCSSblue{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -20%;
+  margin-left: -46%;
+  background-image: url("img/magnifyGlass3.png");
+  background-repeat: no-repeat;
+}
 /* ////////// carousel.CSS //////////// */
 /* .carousel{
   background-image: url("img/openBook7.png");
@@ -835,7 +862,15 @@ background-color:  rgb(246, 246, 246);
   font-weight: 3em;
   text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black;
 }
-
+/* /////////// Profile.js /////////// */
+.profPic{
+  width: 400px;
+  height: 400px;
+  margin-left: 45%;
+}
+.flags{
+  margin-left: 30%;
+}
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;
