@@ -492,8 +492,8 @@
   background-color: none;
   color: rgb(23,50,70);
   text-align: center;
-  /* font-family: "Oswald";
-  font-size: 16pt; */
+  font-family: "Roboto";
+  /* font-size: 16pt;  */
   font-size: 10pt;
   font-weight: 800;
 }
@@ -815,8 +815,20 @@
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
+.show {display:block;
+}
+.copyright{
+  width: 25px;
+  margin-left: 125%;
+}
+.copyrightText{
+  width: 25px;
+  margin-left: 26%;
+  margin-top: 10%;
+}
+.cursorPointer{
+  cursor: pointer;
+}
 .menuHam{
   height: 128px;
   width: 128px;
@@ -854,6 +866,11 @@
   height: 100px;
 }
 /* ////////// Footer.CSS /////////// */
+.footerLogoBlue{
+  position: relative;
+  left: 901px;
+  width: 60px;
+}
 .footer{
 background-color:  rgb(246, 246, 246);
 /* border-top: 3px solid rgb(187, 187, 187); */
@@ -922,14 +939,60 @@ background-color:  rgb(246, 246, 246);
   font-weight: 3em;
   text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black;
 }
+.font7 {
+  font-family: "Oswald";
+  color: rgb(23,50,70);
+  font-size: 13pt;
+  font-weight: 500;
+}
+.font8 {
+  font-family: "Roboto";
+  color: rgb(23,50,70);
+  font-size: 12pt;
+  
+}
 /* /////////// Profile.js /////////// */
 .profPic{
-  width: 400px;
-  height: 400px;
-  margin-left: 45%;
+  width: 500px;
+  height: 500px;
+  margin-left: 38%;
 }
 .flags{
-  margin-left: 30%;
+  margin-bottom: 2%;
+  margin-left: 18.5%;
+  width: 30%;
+}
+.profBG{
+  margin-top: 3%;
+  background-color: rgb(245, 245, 245);
+}
+.socialBtnRow{
+  background-image: url("img/BG_blue.png");
+  background-repeat: no-repeat;
+  height: 144px;
+  
+}
+.whiteBtnSoc{ /* searchgenrewhitebutton */
+  cursor:pointer;
+  border:  1px solid rgb(255, 255, 255);
+  background: none;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-style: double; */
+  /* box-shadow: 1px 1px 1px 1px #000000; */
+  /* color: rgb(23,50,70); */
+  color: white;
+  margin-top: 18px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.4em;
+  font-weight: 800;
+  /* text-shadow: 1px 1px 1px rgb(143, 143, 143); */
+}
+.whiteBtnSoc:hover{
+  /* color: rgb(255, 255, 255); */
+  border: 1px solid rgb(255,71,23);
+  background-color: rgb(255,71,23);
+  text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
 /* @media(max-width: 720px){
     h1, p, h2, row {

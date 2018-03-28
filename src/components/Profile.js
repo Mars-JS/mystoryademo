@@ -15,8 +15,8 @@ class Profile extends Component {
 
         this.state = {
             show: false,
-            valueDisplayName: 'pat_hustad',
-            valueAboutMe: '🌴🌴Software + Design + Surfing🌴🌴'
+            valueDisplayName: 'Patrick Hustad',
+            valueAboutMe: 'Surfer, designer, engineer, family man !'
         };
     }
     handleClose() {
@@ -48,19 +48,19 @@ class Profile extends Component {
     render() {
 
         return (
-            <div className='container-fluid'  style={{ marginTop: '7%' }}>
+            <div className='container-fluid'  style={{ paddingTop: '4%' }} >
 
                 
                 <Modal bsSize='md' show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Profile: Pat Hustad</Modal.Title>
+                        <Modal.Title className='font3'>Profile: Pat Hustad</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
                         <form onSubmit={this.handleSubmit}>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                                 <label>
-                                    <p>Display Name:</p>
+                                    <p className='font7'>Display Name:</p>
                                     <textarea type="textarea" rows={1} cols={64}
                                         value={this.state.valueDisplayName}
                                         placeholder={this.state.valueDisplayName}
@@ -68,26 +68,26 @@ class Profile extends Component {
                                 </label>
                             </div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>About me:</p>
+                                <p className='font7'>About me:</p>
                                 <textarea type="textarea" rows={9} cols={64}
                                     value={this.state.valueAboutMe}
                                     placeholder={this.state.valueAboutMe}
                                     onChange={this.handleChangeAboutMe} />
                             </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>First Name:</p>
+                                <p className='font7'>First Name:</p>
                                 <textarea type="textarea" rows={1} cols={64} placeholder='pat'/>
                             </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Last Name:</p>
+                                <p className='font7'>Last Name:</p>
                                 <textarea type="textarea" rows={1} cols={64} placeholder='hustad' />
                             </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Location:</p>
+                                <p className='font7'>Location:</p>
                                 <textarea type="textarea" rows={1} cols={64} placeholder='Palo Alto' />
                             </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Website:</p>
+                                <p className='font7'>Website:</p>
                                 <textarea type="textarea" rows={1} cols={64} placeholder='www.pathustad.com' />
                             </label></div></div>
                         </form>
@@ -101,60 +101,57 @@ class Profile extends Component {
                 </Modal>
                 
 
-                <div id="1A" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '50px'  }}>
-
+                <div id="1A" className="row" style={{backgroundColor: 'rgb(245, 245, 245)'}}>
+                <div id="1x" className="row">
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
-                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px' , marginBottom: '50px', }} >
-                    <div className='row profPic'>
-                        <img id="" className="img-responsive" src={require("../img/patProfile.png")} alt="" />
-                    </div>
-                    <div className='row flags'>
-                        <div id="col3A" className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-                        <div id="col3A" className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img id="" className="img-responsive" src={require("../img/flag_usa.png")} alt="" /></div>
-                        <div id="col3A" className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img id="" className="img-responsive" src={require("../img/flag_columbia.png")} alt="" /></div>
-                        <div id="col3A" className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
+                    <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px'}} >
+                        <div className='row profPic'>
+                            <img id="" className="img-responsive" src={require("../img/patProfile.png")} alt="" />
                         </div>
                     </div>
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col2A" className="col-sm-6 col-md-6 col-lg-6">
                     
-                        <div id="1B" className="row" style={{ backgroundColor: '#F6F6F6', marginBottom: '10px' }}>
+                        <div id="1B" className="row profBG font8">
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
                                 <h2>{this.state.valueDisplayName}<Button style={{marginLeft: '15%'}} onClick={this.handleShow} className="outlineButton">Edit Profile</Button></h2>
                             </div>
                         </div>
 
-                        <div id="2B" className="row" style={{ backgroundColor: '#F6F6F6(157, 156, 228)', marginBottom: '10px' }}>
+                        <div id="2B" className="row profBG font8">
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <span><h4>founder at mystorya</h4></span>
+                            <span><h4>Founder at <strong>MY</strong>STORYA</h4></span>
                         </div></div>
 
-                        <div id="3B" className="row" style={{ backgroundColor: '#F6F6F6(157, 156, 228)', marginBottom: '10px' }}>
+                        <div id="3B" className="row profBG font8">
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <span><h4><strong> Hometown: </strong></h4></span>
+                            <span><h4><strong> Hometown: </strong>San Clemente, California</h4></span>
                         </div></div>
 
-                        <div id="4B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '10px' }}>
-                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4>Bio: {this.state.valueAboutMe}</h4></span>
+                        <div id="4B" className="row profBG font8">
+                            <div id="col1D" className="col-sm-12 col-md-12 col-lg-12"><span role="img"><h4><strong>Bio:</strong> {this.state.valueAboutMe}</h4></span>
                             </div>
                         </div>
-                        <div id="5B" className="row" style={{ backgroundColor: '#F6F6F6(146, 231, 146)', marginBottom: '12px' }}>
-                            <div id="col1E" className="col-sm-12 col-md-12 col-lg-12"><a href="" style={{ color: 'black' }} ><h4>www.pathustad.com</h4></a>
+                        <div id="5B" className="row profBG font8">
+                            <div id="col1E" className="col-sm-12 col-md-12 col-lg-12"><a href="" style={{ color: 'black' }} ><h4><strong>www.pathustad.com</strong></h4></a>
                             <br/>
                             </div>
                         </div>
                         {/* <a href="/create"><button type="submit" className="blueButton"> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></a> */}
                     </div>
-
+                </div> {/* 1x */}
+                <div className='row flags' style={{backgroundColor: 'rgb(245,245,245)'}} >
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_usa.png")} alt="" /></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_columbia.png")} alt="" /></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
                 </div>
-
-                <div className="row" style={{ backgroundColor: '#F6F6F6' }}>
-                    <div id="col3A" className="col-sm-5 col-md-5 col-lg-5"></div>
-                    <div id="col3A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong></strong></span></div>
-                    <div id="col4A" className="col-sm-1 col-md-1 col-lg-1"><span style={{ color: 'black', marginBottom: '5%' }} ><strong></strong></span></div>
-                    <div id="col3A" className="col-sm-5 col-md-5 col-lg-5"></div>
+                <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>1,111 Following </button></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>2,222 followers</button></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>3,333 stories</button></div>
                 </div>
+            </div>
 
                 <div className="row">
                     <ProfileBookShelf />

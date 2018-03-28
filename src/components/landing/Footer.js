@@ -1,8 +1,49 @@
-import React from 'react';
+import React, {Component} from 'react';
+
+class Footer extends Component {
+    render(){
+        return(<div className='container-fluid' style={{borderTop: '3px solid darkgrey', height: '175px', background: 'transparent'}}>
+            <div className='row'>
+
+            <div id='1A' className="row font7" style={{marginLeft: '8%', marginTop: '1%'}}>
+                <div id='col1A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'><span className='cursorPointer'>Privacy</span>
+                </div>
+                <div id='col1A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'><span className='cursorPointer'>Terms</span>
+                </div>
+                <div id='col1A' className='col-xs-1 col-sm-1 col-md-1 col-lg-1'>
+                </div>
+                <div id='col1A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'><span className='cursorPointer'>About Us</span>
+                </div>
+                <div id='col1A' className='col-xs-1 col-sm-1 col-md-1 col-lg-1'>
+                </div>
+                <div id='col1A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'><span className='cursorPointer'>Careers</span>
+                </div>
+                <div id='col1A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'><span className='cursorPointer'>Langauges</span>
+                </div>
+                </div>
+            <div id='2A' className="row" style={{marginTop: '10px'}}>
+                <div id='col2A' className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                    <img alt="" className="footerLogoBlue img-responsive" src={require("../../img/logoBlueFooter.png")} />
+                </div></div>
+            <div id='3A' className="row font7" style={{marginTop: '10px'}}>
+                <div id='col3A' className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
+                <div id='col3A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
+                <img alt='' className="copyright img-responsive" src={require("../../img/copyright.png")} />
+                </div>
+                <div id='col3A' className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
+                <span className='copyrightText'>2018 MYSTORYA</span>
+                </div>
+                <div id='col3A' className='col-xs-5 col-sm-5 col-md-5 col-lg-5'></div>
+                </div>
+            
+            </div>
+        </div>)
+    };
+}
+export default Footer;
 
 
-const footer = () => (
-        <div className="container-fluid footer">
+       /*  <div className="container-fluid footer">
             <div className="row" style={{marginTop: '1%'}}>
 
                 <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1">
@@ -47,7 +88,4 @@ const footer = () => (
                 </div>
 
             </div>
-        </div>
-);
-
-export default footer;
+        </div> */
