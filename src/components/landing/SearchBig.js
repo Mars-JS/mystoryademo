@@ -40,34 +40,34 @@ class SearchBig extends Component {
     </Jumbotron>
         <Modal bsSize="large" show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Search by genre</Modal.Title>
+          <Modal.Title className='font3'>Search by genre</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <form>
               <div className='container'><div className='row'>
                 
                 <div className='row'>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="life" value="life" /> Life</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="friends" value="friends" /> Friends</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="family" value="family" /> Family</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="life" value="life" /> Life</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="friends" value="friends" /> Friends</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="family" value="family" /> Family</div>
                 </div>
 
                 <div className='row'>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="music" value="music" /> Music</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="sports" value="sports" /> Sports</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="technology" value="technology" /> Technology</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="music" value="music" /> Music</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="sports" value="sports" /> Sports</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="technology" value="technology" /> Technology</div>
                 </div>
 
                 <div className='row'>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="education" value="education" /> Education</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="science" value="science" /> Science</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="autmobiles" value="automobiles" /> Automobiles</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="education" value="education" /> Education</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="science" value="science" /> Science</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="autmobiles" value="automobiles" /> Automobiles</div>
                 </div>
 
                 <div className='row'>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="fiction" value="fiction" /> Travel</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="fiction" value="fiction" /> Fiction</div>
-                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input type="checkbox" name="fiction" value="fiction" /> Military</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /> Travel</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /> Fiction</div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /> Military</div>
                 </div>
 
               </div></div>

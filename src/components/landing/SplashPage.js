@@ -26,28 +26,28 @@ class Splash extends Component {
               <div>
                 <Modal show={this.state.showSearch} onHide={this.handleCloseSearch}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Log in with email</Modal.Title>
+                        <Modal.Title className='font3'>Log in with email</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
                         <form >
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Display Name:</p>
+                                <p className='font5'>Display Name:</p>
                                 <input type="text" placeholder='display name' />
                                 </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Email:</p>
+                                <p className='font5'>Email:</p>
                                 <input type="text" rows={1} cols={10} placeholder='email' />
                             </label></div></div>
                             <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <p>Password:</p>
+                                <p className='font5'>Password:</p>
                                 <input type="text" rows={1} cols={10} placeholder='*********' />
                             </label></div></div>
                         </form>
                         </div></div>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleCloseSearch}>Close</Button>
+                        <Button className='modalCloseBtn' onClick={this.handleCloseSearch}>Close</Button>
                     </Modal.Footer>
                 </Modal>
             </div>
@@ -57,25 +57,27 @@ class Splash extends Component {
 
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
          
-          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '30%', marginTop: '75%' }}>
+         <div id="row10e" className="row logoSplash" style={{marginLeft: '-6%', marginTop: '25%' }}></div>
+
+          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '20%', marginTop: '25%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button onClick={this.handleShowSearch} className="loginBtn loginBtn--custom"><a className="loginbtn" onClick={this.handleShowSearch}>Login with email</a></button>
             </div>
           </div>
 
-            <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '30%'}}>
+            <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '20%'}}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button className="loginBtn loginBtn--facebook"><a className="loginbtn" href="/profile">Login with Facebook</a></button>
             </div>
           </div>
           
-            <div id="row10c" className="row" style={{ marginBottom: '2%', marginLeft: '30%' }}>
+            <div id="row10c" className="row" style={{ marginBottom: '1%', marginLeft: '20%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button className="loginBtn loginBtn--google"><a className="loginbtn" href="/profile">Login with Google</a></button>
             </div>
           </div>
 
-          <div id="row10d" className="row" style={{ marginBottom: '2%', marginLeft: '30%' }}>
+          <div id="row10d" className="row" style={{ marginBottom: '2%', marginLeft: '20%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <div className='col-xs-2 col-sm-2 col-md-2 col-lg-12 platformButton'>OUR PLATFORM</div>
             </div>

@@ -14,7 +14,7 @@ class Header extends Component {
         this.state = {
             show: false,
             navScroll: 'transparent',
-            logoColor: require("../img/logoWhite.png"),
+            logoColor: require("../img/logoWhiteFullSm.png"),
             searchColor: 'searchCSSwhite',
             showSearch: false
         };
@@ -39,11 +39,11 @@ class Header extends Component {
         // access window.scrollY etc
         this.setState({ show: false });
         if (window.scrollY<50){
-            this.setState({ logoColor: require("../img/logoWhite.png") })
-            this.setState({ searchColor: 'searchCSSwhite' })
             this.setState({ navScroll: 'transparent' })
+            this.setState({ logoColor: require("../img/logoWhiteFullSm.png") })
+            this.setState({ searchColor: 'searchCSSwhite' })
         }else{
-            this.setState({ logoColor: require("../img/logoBlue.png") })
+            this.setState({ logoColor: require("../img/logoBlueFullSm.png") })
             this.setState({ searchColor: 'searchCSSblue' })
             this.setState({ navScroll: 'white' })
         }
@@ -64,21 +64,19 @@ class Header extends Component {
         return(
         <div>
         <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div>
-        <Modal show={this.state.showSearch} onHide={this.handleCloseSearch}>
+        <Modal show={this.state.showSearch} onHide={this.handleCloseSearch} >
                     <Modal.Header closeButton>
-                        <Modal.Title>Search Mystorya</Modal.Title>
+                        <Modal.Title className='font3'>Search Mystorya</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <div className='container-fluid'> <div className='row' style={{ margin: '1%'}}>   
-                        <form onSubmit=''>
-                            <div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'><label>
-                                <input type="text" rows={1} cols={10} placeholder='Search Mystorya' autofocus='true' />
-                            </label></div></div>
-                        </form>
+                        <div className='container-fluid'><div className='row' style={{ margin: '1%'}}>   
+                            <div className='row' style={{marginLeft: '15%'}}>
+                                <textarea type="textarea" rows={1} cols={40} placeholder='Search Mystorya' autofocus='true' /><Button className='modalSearchBtn'>Search</Button>
+                            </div>
                         </div></div>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleCloseSearch}>Close</Button>
+                        <Button className='modalCloseBtn' onClick={this.handleCloseSearch}>Close</Button>
                     </Modal.Footer>
                 </Modal>
         </div>
@@ -137,10 +135,10 @@ class Header extends Component {
             <div className='container-fluid'><div className='row'>
                 <div>
                 <Navbar fixedTop='true' fluid='true' href='nav'
-                        style={{ background: this.state.navScroll, border: '1px transparent'}}>
+                        style={{ background: this.state.navScroll, height: '100px', marginTop: '-0.5%', border: '1px transparent'}}>
                     <Navbar.Header>
                         <Nav>
-                                <a href="/"><img style={{height:'100px'}} className='img-responsive logoBlue' src={this.state.logoColor} alt="logo" />
+                                <a href="/"><img style={{height:'100px'}} className='img-responsive logoFull' src={this.state.logoColor} alt="logo" />
                                         {/* <img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" /> */}
                                         {/* <img className='img-responsive ' src={require("../img/logoText.png")} alt="logo" /> */}
                             </a>
