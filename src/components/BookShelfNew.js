@@ -24,6 +24,7 @@ class BookShelfNew extends Component {
     render() {
         const { index, direction } = this.state;
         return (
+            <div>
             <div className="container-fluid" >
                 <div className="row" style={{ marginTop: '1%' }}>
 
@@ -138,7 +139,7 @@ class BookShelfNew extends Component {
                     </div>
                 </div>
             </div>
-
+</div>
         );
     }
 }

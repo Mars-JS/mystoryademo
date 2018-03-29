@@ -1,28 +1,27 @@
 import React, { Component } from "react";
-import "../App.css";
-import ReadBookShelf from './ReadBookShelf';
-
-import Nav from './Header';
-
+/* import ReadBookShelf from './ReadBookShelf'; */
+import BookShelfNew from './BookShelfNew';
 import FlipPage from 'react-flip-page';
 
 class Book7 extends Component {
     render() {
         return (
-            <div className='container'>
-  <Nav/>
-                <div className='row' style={{ marginTop: '13%'}}>
+            <div className='container-fluid' style={{ marginBottom: '1%'}}>
+                
+                <div id="spacer" className="row spacerRow"></div>
+                
+                <div className='row font3'><strong>TITLE OF BOOK </strong><span> by </span>" AUTHOR "</div>
+                <div className='row' style={{marginLeft: '15%', height: '720px', width:'1280px'}}>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
-                        <FlipPage flipOnTouch='true' loopForever='true' height='620' width='920px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >
+                        <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='450' fluid='true'>
                             <article>
                                     <img className="img-responsive" src={require("../img/rihannaPage0.jpg")}/>
-                           
                             </article>
                             <article>
                                 <div className="container">
                                         <div className="row">
                                             <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <h1>Chapter 1</h1>
+                                                <h1 className='font3'>Chapter 1</h1>
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -96,248 +95,25 @@ class Book7 extends Component {
                                         </div>
                                     </div>
                             </article>
-                            <article>
-                                <div className="container">
-                                        <div className="row">
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <h1>Chapter 1</h1>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            
-                                            </div>
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <div className="row">
-                                                    <p />
-                                                    <p />
-                                                    <p />
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                    </p>
-                                                    <p>
-                                                        Consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat.
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                      
-                                                    </p>
-                                                </div>
-                                                <div className='row'>
-                                                    <div className="col-sm-4 col-md-8 col-lg-12">
-                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="center-block" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </article>
-                            <article>
-                                <div className="container">
-                                        <div className="row">
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <h1>Chapter 1</h1>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            
-                                            </div>
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <div className="row">
-                                                    <p />
-                                                    <p />
-                                                    <p />
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                    </p>
-                                                    <p>
-                                                        Consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat.
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                      
-                                                    </p>
-                                                </div>
-                                                <div className='row'>
-                                                    <div className="col-sm-4 col-md-8 col-lg-12">
-                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="center-block" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </article>
-                            <article>
-                                <div className="container">
-                                        <div className="row">
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <h1>Chapter 1</h1>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                </p>
-                                            
-                                            </div>
-                                            <div className="col-sm-6 col-md-6 col-lg-6">
-                                                <div className="row">
-                                                    <p />
-                                                    <p />
-                                                    <p />
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
-                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                    </p>
-                                                    <p>
-                                                        Consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat.
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                      
-                                                    </p>
-                                                </div>
-                                                <div className='row'>
-                                                    <div className="col-sm-4 col-md-8 col-lg-12">
-                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="center-block" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </article>
-                            
+             
                         </FlipPage>
                     </div>
+
                 </div>
-
-                
-                <ReadBookShelf />
-
+                <div className='row pageBtnRow'>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><span className='glyphicon glyphicon-chevron-left pageBtn pageBtnLeft' /></div>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><button className='pageBtn pageBtnSave'>Save</button></div>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><button className='loginBtn loginbtn loginBtn--facebook pageBtnShare'>Share on facebook</button></div>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><span className='glyphicon glyphicon-chevron-right pageBtn pageBtnRight' /></div>
+                 </div>
+                 <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>1,111 Following </button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>2,222 followers</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>3,333 stories</button></div>
+                </div>
+                {/* <ReadBookShelf /> */}
+                <BookShelfNew />
             </div>
         );
     }
