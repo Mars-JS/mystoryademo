@@ -498,8 +498,27 @@
   font-weight: 800;
 }
 .outlineButton:hover{
-  border: 2px solid rgb(255,71,23);
-  background-color: rgb(255,71,23);
+  border: 2px solid rgb(23,50,70);
+  background-color: rgb(10,147,185);
+}
+.outlineButton2{ /* viewprofile */
+  cursor:pointer;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border:  2px solid rgb(23,50,70);
+  border-radius: 1px;
+  background-color: none;
+  color: rgb(23,50,70);
+  text-align: center;
+  font-family: "Roboto";
+  /* font-size: 16pt;  */
+  font-size: 12pt;
+  font-weight: 800;
+}
+.outlineButton2:hover{
+  border: 2px solid rgb(23,50,70);
+  background-color: rgb(10,147,185);
 }
 .blueButton{
   cursor: pointer;
@@ -951,15 +970,19 @@ background-color:  rgb(246, 246, 246);
   font-size: 12pt;
   
 }
-/* /////////// Profile.js /////////// */
+/* /////////// Profile.CSS /////////// */
+.spacerRow{
+  height: 80px;
+  background-color: rgb(23, 50, 70);
+}
 .profPic{
   width: 500px;
   height: 500px;
-  margin-left: 38%;
+  margin-left: 38.5%;
 }
 .flags{
   margin-bottom: 2%;
-  margin-left: 18.5%;
+  margin-left: 19%;
   width: 30%;
 }
 .profBG{
@@ -970,30 +993,28 @@ background-color:  rgb(246, 246, 246);
   background-image: url("img/BG_blue.png");
   background-repeat: no-repeat;
   height: 144px;
-  
 }
-.whiteBtnSoc{ /* searchgenrewhitebutton */
+.whiteBtnSoc{
   cursor:pointer;
-  border:  1px solid rgb(255, 255, 255);
+  border:  2px solid rgb(255, 255, 255);
   background: none;
-  /* background-color: rgb(255, 255, 255); */
-  /* border-style: double; */
-  /* box-shadow: 1px 1px 1px 1px #000000; */
-  /* color: rgb(23,50,70); */
   color: white;
-  margin-top: 18px;
+  margin-top: 12%;
+  margin-left: -19%;
+  padding: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
   font-family: "Roboto";
   font-size: 1.4em;
   font-weight: 800;
-  /* text-shadow: 1px 1px 1px rgb(143, 143, 143); */
 }
 .whiteBtnSoc:hover{
-  /* color: rgb(255, 255, 255); */
-  border: 1px solid rgb(255,71,23);
+  border: 2px solid rgb(255,71,23);
   background-color: rgb(255,71,23);
   text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
+
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;

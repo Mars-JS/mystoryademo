@@ -48,7 +48,7 @@ class Profile extends Component {
     render() {
 
         return (
-            <div className='container-fluid'  style={{ paddingTop: '4%' }} >
+            <div className='container-fluid'>
 
                 
                 <Modal bsSize='md' show={this.state.show} onHide={this.handleClose}>
@@ -100,7 +100,7 @@ class Profile extends Component {
                     </Modal.Footer>
                 </Modal>
                 
-
+                <div id="spacer" className="row spacerRow"></div>
                 <div id="1A" className="row" style={{backgroundColor: 'rgb(245, 245, 245)'}}>
                 <div id="1x" className="row">
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
@@ -147,9 +147,10 @@ class Profile extends Component {
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
                 </div>
                 <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>1,111 Following </button></div>
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>2,222 followers</button></div>
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className='whiteBtnSoc'>3,333 stories</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>1,111 Following </button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>2,222 followers</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>3,333 stories</button></div>
                 </div>
             </div>
 
