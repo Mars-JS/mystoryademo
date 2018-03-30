@@ -176,12 +176,12 @@
 .shelfBook2 {
   margin-bottom: 28%;
   margin-top: 10%;
-  width: 300px;
-  height: 400px;
+  /* width: 300px;
+  height: 400px; */
+  width: 263px;
+  height: 350px;
   border: solid rgb(79, 96, 112) 1px;
-  
   position: relative;
-  /* box-shadow: -3px 5px 5px black; */
 }
 .bookImage{
 	width: 217px;
@@ -757,7 +757,7 @@
  }
 .carousel-control {
   background-size: 50%;
-  background-position-y: 249px;
+  background-position-y: 208px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
@@ -783,10 +783,10 @@
 .overlay {
   cursor: pointer;
   position: absolute;  
-  top: 6.5%;
-  left: 4%;
-  height: 75%;
-  width: 79.5%;
+  top: 6%;
+  left: 5.5%;
+  height: 77.5%;
+  width: 89%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(10, 147, 185, 0.445);
@@ -1094,6 +1094,53 @@ background-color:  rgb(246, 246, 246);
   text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
 
+/* media size controls */
+ @media(max-width: 1366px){
+.carousel-control.right {
+  background-image: url("img/blueRectangle.png");
+  margin-right: -3%;
+  background-repeat: no-repeat;
+  background-position-x: 41px;
+  /* background: none !important; */
+  /* filter: progid none !important; */
+  outline: 1;
+ }
+  .carousel-control.left{
+  /* background-image: url("img/blueRectangle.png"); */
+  background-image: url("img/blueRectangle.png");
+  margin-left: -3.5%;
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  outline: 1;
+ }
+.carousel-control {
+  background-size: 55%;
+  background-position-y: 210px;
+  margin-top: -5%;
+  visibility: visible;
+  color: rgb(182,186,190);
+}
+.carousel:hover .carousel-control:hover {
+  color: rgb(255, 255, 255);
+}
+.carousel-control:focus {
+  color: rgb(182, 186, 190);
+}
+.shelfBook2 {
+  margin-bottom: 28%;
+  margin-top: 10%;
+  width: 263px;
+  height: 350px;
+  border: solid rgb(79, 96, 112) 1px;
+  position: relative;
+}
+ }
+@media(max-width: 1280px){
+
+}
+@media(max-width: 720px){
+
+}
 /* @media(max-width: 720px){
     h1, p, h2, row {
         font-size: 18px;

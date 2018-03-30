@@ -42,8 +42,8 @@ class BookShelfNew extends Component {
                             <Carousel activeIndex={index} direction={direction} onSelect={this.handleSelect} >
                                 <Carousel.Item>
                                     <div className="container">
-                                        <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div className="row ">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookSports1.png")} />
                                                     <Link to="/books/7">
@@ -58,7 +58,7 @@ class BookShelfNew extends Component {
                                                     </div></Link>
                                                 </div>
                                             </div>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookRihanna1.png")} />
                                                     <Link to="/books/7">
@@ -74,7 +74,22 @@ class BookShelfNew extends Component {
 
                                                 </div>
                                             </div>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <Link to="/books/7">
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 1,111</div>
+                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 1,111</div>
+                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 1,111</div>
+                                                        <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
+                                                            <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div></Link>
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
                                                     <Link to="/books/7">
@@ -93,46 +108,62 @@ class BookShelfNew extends Component {
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <div className="container">
-                                        <div className="row" style={{ marginLeft: '2%' }}>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div className="row ">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookSports1.png")} />
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
                                                     <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
-                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
-                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 2,222</div>
-                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 2,222</div>
+                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses'/> 2,222</div>
+                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart'/> 2,222</div>
+                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment'/> 2,222</div>
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
                                                     </div></Link>
                                                 </div>
                                             </div>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
                                                     <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
-                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
-                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 2,222</div>
-                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 2,222</div>
+                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 3,333</div>
+                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 3,333</div>
+                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 3,333</div>
+                                                        <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
+                                                            <span className='glyphicon glyphicon-star-empty' /><span className='glyphicon glyphicon-star-empty' /></div>
+                                                        <div className="bookAuthor">book Author</div>
+                                                    </div></Link>
+
+                                                </div>
+                                            </div>
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                <div className='containerBook'>
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <Link to="/books/7">
+                                                    <div className='overlay'>
+                                                        <div className="bookTitle">book Title</div>
+                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 1,111</div>
+                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 1,111</div>
+                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 1,111</div>
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
                                                     </div></Link>
                                                 </div>
                                             </div>
-                                            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
                                                     <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
-                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
-                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 2,222</div>
-                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 2,222</div>
+                                                        <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 1,111</div>
+                                                        <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 1,111</div>
+                                                        <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 1,111</div>
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
@@ -141,6 +172,7 @@ class BookShelfNew extends Component {
                                             </div>
                                         </div></div>
                                 </Carousel.Item>
+
 
                             </Carousel>
                         </div>
