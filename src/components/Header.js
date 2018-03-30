@@ -92,28 +92,28 @@ class Header extends Component {
                             onClick={this.handleDismiss} alt="logo" />
                     </div>
                     
-                    <div className='row' style={{marginTop: '1%'}}>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
+                    <div className='row dropDownRow' style={{marginTop: '1%'}}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'>Profile</a></Button>
+                    <div className='row dropDownRow'>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
+                            <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'> Profile</a></Button>
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
+                    <div className='row dropDownRow'>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-edit' /> My Stories</Button>
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
+                    <div className='row dropDownRow'>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
+                    <div className='row dropDownRow'>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-bookmark' /> Bookmarks</Button>
                     </div>
-                    <div className='row'>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
+                    <div className='row dropDownRow'>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-book' /> Create New</Button>
                     </div>
                     

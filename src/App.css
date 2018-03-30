@@ -1,4 +1,3 @@
-
 /* ///////////////// Landing.CSS /////////// */
 .jumbophoto {
     background-image: url("img/landing1.png");
@@ -110,7 +109,8 @@
 }
 .jumboSearch{
   /* background-image: url("img/waterBG.png"); */
-  background-image: url("img/BG_blue.png");
+  /* background-image: url("img/BG_blue.png"); */
+  background-color: rgb(182, 186, 190);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -927,6 +927,7 @@
 .cursorPointer{
   cursor: pointer;
 }
+/* menuham is for header */
 .menuHam{
   height: 128px;
   width: 128px;
@@ -942,6 +943,9 @@
   margin-top: 14.5%;
   float: right;
   cursor: pointer;
+}
+.dropDownRow{
+  margin-left: -104%;
 }
 .logoBlue{
   margin-left: 155%;
@@ -1134,7 +1138,59 @@ background-color:  rgb(246, 246, 246);
   border: solid rgb(79, 96, 112) 1px;
   position: relative;
 }
- }
+.footerLogoBlue{
+  position: relative;
+  left: 651px;
+  width: 60px;
+}
+ /* ///////////////// Landing.CSS /////////// */
+.jumbophoto {
+    background-image: url("img/landing1.png");
+    /* background-image: url("img/landing2.png"); */
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px; 
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    background-color: #F6F6F6;
+  }
+.logoFull{
+  margin-left: -45%;
+  margin-top: 1%;
+}
+.menuHam2{
+  height: 25%;
+  width: 25%;
+  margin-right: 80%;
+  margin-top: 14.5%;
+  float: right;
+  cursor: pointer;
+}
+.searchCSSwhite{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -23.5%;
+  margin-left: 35%;
+  background-image: url("img/magnifyGlass2.png");
+  background-repeat: no-repeat;
+}
+.searchCSSblue{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -23.5%;
+  margin-left: 35%;
+  background-image: url("img/magnifyGlass3.png");
+  background-repeat: no-repeat;
+}
+.dropDownRow{
+  margin-left: -52%;
+}
+} /* end 1366x768 */
+
 @media(max-width: 1280px){
 
 }
