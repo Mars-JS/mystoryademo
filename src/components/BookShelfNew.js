@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class BookShelfNew extends Component {
     constructor(props, context) {
@@ -29,7 +30,7 @@ class BookShelfNew extends Component {
                 <div className="row" style={{ marginTop: '1%' }}>
 
                     <div className="container">
-                        <div className="row titleRow"><a href='' className='viewAll'>View all ></a>
+                        <div className="row titleRow"><a href='/viewprofile' className='viewAll'>View all ></a>
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div className="font3 shelfTitle">Popular Stories</div>
                             </div>
@@ -45,6 +46,7 @@ class BookShelfNew extends Component {
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookSports1.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses'/> 2,222</div>
@@ -53,12 +55,13 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
                                                 </div>
                                             </div>
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
-                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookRihanna1.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 3,333</div>
@@ -67,12 +70,14 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star-empty' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
+
                                                 </div>
                                             </div>
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 1,111</div>
@@ -81,7 +86,7 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
                                                 </div>
                                             </div>
                                         </div></div>
@@ -92,6 +97,7 @@ class BookShelfNew extends Component {
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookSports1.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
@@ -100,12 +106,13 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
                                                 </div>
                                             </div>
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
@@ -114,12 +121,13 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
                                                 </div>
                                             </div>
                                             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <div className='containerBook'>
                                                     <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                    <Link to="/books/7">
                                                     <div className='overlay'>
                                                         <div className="bookTitle">book Title</div>
                                                         <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
@@ -128,7 +136,7 @@ class BookShelfNew extends Component {
                                                         <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
                                                             <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
                                                         <div className="bookAuthor">book Author</div>
-                                                    </div>
+                                                    </div></Link>
                                                 </div>
                                             </div>
                                         </div></div>

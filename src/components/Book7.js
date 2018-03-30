@@ -10,7 +10,7 @@ class Book7 extends Component {
                 
                 <div id="spacer" className="row spacerRow"></div>
                 
-                <div className='row font3'><strong>TITLE OF BOOK </strong><span> by </span>" AUTHOR "</div>
+                <div className='row font3'><strong>TITLE OF BOOK </strong><span> by </span>" <a style={{color: 'rgb(23,50,70)'}} href='/viewprofile'>AUTHOR</a> "</div>
                 <div className='row' style={{marginLeft: '15%', height: '720px', width:'1280px'}}>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='450' fluid='true'>

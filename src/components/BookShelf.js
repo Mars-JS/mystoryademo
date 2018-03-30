@@ -11,7 +11,7 @@ class BookShelf extends Component {
                     <div className="container" style={{paddingBottom: "17px"}}>
                         <div id="latestOne" className="col-sm-3 col-md-3 col-lg-3 text-center">
                             <button id="userLeftScroll" className="btn btn-info leftScroll"><span className="glyphicon glyphicon-chevron-left pull-left"></span></button>
-                            <Link to="/books/1" className="">
+                            <Link to="/books/7" className="">
                                 <div className="books">
                                     <div className="book">
 
@@ -24,7 +24,7 @@ class BookShelf extends Component {
                             </Link>
                         </div>
                         <div id="latestTwo" className="col-sm-3 col-md-3 col-lg-3 text-center">
-                            <Link to="/books/2" className="">
+                            <Link to="/books/7" className="">
                                 <div className="books">
                                     <div className="book">
                                         <img alt=""  className="bookImage img-responsive" src={require("../img/popstory1.jpg")} />

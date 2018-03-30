@@ -1,8 +1,8 @@
 
 /* ///////////////// Landing.CSS /////////// */
 .jumbophoto {
-    /* background-image: url("img/landingPage.png"); */
     background-image: url("img/landing1.png");
+    /* background-image: url("img/landing2.png"); */
     height: 1080px;
     background-position: center;
     background-size: cover;
@@ -242,8 +242,23 @@
 }
 
 /* //////////// Create.CSS SelectPage.CSS ///////////// */
+.pageSelect{
+  margin-top:33%;
+}
+.selectPageMenu{
+  margin-left: -5%;
+}
+.formRow{
+  border: 1px solid; 
+  background-color: rgb(219, 219, 219); 
+  width: 550px;
+  /* position: absolute; */
+}
+.imgPrev{
+  margin-left: 17%;
+}
 .createStory{
-  background-color: rgb(143, 143, 145);
+  background-color: rgb(219, 219, 219);
   height: 720px;
   width: 1280px;
   margin-left: 14%;
@@ -376,7 +391,7 @@
   color: white;
   width: 1280px;
   height: 720px;
-  background-color: rgb(57, 64, 71);
+  background-color: rgb(23, 50, 70);
   }
 .hideButton{
   padding: 6px;
@@ -759,10 +774,11 @@
 /* Container holding the image and the text */
 /* ///// overlayControls ////////// */
 .containerText {
-    background: rgb(10,147,185);
+    background: rgba(10, 147, 185, 0.664);
     position: relative;
     text-align: center;
-    z-index: 10;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .overlay {
   cursor: pointer;

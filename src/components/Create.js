@@ -87,36 +87,19 @@ class Create extends Component {
         let { imagePreviewUrl } = this.state;
         let $imagePreview = null;
         if (imagePreviewUrl) {
-            $imagePreview = (<img style={{ width: '640px', height: '360px' }} src={imagePreviewUrl} />);
+            $imagePreview = (<img style={{ width: '480px', height: '270px' }} src={imagePreviewUrl} />);
         } else {
-            $imagePreview = (<div className="previewText" style={{ width: '640px', height: '360px' }}>Preview cover art, add image using menu below</div>);
+            $imagePreview = (<div className="previewText" style={{ width: '480px', height: '270px' }}>Preview cover art, add image using menu below</div>);
         }
-        if (this.state.show) {
+        
             return (
-                <div className='container'><div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
-                
-                    <Button onClick={this.handleDismiss} className="hideButton" style={{ marginBottom: '1%', marginTop: '1%' }} >Hide the update menu (click)</Button>
-                    <div className='row'>
-                    {$imagePreview}</div>
-                    <div className='container'><div className='row' style={{ border: '1px solid', marginLeft: '4%', marginTop: '1%', backgroundColor: 'lightslategrey', width: '480px' }}><div className='col-sm-12 col-md-12 col-lg-12'>
+                <div className='container-fluid'><div className='row'>
+                    
+                    <div className='row formRow'><div className='col-sm-12 col-md-12 col-lg-12'>
                         
-                            <div className='row'>
-                                <div className='col-sm-3 col-md-3 col-lg-3'>
-                                    <div className='row' style={{ marginLeft: '-1px', marginTop: '1%'}}><strong>Add cover art:</strong></div>
-                                    <div className="previewComponent">
-                                        <form onSubmit={(e) => this._handleSubmit(e)} style={{ marginLeft: '14px' }}>
-                                            <input className="fileInput"
-                                                type="file"
-                                                onChange={(e) => this._handleImageChange(e)} />
-                                            <Button className="uploadImgButton"
-                                                type="submit"
-                                                onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
-                                        </form>
-                                    </div>
-                                </div></div>
-                                <div className='row'>
+                        <div className='row' > {/* title input*/}
                                 <div className='col-sm-6 col-md-6 col-lg-6'>
-                                    <form >
+                                    <form>
                                         <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
                                             <ControlLabel>New Title:</ControlLabel>
                                             <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange} />
@@ -127,13 +110,27 @@ class Create extends Component {
                                 </div>
                                 <div className='col-sm-6 col-md-6 col-lg-6'></div>
                             </div>
-                        
-                    </div></div></div>
+                            <div className='row'> {/* cover art input */}
+                                <div className='col-sm-3 col-md-3 col-lg-3'>
+                                    <div className='row' style={{ marginLeft: '-1px', marginTop: '1%'}}><strong>Add cover art:</strong></div>
+                                    <div className='row imgPrev'>{$imagePreview}</div>
+                                    <div className="previewComponent">
+                                        <form onSubmit={(e) => this._handleSubmit(e)} style={{ marginLeft: '14px', marginBottom: '6%' }}>
+                                            <input className="fileInput"
+                                                type="file"
+                                                onChange={(e) => this._handleImageChange(e)} />
+                                            <Button className="uploadImgButton"
+                                                type="submit"
+                                                onClick={(e) => this._handleSubmit(e)}>Upload Image</Button>
+                                        </form>
+                                    </div>
+                                </div></div>
 
-                </div></div></div>
+                    </div></div>
+
+                </div></div>
             );
-        }
-        return (<div className='container'><Button className="hideButton" style={{ backgroundColor: 'black', color: 'white', marginTop: '1%' }} onClick={this.handleShow}>Update cover & title (click)</Button></div>);
+        
     }
 
     render() {
@@ -146,18 +143,18 @@ class Create extends Component {
         }
         return (
             <div className="container-fluid">
-                <div className='row darkWoodBG' style={{ marginTop: '4%' }}>
+                <div className='row' style={{ marginTop: '4%', background:'rgb(182, 186, 190)' }}>
                 <div className='container-fluid'>
-                    <div className='row'>
+                    <div className='row'> {/* title */}
                         <div className='col-sm-12 col-md-12 col-lg-12'>
                             <h1 style={{ marginLeft: '14%', width: '1280px', color: 'black', backgroundColor: 'white', textAlign: 'center'}}>{this.state.value}</h1>
                     </div></div>
                 <div className='row createStory' ><div className='col-sm-12 col-md-12 col-lg-12'>
                     <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-                    {this.renderMenu()}
+                    <div style={{marginTop:'7%'}}>{this.renderMenu()}</div>
                     </div>
                     <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-                        <SelectPageType />
+                        <div className='row selectPageMenu'><SelectPageType /></div>
                     </div>
                 </div></div>
                 </div>

@@ -51,11 +51,12 @@ class SelectPageType extends Component {
                 ];
             default:
                 return [
-                    <div className='container'><div className='row' style={{ marginLeft: '10%', marginTop: '5%' }}>
-                        <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 containerText' style={{ width: '480px' }}>
-                            <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} />
-                            <div class="top-left"><Button onClick={this.handleSelected} value='fullPage'>full page</Button></div>
-                            <div class="bottom-left"><Button onClick={this.handleSelected} value='halfPage'>half page</Button></div>
+                    <div className='container-fluid'>
+                    <div className='row'>
+                        <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 containerText' style={{ width: '630px', height: '710px' }}>
+                            {/* <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} /> */}
+                            <div className="row pageSelect"><Button onClick={this.handleSelected} value='fullPage'>full page</Button></div>
+                            <div className="row pageSelect"><Button onClick={this.handleSelected} value='halfPage'>half page</Button></div>
                         </div></div></div>
                 ];
         }

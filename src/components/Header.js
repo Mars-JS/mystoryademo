@@ -98,7 +98,7 @@ class Header extends Component {
                     </div>
                     <div className='row'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-user' /> Profile</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'>Profile</a></Button>
                     </div>
                     <div className='row'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px', marginLeft: '-104%' }}>
