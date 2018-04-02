@@ -1150,7 +1150,125 @@ background-color:  rgb(246, 246, 246);
 
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
- @media(max-width: 1366px){
+@media(max-width: 1440px){
+
+.carousel-control.right {
+  background-image: url("img/blueRectangle.png");
+  margin-right: -3%;
+  background-repeat: no-repeat;
+  background-position-x: 41px;
+  /* background: none !important; */
+  /* filter: progid none !important; */
+  outline: 1;
+ }
+  .carousel-control.left{
+  /* background-image: url("img/blueRectangle.png"); */
+  background-image: url("img/blueRectangle.png");
+  margin-left: -3.5%;
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  outline: 1;
+ }
+.carousel-control {
+  background-size: 55%;
+  background-position-y: 210px;
+  margin-top: -5%;
+  visibility: visible;
+  color: rgb(182,186,190);
+}
+.carousel:hover .carousel-control:hover {
+  color: rgb(255, 255, 255);
+}
+.carousel-control:focus {
+  color: rgb(182, 186, 190);
+}
+.shelfBook2 {
+  margin-bottom: 28%;
+  margin-top: 10%;
+  width: 263px;
+  height: 350px;
+  border: solid rgb(79, 96, 112) 1px;
+  position: relative;
+}
+.footerLogoBlue{
+  position: relative;
+  left: 651px;
+  width: 60px;
+}
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  width: 15em;
+  margin: 0.2em;
+  padding: 0 15px 0 75px;
+  border: none;
+  text-align: left;
+  line-height: 55px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 1px;
+  font-size: 18px;
+  /* opacity: 0.5; */
+  /* transition: 1s ease; */
+}
+ /* ///////////////// Landing.CSS //////1440///// */
+.jumbophoto {
+    background-image: url("img/landing3.png");
+    /* background-image: url("img/landing2.png"); */
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px; 
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    background-color: #F6F6F6;
+  }
+.logoFull{
+  margin-left: -45%;
+  margin-top: 1%;
+}
+.searchCSSwhite{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -23.5%;
+  margin-left: 35%;
+  background-image: url("img/magnifyGlass2.png");
+  background-repeat: no-repeat;
+}
+.searchCSSblue{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: -23.5%;
+  margin-left: 35%;
+  background-image: url("img/magnifyGlass3.png");
+  background-repeat: no-repeat;
+}
+.dropDownRow{
+  margin-left: -23.5%;
+}
+/* ////////////////////// 1440x900 fonts ////////////////////////// */
+.font0 {
+  font-family: 'TimesNewRoman', serif;
+  color: rgb(233, 233, 233);
+  font-size: 6.5em;
+  font-weight: 100;
+  margin-right: -1.5%;
+}
+.font9 {
+  font-family: 'TimesNewRoman', serif;
+  color: rgb(233, 233, 233);
+  font-size: 2.5em;
+  font-weight: 100;
+  margin-right: -9%;
+}
+
+}
+
+@media(max-width: 1366px){
+
 .carousel-control.right {
   background-image: url("img/blueRectangle.png");
   margin-right: -3%;
@@ -1214,7 +1332,7 @@ background-color:  rgb(246, 246, 246);
 .jumbophoto {
     background-image: url("img/landing3.png");
     /* background-image: url("img/landing2.png"); */
-    height: 720px;
+    height: 768px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
