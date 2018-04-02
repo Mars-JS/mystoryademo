@@ -14,7 +14,9 @@ class Header extends Component {
         this.state = {
             show: false,
             navScroll: 'transparent',
-            logoColor: require("../img/logoWhiteFullSm.png"),
+            /* logoColor: require("../img/logoWhiteFullSm.png"), */
+            logoColor: require("../img/logoWhite.png"),
+            menuHamColor: require("../img/menuHamWhite.png"),
             searchColor: 'searchCSSwhite',
             showSearch: false
         };
@@ -40,11 +42,15 @@ class Header extends Component {
         this.setState({ show: false });
         if (window.scrollY<50){
             this.setState({ navScroll: 'transparent' })
-            this.setState({ logoColor: require("../img/logoWhiteFullSm.png") })
+            /* this.setState({ logoColor: require("../img/logoWhiteFullSm.png") }) */
+            this.setState({ logoColor: require("../img/logoWhite.png") })
+            this.setState({ menuHamColor: require("../img/menuHamWhite.png") })
             this.setState({ searchColor: 'searchCSSwhite' })
         }else{
-            this.setState({ logoColor: require("../img/logoBlueFullSm.png") })
+            /* this.setState({ logoColor: require("../img/logoBlueFullSm.png") }) */
+            this.setState({ logoColor: require("../img/logoBlue.png") })
             this.setState({ searchColor: 'searchCSSblue' })
+            this.setState({ menuHamColor: require("../img/menuHam2.png") })
             this.setState({ navScroll: 'white' })
         }
         /* console.log(this.state.navScroll); */
@@ -86,15 +92,16 @@ class Header extends Component {
         if (this.state.show) {
             return (
                 <div className='container-fluid'>
-                    {/* <div className='row'> */}
-                    <div className='row headerLogin'>
-                    <button className='btn redButton' onClick={this.handleDismiss} alt='dropdownmenu'>Create Story</button>
+                        <div className='row'>
                         {/* <img src={require("../img/menuHam3.png")}
                             className="menuHam2"
                             onClick={this.handleDismiss} alt="logo" /> */}
+                        <img src={this.state.menuHamColor}
+                            className="menuHam2"
+                            onClick={this.handleDismiss} alt="logo" />
                     </div>
                     
-                    <div className='row dropDownRow'>
+                    <div className='row dropDownRow' style={{ marginTop: '2%' }}>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'> Profile</a></Button>
                     </div>
@@ -114,7 +121,7 @@ class Header extends Component {
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
                     </div>
-                    <div className='row dropDownRow' style={{marginTop: '2%'}}>
+                    <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
                     </div>
@@ -123,12 +130,10 @@ class Header extends Component {
             );
         }
         return (
-            <div className='container-fluid'>{/* <div className='row'>
-                <img src={require("../img/menuHam2.png")}
+            <div className='container-fluid'><div className='row'>
+                <img src={this.state.menuHamColor}
                     className="menuHam2"
-                    onClick={this.handleShow} alt="logo" /> */}
-                <div className='row headerLogin2'>
-                <button className='btn redButton' onClick={this.handleShow} alt='dropdownmenu'>Create Story</button>
+                    onClick={this.handleShow} alt="logo" />
             </div></div>
         );
 
@@ -139,10 +144,10 @@ class Header extends Component {
             <div className='container-fluid'><div className='row'>
                 <div>
                 <Navbar fixedTop='true' fluid='true' href='nav'
-                        style={{ background: this.state.navScroll, height: '100px', marginTop: '-0.5%', border: '1px transparent'}}>
+                        style={{ background: this.state.navScroll, height: '126px', marginTop: '-0.5%', border: '1px transparent'}}>
                     <Navbar.Header>
                         <Nav>
-                                <a href="/"><img style={{height:'100px'}} className='img-responsive logoFull' src={this.state.logoColor} alt="logo" />
+                                <a href="/"><img style={{height:'155px'}} className='img-responsive logoLeft' src={this.state.logoColor} alt="logo" />
                                         {/* <img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" /> */}
                                         {/* <img className='img-responsive ' src={require("../img/logoText.png")} alt="logo" /> */}
                             </a>
@@ -152,9 +157,8 @@ class Header extends Component {
                         <Navbar.Toggle />
                             <Navbar.Collapse >
                             <Navbar.Form >
-                                <div>about</div>
                                 {this.renderMenuHam()}
-                                {this.renderSearchModal()}
+                                {/* {this.renderSearchModal()} */}
                                 {/* <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div> */}
                             </Navbar.Form>
                         </Navbar.Collapse>

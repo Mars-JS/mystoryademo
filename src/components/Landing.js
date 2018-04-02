@@ -7,10 +7,10 @@ import BookShelfNew from './BookShelfNew';
 const Landing = () => {
     return (
       <div>
-      <SplashPage/>
-      <SearchBig/>
-      <BookShelfNew/>
-      <BookShelf/>
+      <SplashPage />
+      <SearchBig />
+      <BookShelfNew />
+      <BookShelf />
       </div>
     );
 };
