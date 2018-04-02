@@ -535,6 +535,32 @@
   border: 2px solid rgb(23,50,70);
   background-color: rgb(10,147,185);
 }
+.headerLogin{
+  margin-left: -210%;
+  margin-top: 20%;
+}
+.headerLogin2{
+  margin-left: -287%;
+  margin-top: 25%;
+}
+.redButton{
+  cursor: pointer;
+  padding: 5px;
+  padding-right:8px;
+  border: 0px solid rgb(255,71,23);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 10pt;
+  background: rgb(255,71,23);
+}
+.redButton:hover, .redButton:focus{
+  border: 0px solid rgb(255,71,23);
+  color: rgb(255,255,255);
+  font-weight: 800;
+  font-size: 10pt;
+  background: linear-gradient(rgb(255, 72, 0), rgb(255, 3, 3) );
+}
 .blueButton{
   cursor: pointer;
   padding: 5px;
@@ -703,12 +729,12 @@
   font-size: 10pt;
   background: linear-gradient(rgb(10,147,185), rgb(23,50,70));
 }
-
+/* magnifyingglass */
 .searchCSSwhite{
   cursor: pointer;
   width: 50px;
   height: 50px;
-  margin-top: -23.5%;
+  margin-top: -27.5%;
   margin-left: -46%;
   background-image: url("img/magnifyGlass2.png");
   background-repeat: no-repeat;
@@ -717,7 +743,7 @@
   cursor: pointer;
   width: 50px;
   height: 50px;
-  margin-top: -23.5%;
+  margin-top: -27.5%;
   margin-left: -46%;
   background-image: url("img/magnifyGlass3.png");
   background-repeat: no-repeat;
@@ -945,7 +971,7 @@
   cursor: pointer;
 }
 .dropDownRow{
-  margin-left: -104%;
+  margin-left: -220.5%;
 }
 .logoBlue{
   margin-left: 155%;

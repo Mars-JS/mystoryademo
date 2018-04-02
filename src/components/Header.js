@@ -86,16 +86,14 @@ class Header extends Component {
         if (this.state.show) {
             return (
                 <div className='container-fluid'>
-                    <div className='row'>
-                        <img src={require("../img/menuHam3.png")}
+                    {/* <div className='row'> */}
+                    <div className='row headerLogin'>
+                    <button className='btn redButton' onClick={this.handleDismiss} alt='dropdownmenu'>Create Story</button>
+                        {/* <img src={require("../img/menuHam3.png")}
                             className="menuHam2"
-                            onClick={this.handleDismiss} alt="logo" />
+                            onClick={this.handleDismiss} alt="logo" /> */}
                     </div>
                     
-                    <div className='row dropDownRow' style={{marginTop: '1%'}}>
-                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
-                    </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
                             <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'> Profile</a></Button>
@@ -106,7 +104,7 @@ class Header extends Component {
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-book' /> Create New</Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
@@ -114,17 +112,23 @@ class Header extends Component {
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-book' /> Create New</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
+                    </div>
+                    <div className='row dropDownRow' style={{marginTop: '2%'}}>
+                        <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
+                            <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
                     </div>
                     
                 </div>
             );
         }
         return (
-            <div className='container-fluid'><div className='row'>
+            <div className='container-fluid'>{/* <div className='row'>
                 <img src={require("../img/menuHam2.png")}
                     className="menuHam2"
-                    onClick={this.handleShow} alt="logo" />
+                    onClick={this.handleShow} alt="logo" /> */}
+                <div className='row headerLogin2'>
+                <button className='btn redButton' onClick={this.handleShow} alt='dropdownmenu'>Create Story</button>
             </div></div>
         );
 
@@ -148,9 +152,10 @@ class Header extends Component {
                         <Navbar.Toggle />
                             <Navbar.Collapse >
                             <Navbar.Form >
+                                <div>about</div>
                                 {this.renderMenuHam()}
                                 {this.renderSearchModal()}
-                                    {/* <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div> */}
+                                {/* <div onClick={this.handleShowSearch} className='row' className={this.state.searchColor}></div> */}
                             </Navbar.Form>
                         </Navbar.Collapse>
                     </Nav>
