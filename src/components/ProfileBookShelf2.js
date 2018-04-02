@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class BookShelfNew extends Component {
+class ProfileBookShelf2 extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -1839,4 +1839,4 @@ class BookShelfNew extends Component {
     }
 }
 
-export default BookShelfNew;
+export default ProfileBookShelf2;
