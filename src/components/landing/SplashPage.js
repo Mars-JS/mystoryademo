@@ -77,11 +77,6 @@ class Splash extends Component {
             </div>
           </div>
 
-          <div id="row10d" className="row" style={{ marginBottom: '2%', marginLeft: '20%' }}>
-            <div className="col-sm-8 col-md-8 col-lg-8">
-              <div className='col-xs-2 col-sm-2 col-md-2 col-lg-12 platformButton'>OUR PLATFORM</div>
-            </div>
-          </div>
             
 
           
