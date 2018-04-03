@@ -5,26 +5,34 @@ import BookShelfEducation from './BookShelfEducation';
 import BookShelfFood from './BookShelfFood';
 import BookShelfMusic from './BookShelfMusic';
 import BookShelfPopular from './BookShelfPopular';
-import BookShelfNew from './BookShelfNew';
-import BookShelfGaming from './BookShelfGaming';
 import BookShelfSports from './BookShelfSports';
 import BookShelfTech from './BookShelfTech';
 import BookShelfTravel from './BookShelfTravel';
+import ProfileShelfMyStories from './ProfileShelfMyStories';
+import ProfileShelfMySocial from './ProfileShelfMySocial';
+import ProfileShelfMyProjects from './ProfileShelfMyProjects';
+import ProfileShelfFriends from './ProfileShelfFriends';
+import ProfileShelfFamily from './ProfileShelfFamily';
+import ProfileShelfClasses from './ProfileShelfClasses';
 
-class AllShelf extends Component {
+class ProfileAllShelf extends Component {
 
     render() {
 
         return (
             <div>
-                <BookShelfNew />
+                <ProfileShelfMyStories/>
+                <ProfileShelfMySocial/>
+                <ProfileShelfFamily/>
+                <ProfileShelfFriends/>
+                <ProfileShelfClasses/>
+                <ProfileShelfMyProjects/>
                 <BookShelfPopular />
                 <BookShelfTravel />
                 <BookShelfFood />
                 <BookShelfMusic />
                 <BookShelfSports />
                 <BookShelfTech />
-                <BookShelfGaming />
                 <BookShelfEducation />
             </div>
 
@@ -32,4 +40,4 @@ class AllShelf extends Component {
     }
 }
 
-export default AllShelf;
+export default ProfileAllShelf;

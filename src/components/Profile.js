@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Glyphicon, Modal } from 'react-bootstrap';
-import ProfileBookShelf2 from './ProfileBookShelf2';
+import ProfileAllShelf from './ProfileAllShelf';
 
 
 class Profile extends Component {
@@ -155,7 +155,7 @@ class Profile extends Component {
             </div>
 
                 <div className="row">
-                    <ProfileBookShelf2 />
+                    <ProfileAllShelf />
                 </div>
             </div>
         );

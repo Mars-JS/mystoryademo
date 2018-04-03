@@ -32,7 +32,7 @@ class BookShelfEducation extends Component {
                         <div className="container">
                             <div className="row titleRow"><a href='/viewprofile' className='viewAll'>View all ></a>
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div className="font3 shelfTitle">Popular Stories</div>
+                                    <div className="font3 shelfTitle">College Stories</div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class BookShelfEducation extends Component {
                                             <div className="row ">
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookSports1.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college1.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -60,7 +60,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookRihanna1.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college2.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -76,7 +76,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college3.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -91,7 +91,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bbuy.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>

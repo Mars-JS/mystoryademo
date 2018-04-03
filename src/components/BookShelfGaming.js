@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class BookShelfTravel extends Component {
+class BookShelfGaming extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -32,7 +32,7 @@ class BookShelfTravel extends Component {
                         <div className="container">
                             <div className="row titleRow"><a href='/viewprofile' className='viewAll'>View all ></a>
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div className="font3 shelfTitle">Travel Stories</div>
+                                    <div className="font3 shelfTitle">Gaming Stories</div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class BookShelfTravel extends Component {
                                             <div className="row ">
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/travel1.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/game1.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -60,7 +60,7 @@ class BookShelfTravel extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/travel2.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/game2.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -76,7 +76,7 @@ class BookShelfTravel extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/travel3.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/game3.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -91,7 +91,7 @@ class BookShelfTravel extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/expedia.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/ps4.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -186,4 +186,4 @@ class BookShelfTravel extends Component {
     }
 }
 
-export default BookShelfTravel;
+export default BookShelfGaming;
