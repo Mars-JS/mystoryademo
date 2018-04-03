@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class BookShelfEducation extends Component {
+class BookShelfPopular extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -32,7 +32,7 @@ class BookShelfEducation extends Component {
                         <div className="container">
                             <div className="row titleRow"><a href='/viewprofile' className='viewAll'>View all ></a>
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div className="font3 shelfTitle">College Stories</div>
+                                    <div className="font3 shelfTitle">Popular Stories</div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class BookShelfEducation extends Component {
                                             <div className="row ">
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college1.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/popstory3.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -60,7 +60,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college2.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/newstory2.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -76,7 +76,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/college3.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/newstory3.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -91,7 +91,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bbuy.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/popstory4.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -111,7 +111,7 @@ class BookShelfEducation extends Component {
                                             <div className="row ">
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/bookProgress.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -126,7 +126,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/bookProgress.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -142,7 +142,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/bookProgress.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -157,7 +157,7 @@ class BookShelfEducation extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/bookProgress.png")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../../img/bookProgress.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>
@@ -177,13 +177,9 @@ class BookShelfEducation extends Component {
                                 </Carousel>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-        );
+                    
+                </div></div></div>);
     }
 }
 
-export default BookShelfEducation;
+export default BookShelfPopular;

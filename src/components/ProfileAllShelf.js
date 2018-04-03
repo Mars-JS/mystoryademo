@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import BookShelfEducation from './BookShelfEducation';
-import BookShelfFood from './BookShelfFood';
-import BookShelfMusic from './BookShelfMusic';
-import BookShelfPopular from './BookShelfPopular';
-import BookShelfSports from './BookShelfSports';
-import BookShelfTech from './BookShelfTech';
-import BookShelfTravel from './BookShelfTravel';
+import AllShelf from './bookshelf/AllShelf';
 import ProfileShelfMyStories from './ProfileShelfMyStories';
 import ProfileShelfMySocial from './ProfileShelfMySocial';
 import ProfileShelfMyProjects from './ProfileShelfMyProjects';
@@ -27,13 +21,7 @@ class ProfileAllShelf extends Component {
                 <ProfileShelfFriends/>
                 <ProfileShelfClasses/>
                 <ProfileShelfMyProjects/>
-                <BookShelfPopular />
-                <BookShelfTravel />
-                <BookShelfFood />
-                <BookShelfMusic />
-                <BookShelfSports />
-                <BookShelfTech />
-                <BookShelfEducation />
+                <AllShelf />
             </div>
 
         );
