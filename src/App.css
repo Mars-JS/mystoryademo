@@ -183,8 +183,8 @@
   border: solid rgb(248, 244, 244) 1px;
   position: relative;
 }
-.shelfBook2 {
-  margin-bottom: 28%;
+.shelfBook2 { /* 1 */
+  margin-bottom: 35%;
   margin-top: 10%;
   /* width: 300px;
   height: 400px; */
@@ -213,14 +213,14 @@
   margin-right: 70%; */
 }
 
-.shelf {
+/* .shelf {
     background-image: url("img/lineShelfgrey.png");
     background-repeat: no-repeat;
     background-position: bottom;
     margin-bottom: 80px;
     padding-top: 30px;
     margin-right: 0;
-}
+} */
 
 .leftScroll{
   background-color: #176cff!important;
@@ -764,7 +764,7 @@
 } */
 .carousel-inner{
   /* background-image: url("img/lineShelfgrey.png"); */
-  background-image: url("img/shelf13.png");
+  background-image: url("img/shelf4.png");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 90%;
@@ -1187,7 +1187,7 @@ background-color:  rgb(233, 233, 233);
 .carousel-control:focus {
   color: rgb(182, 186, 190);
 }
-.shelfBook2 {
+.shelfBook2 { /* 2 */
   margin-bottom: 28%;
   margin-top: 10%;
   width: 263px;
@@ -1304,7 +1304,7 @@ background-color:  rgb(233, 233, 233);
 .carousel-control:focus {
   color: rgb(182, 186, 190);
 }
-.shelfBook2 {
+.shelfBook2 { /* 3 */
   margin-bottom: 28%;
   margin-top: 10%;
   width: 263px;

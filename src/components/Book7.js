@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 /* import ReadBookShelf from './ReadBookShelf'; */
-import BookShelfNew from './BookShelfNew';
+import BookShelfNew from './bookshelf/BookShelfNew';
 import FlipPage from 'react-flip-page';
 
 class Book7 extends Component {
