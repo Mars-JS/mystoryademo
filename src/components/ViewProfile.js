@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Glyphicon, Modal } from 'react-bootstrap';
-import BookShelfNew from './BookShelfNew';
+import ViewProfileAllShelf from './ViewProfileAllShelf';
 
 
 class ViewProfile extends Component {
@@ -122,7 +122,7 @@ class ViewProfile extends Component {
             </div>
 
                 <div className="row">
-                <BookShelfNew />
+                <ViewProfileAllShelf />
                 </div>
             </div>
         );

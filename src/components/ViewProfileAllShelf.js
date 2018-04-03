@@ -5,31 +5,27 @@ import BookShelfEducation from './BookShelfEducation';
 import BookShelfFood from './BookShelfFood';
 import BookShelfMusic from './BookShelfMusic';
 import BookShelfPopular from './BookShelfPopular';
+import BookShelfSports from './BookShelfSports';
 import BookShelfTech from './BookShelfTech';
 import BookShelfTravel from './BookShelfTravel';
-import ProfileShelfMyStories from './ProfileShelfMyStories';
-import ProfileShelfMySocial from './ProfileShelfMySocial';
-import ProfileShelfMyProjects from './ProfileShelfMyProjects';
-import ProfileShelfFriends from './ProfileShelfFriends';
-import ProfileShelfFamily from './ProfileShelfFamily';
-import ProfileShelfClasses from './ProfileShelfClasses';
+import ViewProfileShelfOther from './ViewProfileShelfOther';
+import ViewProfileShelfFav from './ViewProfileShelfFav';
+import ViewProfileFriend from './ViewProfileFriend';
 
-class ProfileAllShelf extends Component {
+class ViewProfileAllShelf extends Component {
 
     render() {
 
         return (
             <div>
-                <ProfileShelfMyStories/>
-                <ProfileShelfMySocial/>
-                <ProfileShelfFamily/>
-                <ProfileShelfFriends/>
-                <ProfileShelfClasses/>
-                <ProfileShelfMyProjects/>
+                <ViewProfileShelfOther/>
+                <ViewProfileShelfFav/>
+                <ViewProfileFriend/>
                 <BookShelfPopular />
                 <BookShelfTravel />
                 <BookShelfFood />
                 <BookShelfMusic />
+                <BookShelfSports />
                 <BookShelfTech />
                 <BookShelfEducation />
             </div>
@@ -38,4 +34,4 @@ class ProfileAllShelf extends Component {
     }
 }
 
-export default ProfileAllShelf;
+export default ViewProfileAllShelf;
