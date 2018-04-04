@@ -101,7 +101,7 @@ class Create extends Component {
                                 <div className='col-sm-6 col-md-6 col-lg-6'>
                                     <form>
                                         <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
-                                            <ControlLabel>New Title:</ControlLabel>
+                                            <ControlLabel><span className='font2'>New Title:</span></ControlLabel>
                                             <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange} />
                                             <Button className="uploadButton" type="submit" onClick={(e) => this._handleSubmit(e)}>Update Title</Button>
                                             <FormControl.Feedback />
@@ -112,7 +112,7 @@ class Create extends Component {
                             </div>
                             <div className='row'> {/* cover art input */}
                                 <div className='col-sm-3 col-md-3 col-lg-3'>
-                                    <div className='row' style={{ marginLeft: '-1px', marginTop: '1%'}}><strong>Add cover art:</strong></div>
+                                    <div className='row' style={{ marginLeft: '-1px', marginTop: '1%'}}><span className='font2'>Add cover art:</span></div>
                                     <div className='row imgPrev'>{$imagePreview}</div>
                                     <div className="previewComponent">
                                         <form onSubmit={(e) => this._handleSubmit(e)} style={{ marginLeft: '14px', marginBottom: '6%' }}>
@@ -125,7 +125,28 @@ class Create extends Component {
                                         </form>
                                     </div>
                                 </div></div>
+                            <div className='row' style={{marginBottom: '2%'}}> {/* share settings */}
+                                <div className='col-sm-12 col-md-12 col-lg-12'>
+                                <span className='font2'>Share:</span>
+                                            <form>
+                                            <div className='container'><div className='row'>
+                                                
+                                                <div className='row'>
+                                                <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+                                                <input className='genreCheckBox' type="checkbox" name="private" value="private" /> <span className='font6'>Private</span></div>
+                                                </div>                                                
+                                                <div className='row'>
+                                                <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+                                                <input className='genreCheckBox' type="checkbox" name="friendsNfamily" value="friendsNfamily" /> <span className='font6'>Friends + Family</span></div>
+                                                </div>
+                                                <div className='row'>
+                                                <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+                                                <input className='genreCheckBox' type="checkbox" name="world" value="world" /> <span className='font6'>The World</span></div>
+                                                </div>
 
+                                            </div></div>
+                                            </form>
+                            </div></div>
                     </div></div>
 
                 </div></div>
@@ -134,24 +155,20 @@ class Create extends Component {
     }
 
     render() {
-        let { imagePreviewUrl } = this.state;
-        let $imagePreview = null;
-        if (imagePreviewUrl) {
-            $imagePreview = (<img style={{ width: '1280px', height: '720px' }} src={imagePreviewUrl} />);
-        } else {
-            $imagePreview = (<div className="previewText" style={{ width: '1280px', height: '720px' }}>Preview your story here as you create</div>);
-        }
+
         return (
             <div className="container-fluid">
-                <div className='row' style={{ marginTop: '4%', background:'rgb(182, 186, 190)' }}>
+            <div id="spacer" className="row spacerRow"></div>
+                <div className='row'>
                 <div className='container-fluid'>
                     <div className='row'> {/* title */}
                         <div className='col-sm-12 col-md-12 col-lg-12'>
-                            <h1 style={{ marginLeft: '14%', width: '1280px', color: 'black', backgroundColor: 'white', textAlign: 'center'}}>{this.state.value}</h1>
+                            {/* <h1 style={{ marginLeft: '14%', width: '1280px', color: 'black', backgroundColor: 'white', textAlign: 'center'}}>{this.state.value}</h1> */}
+                            <h1 className='bookTitleCreate'>{this.state.value}</h1>
                     </div></div>
                 <div className='row createStory' ><div className='col-sm-12 col-md-12 col-lg-12'>
                     <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-                    <div style={{marginTop:'7%'}}>{this.renderMenu()}</div>
+                    <div className='formRenderMenu'>{this.renderMenu()}</div>
                     </div>
                     <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
                         <div className='row selectPageMenu'><SelectPageType /></div>
