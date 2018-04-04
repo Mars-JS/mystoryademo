@@ -772,7 +772,7 @@
   background-image: url("img/image.png");
  } */
 .carousel-indicators li { visibility: hidden; }
-.carousel-control.right {
+.carousel-control.right { /* 1 */
   background-image: url("img/blueRectangle.png");
   margin-right: -1%;
   background-repeat: no-repeat;
@@ -781,7 +781,7 @@
   /* filter: progid none !important; */
   outline: 1;
  }
-.carousel-control.left{
+.carousel-control.left{ /* 1 */
   background-image: url("img/blueRectangle.png");
   margin-left: -1%;
   background-repeat: no-repeat;
@@ -790,18 +790,18 @@
   /* filter: progid none !important; */
   outline: 1;
  }
-.carousel-control {
+.carousel-control { /* 1 */
   background-size: 55%;
-  background-position-y: 212px;
+  background-position-y: 210px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
 }
-.carousel:hover .carousel-control:hover {
+.carousel:hover .carousel-control:hover { /* 1 */
   /* visibility: visible; */
   color: rgb(255, 255, 255);
 }
-.carousel-control:focus {
+.carousel-control:focus { /* 1 */
   /* visibility: visible; */
   color: rgb(182, 186, 190);
 }
@@ -1156,34 +1156,34 @@ background-color:  rgb(233, 233, 233);
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 @media(max-width: 1440px){
 
-.carousel-control.right {
+.carousel-control.right { /* 2 */
   background-image: url("img/blueRectangle.png");
-  margin-right: -3%;
+  margin-right: -5.5%;
   background-repeat: no-repeat;
-  background-position-x: 41px;
+  background-position-x: 44px;
   /* background: none !important; */
   /* filter: progid none !important; */
   outline: 1;
  }
-  .carousel-control.left{
+  .carousel-control.left { /* 2 */
   /* background-image: url("img/blueRectangle.png"); */
   background-image: url("img/blueRectangle.png");
-  margin-left: -3.5%;
+  margin-left: -5.5%;
   background-repeat: no-repeat;
-  background-position-x: 50px;
+  background-position-x: 53px;
   outline: 1;
  }
-.carousel-control {
+.carousel-control { /* 2 */
   background-size: 55%;
-  background-position-y: 210px;
+  background-position-y: 217px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
 }
-.carousel:hover .carousel-control:hover {
+.carousel:hover .carousel-control:hover { /* 2 */
   color: rgb(255, 255, 255);
 }
-.carousel-control:focus {
+.carousel-control:focus { /* 2 */
   color: rgb(182, 186, 190);
 }
 .shelfBook2 { /* 2 */
@@ -1272,7 +1272,7 @@ background-color:  rgb(233, 233, 233);
 
 @media(max-width: 1366px){
 
-.carousel-control.right {
+.carousel-control.right { /* 3 */
   background-image: url("img/blueRectangle.png");
   margin-right: -3%;
   background-repeat: no-repeat;
@@ -1281,7 +1281,7 @@ background-color:  rgb(233, 233, 233);
   /* filter: progid none !important; */
   outline: 1;
  }
-  .carousel-control.left{
+  .carousel-control.left{ /* 3 */
   /* background-image: url("img/blueRectangle.png"); */
   background-image: url("img/blueRectangle.png");
   margin-left: -3.5%;
@@ -1289,17 +1289,17 @@ background-color:  rgb(233, 233, 233);
   background-position-x: 50px;
   outline: 1;
  }
-.carousel-control {
+.carousel-control { /* 3 */
   background-size: 55%;
   background-position-y: 210px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
 }
-.carousel:hover .carousel-control:hover {
+.carousel:hover .carousel-control:hover { /* 3 */
   color: rgb(255, 255, 255);
 }
-.carousel-control:focus {
+.carousel-control:focus { /* 3 */
   color: rgb(182, 186, 190);
 }
 .shelfBook2 { /* 3 */
