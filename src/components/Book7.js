@@ -88,7 +88,7 @@ class Book7 extends Component {
                                                 </div>
                                                 <div className='row'>
                                                     <div className="col-sm-4 col-md-8 col-lg-12">
-                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="center-block" />
+                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="iframeYoutube" />
                                                     </div>
                                                 </div>
                                             </div>

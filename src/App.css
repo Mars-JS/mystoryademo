@@ -173,7 +173,7 @@
 }
 
 /* /////////////// Bookshelf.CSS ////////// */
-.center-block{
+.iframeYoutube{
   margin-top: 8%;
 }
 .shelfBook {
@@ -758,6 +758,14 @@
   background-repeat: no-repeat;
 }
 /* ////////// carousel.CSS ////// 1920 ////// */
+.centerThis {
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    margin-right: 0 auto;
+    margin-left: 12%;
+    width: 80%;
+    float: none;
+}
 /* .carousel{
   background-image: url("img/openBook7.png");
 } */
@@ -792,7 +800,7 @@
  }
 .carousel-control { /* 1 */
   background-size: 55%;
-  background-position-y: 210px;
+  background-position-y: 225px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
@@ -805,23 +813,22 @@
   /* visibility: visible; */
   color: rgb(182, 186, 190);
 }
-
 /* Container holding the image and the text */
 /* ///// overlayControls ////////// */
-.containerText {
+.containerText { 
     background: rgba(10, 147, 185, 0.664);
     position: relative;
     text-align: center;
     margin-top: 5px;
     margin-left: 5px;
 }
-.overlay {
+.overlay { /* 1 */
   cursor: pointer;
-  position: absolute;  
-  top: 5.8%;
-  left: 5%;
-  height: 73.2%;
-  width: 82.5%;
+  position: absolute;
+  top: 6.9%;
+  left: 4.2%;
+  height: 69%;
+  width: 69.9%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(10, 147, 185, 0.445);
@@ -1155,7 +1162,26 @@ background-color:  rgb(233, 233, 233);
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 @media(max-width: 1440px){
+  .centerThis {
 
+}
+.overlay { /* 2 */
+  cursor: pointer;
+  position: absolute;
+  top: 6.9%;
+  left: 4.2%;
+  height: 69%;
+  width: 69.9%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(10, 147, 185, 0.445);
+}
+.book:hover .overlay {
+  opacity: 1;
+}
+.containerBook:hover .overlay {
+  opacity: 1;
+}
 .carousel-control.right { /* 2 */
   background-image: url("img/blueRectangle.png");
   margin-right: -5.5%;
