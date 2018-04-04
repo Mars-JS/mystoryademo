@@ -1,3 +1,4 @@
+
 /* ///////////////// Landing.CSS /////////// */
 .jumbophoto {
     /* background-image: url("img/landing1.png"); */
@@ -186,8 +187,6 @@
 .shelfBook2 { /* 1 */
   margin-bottom: 35%;
   margin-top: 10%;
-  /* width: 300px;
-  height: 400px; */
   width: 263px;
   height: 350px;
   border: solid rgb(79, 96, 112) 1px;
@@ -758,7 +757,7 @@
   background-image: url("img/magnifyGlass3.png");
   background-repeat: no-repeat;
 }
-/* ////////// carousel.CSS //////////// */
+/* ////////// carousel.CSS ////// 1920 ////// */
 /* .carousel{
   background-image: url("img/openBook7.png");
 } */
@@ -775,25 +774,25 @@
 .carousel-indicators li { visibility: hidden; }
 .carousel-control.right {
   background-image: url("img/blueRectangle.png");
-  margin-right: 5%;
+  margin-right: -1%;
   background-repeat: no-repeat;
-  background-position-x: 66px;
+  background-position-x: 60px;
   /* background: none !important; */
   /* filter: progid none !important; */
   outline: 1;
  }
 .carousel-control.left{
   background-image: url("img/blueRectangle.png");
-  margin-left: 5%;
+  margin-left: -1%;
   background-repeat: no-repeat;
-  background-position-x: 76px;
+  background-position-x: 70px;
   /* background: none !important; */
   /* filter: progid none !important; */
   outline: 1;
  }
 .carousel-control {
-  background-size: 50%;
-  background-position-y: 208px;
+  background-size: 55%;
+  background-position-y: 212px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
@@ -819,10 +818,10 @@
 .overlay {
   cursor: pointer;
   position: absolute;  
-  top: 6%;
-  left: 5.5%;
-  height: 77.5%;
-  width: 89%;
+  top: 5.8%;
+  left: 5%;
+  height: 73.2%;
+  width: 82.5%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(10, 147, 185, 0.445);
@@ -896,7 +895,7 @@
 } */
 .bookAuthor{
   position: absolute;
-  left: 40%;
+  left: 44%;
   bottom: 7%;
   transform: translate(-50%, -50%);
   font-family: "roboto";
@@ -1183,10 +1182,9 @@ background-color:  rgb(246, 246, 246);
   color: rgb(182, 186, 190);
 }
 .shelfBook2 { /* 2 */
-  margin-bottom: 28%;
+  margin-bottom: 35%;
   margin-top: 10%;
-  width: 263px;
-  height: 350px;
+  
   border: solid rgb(79, 96, 112) 1px;
   position: relative;
 }
