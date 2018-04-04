@@ -3,6 +3,7 @@ import { Alert, Button, Glyphicon, FormGroup, ControlLabel, FormControl, Tabs, T
 import FlipPage from 'react-flip-page';
 import SelectPage from './SelectPage';
 import SelectPageType from './SelectPageType';
+import SearchBig from './landing/SearchBig';
 
 class Create extends Component {
     constructor(props, context) {
@@ -174,8 +175,43 @@ class Create extends Component {
                         <div className='row selectPageMenu'><SelectPageType /></div>
                     </div>
                 </div></div>
+                <div className='container'><div className='row' style={{marginTop: '-5%'}}>
+                    <div className="col-sm-4 col-md-4 col-lg-4"><button className='createBtn'>Save</button></div>
+                    <div className="col-sm-4 col-md-4 col-lg-4"><button className='createBtn'>Edit</button></div>
+                    <div className="col-sm-4 col-md-4 col-lg-4"><button className='createFbBtn'>Share on facebook</button></div>
+                 </div></div>
+                </div> {/* container-fluid end */}
+                </div> {/* row end */}
+                <SearchBig />
+
+                <div className='container'>
+                    {/* preview pages stuff */}
+                    <div className='font3'>Storybook preview</div>
+                    <div className='row' style={{marginTop: '2%'}}>
+                    
+                        <div className="col-sm-3 col-md-3 col-lg-3">
+                            <div className='row pagePreview'>
+                            <div className='containerPreview'>
+                                <img alt="" className="img-responsive" src={require("../img/pagePreview0.png")} /> 
+                                    <div className='overlayPreview'> 
+                                    <div className='textEditHover'>EDIT</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview1.png")} /> </div></div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview2.png")} /> </div></div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview3.png")} /> </div></div>
+                        </div>
+                        <div className='row'>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview4.png")} /> </div></div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview5.png")} /> </div></div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview6.png")} /> </div></div>
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview7.png")} /> </div></div>
+                    </div>
                 </div>
-                </div></div>
+
+                </div>
         )
     }
 }
