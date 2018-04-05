@@ -4,7 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-import Nav from "./components/Header";
 import Footer from "./components/landing-components/footer";
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
@@ -21,7 +20,6 @@ class App extends Component {
     return (
     <BrowserRouter>
       <div classname='container'>
-          <Nav />
           <Route exact path="/" component={Landing} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/books/1" component={Book1} />
