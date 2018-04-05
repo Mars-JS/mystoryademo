@@ -967,6 +967,20 @@
 }
 /* Container holding the image and the text */
 /* ///// overlayControls ////////// */
+.containerTextFull { 
+    /* background: rgb(102, 168, 187); */
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: -10%;
+}
+.containerTextHalf { 
+    /* background: rgb(102, 168, 187); */
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: -10%;
+}
 .containerText { 
     background: rgb(102, 168, 187);
     position: relative;

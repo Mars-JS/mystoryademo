@@ -100,8 +100,8 @@ class SelectPage extends Component {
                 ];
             default:
                 return [
-                    <div className='container'><div className='row' style={{ marginLeft: '10%', marginTop: '5%' }}>
-                        <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 containerText' style={{ width: '480px' }}>
+                    <div className='container'><div className='row containerTextFull'>
+                        <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                             <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} />
                             <div class="top-left"><Button onClick={this.handleSelected} value='textInput'>text</Button></div>
                             <div class="bottom-left"><Button onClick={this.handleSelected} value='audioInput'>audio</Button></div>
