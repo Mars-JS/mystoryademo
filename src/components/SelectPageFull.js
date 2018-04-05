@@ -103,10 +103,11 @@ class SelectPage extends Component {
                     <div className='container'><div className='row containerTextFull'>
                         <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                             <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} />
-                            <div class="top-left"><Button onClick={this.handleSelected} value='textInput'>text</Button></div>
-                            <div class="bottom-left"><Button onClick={this.handleSelected} value='audioInput'>audio</Button></div>
-                            <div class="top-right"><Button onClick={this.handleSelected} value='imgInput'>image</Button></div>
-                            <div class="bottom-right"><Button onClick={this.handleSelected} value='videoInput'>video</Button></div>
+                            {/* <div class="top-left glyphicon glyphicon-text-size glyphCreate selectInput" onClick={this.handleSelected} value='textInput' /> */}
+                            <div class="top-left-div glyphicon glyphicon-text-size glyphCreate"/> <Button className='top-left selectInput' onClick={this.handleSelected} value='textInput'/>
+                            <div class="bottom-left-div glyphicon glyphicon-volume-up glyphCreate"/> <Button className='bottom-left selectInput' onClick={this.handleSelected} value='audioInput'/>
+                            <div class="top-right-div glyphicon glyphicon-picture glyphCreate"/> <Button className='top-right selectInput' onClick={this.handleSelected} value='imgInput'/>
+                            <div class="bottom-right-div glyphicon glyphicon-camera glyphCreate"/> <Button className='bottom-right selectInput' onClick={this.handleSelected} value='videoInput'/>
                         </div></div></div>
                 ];
         }

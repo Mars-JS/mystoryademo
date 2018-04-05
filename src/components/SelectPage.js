@@ -10,6 +10,8 @@ class SelectPage extends Component {
         this.handleSelect = this.handleSelect.bind(this);
         this.handleSelected = this.handleSelected.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.readFile = this.readFile.bind(this);
+        this.playAudioFile = this.playAudioFile.bind(this);
 
         this.state = {
             isLoading: false,
@@ -22,6 +24,7 @@ class SelectPage extends Component {
             isSelected: ''
         };
     }
+    
     renderContent() {
         let { isLoading } = this.state;
         let { imagePreviewUrl } = this.state;
@@ -74,7 +77,8 @@ class SelectPage extends Component {
             case 'audioInput':
                 return [
                     <div className='container'><div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                        audioInput
+                        <label for="audioFileChooser">Upload an audio file: </label>
+                        <input  id="audioFileChooser" type="file" onchange={this.readFile(this.files)}/>
                         </div>
                     </div>
                         <div className='row' style={{ marginLeft: '15%' }}><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
@@ -99,13 +103,13 @@ class SelectPage extends Component {
                 ];
             default:
                 return [
-                    <div className='container'><div className='row' style={{ marginLeft: '10%', marginTop: '5%' }}>
+                    <div className='container'><div className='row' style={{ marginLeft: '17%', marginTop: '5%'}}>
                         <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 containerTextHalf' style={{ width: '480px' }}>
                             <img alt="" className="crossImg img-responsive" src={require("../img/cross2.png")} />
-                            <div class="top-left"><Button onClick={this.handleSelected} value='textInput'>text</Button></div>
-                            <div class="bottom-left"><Button onClick={this.handleSelected} value='audioInput'>audio</Button></div>
-                            <div class="top-right"><Button onClick={this.handleSelected} value='imgInput'>image</Button></div>
-                            <div class="bottom-right"><Button onClick={this.handleSelected} value='videoInput'>video</Button></div>
+                            <div class="top-left-div glyphicon glyphicon-text-size glyphCreate2"/> <Button className='top-left selectInput2' onClick={this.handleSelected} value='textInput'/>
+                            <div class="bottom-left-div2 glyphicon glyphicon-volume-up glyphCreate2"/> <Button className='bottom-left selectInput2' onClick={this.handleSelected} value='audioInput'/>
+                            <div class="top-right-div glyphicon glyphicon-picture glyphCreate2"/> <Button className='top-right selectInput2' onClick={this.handleSelected} value='imgInput'/>
+                            <div class="bottom-right-div2 glyphicon glyphicon-camera glyphCreate2"/> <Button className='bottom-right selectInput2' onClick={this.handleSelected} value='videoInput'/>
                         </div></div></div>
                 ];
         }
@@ -181,7 +185,25 @@ class SelectPage extends Component {
             isToggleOn: !prevState.isToggleOn
         }));
     }
-
+    playAudioFile(file) {
+		var context = new window.AudioContext();
+			context.decodeAudioData(file, function(buffer) {
+				var source = context.createBufferSource();
+					source.buffer = buffer;
+					source.loop = false;
+					source.connect(context.destination);
+					source.start(0); 
+			});
+    }
+    readFile(files) {
+		var fileReader = new FileReader();
+			fileReader.readAsArrayBuffer(files[0]);
+			fileReader.onload = function(e) {
+				this.playAudioFile(e.target.result);
+				console.log(("Filename: '" + files[0].name + "'"), ( "(" + ((Math.floor(files[0].size/1024/1024*100))/100) + " MB)" ));
+			}
+	}
+    
     render() {
         return (
             <div className='container'><div className='row'><div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>{this.renderContent()}</div></div></div>
