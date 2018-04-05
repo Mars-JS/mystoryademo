@@ -184,17 +184,17 @@ class Create extends Component {
                 </div> {/* row end */}
                 <SearchBig />
 
-                <div className='container'>
+                <div className='container-fluid'>
                     {/* preview pages stuff */}
-                    <div className='font3'>Storybook preview</div>
+                    <div className='font3'>Storybook Preview</div>
                     <div className='row' style={{marginTop: '2%'}}>
                     
-                        <div className="col-sm-3 col-md-3 col-lg-3">
+                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
                                 <img alt="" className="img-responsive" src={require("../img/pagePreview0.png")} /> 
                                     <div className='overlayPreview'> 
-                                    <div className='textEditHover'>EDIT</div>
+                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 1</div><div className='pageNo2hover'>Page 2</div>
                                 </div>
                             </div>
                             </div>
@@ -203,7 +203,8 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview2.png")} /> </div></div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview3.png")} /> </div></div>
                         </div>
-                        <div className='row'>
+
+                        <div className='row' style={{marginTop: '2%'}}>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview4.png")} /> </div></div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview5.png")} /> </div></div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='row pagePreview'> <img alt="" className="img-responsive" src={require("../img/pagePreview6.png")} /> </div></div>

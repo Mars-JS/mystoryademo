@@ -252,6 +252,47 @@
 }
 
 /* //////////// Create.CSS SelectPage.CSS SelectPageFull.CSS SelectPageType ///////////// */
+.pageNo1{
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  font-family: "Oswald";
+  color: rgb(23,50,70);
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 3em;
+}
+.pageNo2{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-family: "Oswald";
+  color: rgb(23,50,70);
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 3em;
+}
+.pageNo1hover{
+  position: absolute;
+  top: 101.3%;
+  left: 9%;
+  font-family: "Oswald";
+  color: rgb(255,71,23);
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 3em;
+}
+.pageNo2hover{
+  position: absolute;
+  top: 101.3%;
+  left: 57.2%;
+  font-family: "Oswald";
+  color: rgb(255,71,23);
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 3em;
+  text-underline-position: auto;
+}
 .createBtn{
   background-image: linear-gradient(rgb(23,50,70), #3B55A0);
   text-shadow: 0 -1px 0 black;
@@ -312,20 +353,43 @@
 .createFbBtn:active {
   box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
 }
+.pagePreview:hover{ /* 1 */
+  padding: 5px;
+  width: 300px;
+  border: 5px solid rgb(255,71,23);
+  border-radius: 1px;
+  margin: 2%;
+  margin-left: 11%;
+  margin-bottom: 10%;
+}
+.textEditHover{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+  color: white;
+  text-align: center;
+}
 .pagePreview{ /* 1 */
-  height: 200px;
-  width: 200px;
+  padding: 5px;
+  width: 300px;
+  border: 5px solid rgb(23,50,70);
+  border-radius: 1px;
+  margin: 2%;
+  margin-left: 11%;
+  margin-bottom: 10%;
 }
 .overlayPreview { /* preview section */
   cursor: pointer;
   position: absolute;
-  top: 6.9%;
-  left: 4.2%;
-  height: 69%;
-  width: 69.9%;
+  top: 5.8%;
+  left: 14.5%;
+  height: 73%;
+  width: 62%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(10, 147, 185, 0.445);
+  transition: .2s ease;
+  /* background-color: rgba(10, 147, 185, 0.445); */
 }
 .containerPreview:hover .overlayPreview {
   opacity: 1;
@@ -1157,7 +1221,7 @@ background-color:  rgb(233, 233, 233);
   color: rgb(233, 233, 233);
   font-size: 3em;
   font-weight: 3em;
-  text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black, 0 0 15px black, 0 0 20px black;
+  text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black;
 }
 .font2 {
   font-family: 'Oswald', serif;
@@ -1206,6 +1270,13 @@ background-color:  rgb(233, 233, 233);
   color: rgb(23,50,70);
   font-size: 12pt;
   
+}
+.font10 {
+  color: rgb(255,71,23);
+  font-family: 'Oswald', serif;
+  font-size: 3em;
+  font-weight: 3em;
+  text-shadow: 1px 1px 1px black, 0 0 3px black, 0 0 5px black;
 }
 /* /////////// Profile.CSS /////////// */
 .spacerRow{
