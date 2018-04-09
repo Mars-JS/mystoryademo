@@ -192,7 +192,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview0.png")} />
+                                <img alt="" className="img-responsive" src={require("../img/prev8.png")} />
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 1</div><div className='pageNo2hover'>Page 2</div>
                                 </div>
@@ -202,7 +202,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 3</div><div className='pageNo2'>Page 4</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview1.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev1.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 3</div><div className='pageNo2hover'>Page 4</div>
                                 </div>
@@ -212,7 +212,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 5</div><div className='pageNo2'>Page 6</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview2.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev2.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 5</div><div className='pageNo2hover'>Page 6</div>
                                 </div>
@@ -222,7 +222,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 7</div><div className='pageNo2'>Page 8</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview3.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev3.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 7</div><div className='pageNo2hover'>Page 8</div>
                                 </div>
@@ -235,7 +235,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 9</div><div className='pageNo2'>Page 10</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview4.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev4.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 9</div><div className='pageNo2hover'>Page 10</div>
                                 </div>
@@ -245,7 +245,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 11</div><div className='pageNo2'>Page 12</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview5.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev5.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 11</div><div className='pageNo2hover'>Page 12</div>
                                 </div>
@@ -255,7 +255,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 13</div><div className='pageNo2'>Page 14</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview6.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev6.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 13</div><div className='pageNo2hover'>Page 14</div>
                                 </div>
@@ -265,7 +265,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 15</div><div className='pageNo2'>Page 16</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview7.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/prev7.png")} /> 
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 15</div><div className='pageNo2hover'>Page 16</div>
                                 </div>
