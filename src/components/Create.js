@@ -192,7 +192,7 @@ class Create extends Component {
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div>
                             <div className='row pagePreview'>
                             <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/pagePreview0.png")} /> 
+                                <img alt="" className="img-responsive" src={require("../img/pagePreview0.png")} />
                                     <div className='overlayPreview'> 
                                     <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 1</div><div className='pageNo2hover'>Page 2</div>
                                 </div>
