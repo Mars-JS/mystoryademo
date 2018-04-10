@@ -160,7 +160,7 @@ class Create extends Component {
         return (
             <div className="container-fluid">
             <div id="spacer" className="row spacerRow"></div>
-                <div className='row'>
+                <div className='row mainCreateRow'>
                 <div className='container-fluid'>
                     <div className='row'> {/* title */}
                         <div className='col-sm-12 col-md-12 col-lg-12'>
@@ -175,7 +175,7 @@ class Create extends Component {
                         <div className='row selectPageMenu'><SelectPageType /></div>
                     </div>
                 </div></div>
-                <div className='container'><div className='row' style={{marginTop: '-5%'}}>
+                <div className='container'><div className='row createButtonRow' style={{marginTop: '-5%'}}>
                     <div className="col-sm-4 col-md-4 col-lg-4"><button className='createBtn'>Save</button></div>
                     <div className="col-sm-4 col-md-4 col-lg-4"><button className='createBtn'>Edit</button></div>
                     <div className="col-sm-4 col-md-4 col-lg-4"><button className='createFbBtn'>Share on facebook</button></div>

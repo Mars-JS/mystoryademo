@@ -24,7 +24,7 @@ class SearchBig extends Component {
   
   render(){
     return(
-    <div>
+    <div className='container-fluid'>
     <Jumbotron className="jumboSearch">
         <div className='container-fluid'><div className='row'>
           <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>

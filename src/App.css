@@ -416,9 +416,7 @@
 .containerPreview:hover .overlayPreview {
   opacity: 1;
 }
-.bookTitleCreate{
-  margin-left: 14%; width: 1280px; color: black; background-color: white; text-align: center;
-}
+
 /* .pageSelect{
   margin-top:1%;
 } */
@@ -437,13 +435,18 @@
 .imgPrev{
   margin-left: 17%;
 }
-.createStory{
+@media(max-width: 1920px){
+  .bookTitleCreate{
+  margin-left: 14%; width: 1280px; color: black; background-color: white; text-align: center;
+}
+.createStory{ /* 1 */
   background-color: rgb(219, 219, 219);
   height: 720px;
   width: 1280px;
   margin-left: 14%;
   margin-top: 1%;
   margin-bottom: 5%;
+}
 }
 .boxShadow{
   box-shadow: -3px 5px 5px black;
@@ -836,11 +839,12 @@
 .whiteBG{
   background-color: rgb(238, 238, 238);
 }
-.entireSiteBG{
+.entireSiteBG{ /* 1 */
   /* affects app.js */
   /* background-image: url("img/name.png"); */
   background-color: rgb(244,243,244);
   background-repeat: no-repeat;
+  width: 1920px;
 }
 .crossBG{
   background-image: url("img/cross2.png");
@@ -1308,7 +1312,7 @@
 /* ////////// Footer.CSS /////////// */
 .footerLogoBlue{ /* 1920 */
   position: relative;
-  left: 899px;
+  left: 892px;
   width: 65px;
   margin-top: 1%;
 }
@@ -1457,10 +1461,13 @@ background-color:  rgb(233, 233, 233);
   background-color: black;
   text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
-
+body {
+  overflow-x: hidden;
+}
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 @media(max-width: 1440px){
+  
   .centerThis {
 
 }
@@ -1520,7 +1527,7 @@ background-color:  rgb(233, 233, 233);
 }
 .footerLogoBlue{ /* 1440 */
   position: relative;
-  left: 651px;
+  left: 893px;
   width: 60px;
 }
 .loginBtn {
@@ -1544,6 +1551,7 @@ background-color:  rgb(233, 233, 233);
     background-image: url("img/landing3.png");
     /* background-image: url("img/landing2.png"); */
     height: 900px;
+    width: 1920px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1595,7 +1603,112 @@ background-color:  rgb(233, 233, 233);
 
 }
 
-@media(max-width: 1366px){
+@media(max-width: 1366px){ /* /////////////////////////////////////// 1366x768 ///////////////////////// */
+.entireSiteBG{
+  /* affects app.js */
+  /* background-image: url("img/name.png"); */
+  background-color: rgb(244,243,244);
+  background-repeat: no-repeat;
+  width: 1366px;
+}
+.mainCreateRow{
+  margin-left: -17.5%;
+}
+.createButtonRow{
+  margin-left: 22%;
+}
+.bookTitleCreate{ /* 3 */
+  display: center;
+  color: rgb(23, 50, 70);
+  background-color: white;
+  text-align: center;
+}
+.createStory{ /* 3 */
+  background-color: rgb(219, 219, 219);
+  margin-bottom: 5%;
+}
+.pagePreview{ /* 3 */
+  padding: 5px;
+  width: 225px;
+  border: 5px solid rgb(23,50,70);
+  border-radius: 1px;
+  margin: 2%;
+  margin-left: 11%;
+  margin-bottom: 10%;
+}
+.pagePreview:hover{ /* 3 */
+  padding: 5px;
+  width: 225px;
+  border: 5px solid rgb(255,71,23);
+  border-radius: 1px;
+  margin: 2%;
+  margin-left: 11%;
+  margin-bottom: 10%;
+}
+.textEditHover{
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+  color:rgb(255,71,23);
+  text-align: center;
+}
+.overlayPreview { /* preview section */
+  cursor: pointer;
+  position: absolute;
+  top: 5.8%;
+  left: 14.5%;
+  height: 73%;
+  width: 62%;
+  opacity: 0;
+  transition: .2s ease;
+  /* background-color: rgba(10, 147, 185, 0.445); */
+}
+.containerPreview:hover .overlayPreview {
+  opacity: 1;
+}
+.pageNo1{ /* 3 */
+  position: absolute;
+  top: 85%;
+  left: 22%;
+  font-family: "Oswald";
+  color: rgb(23,50,70);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 2.5em;
+}
+.pageNo2{ /* 3 */
+  position: absolute;
+  top: 85%;
+  left: 52%;
+  font-family: "Oswald";
+  color: rgb(23,50,70);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 2.5em;
+}
+.pageNo1hover{ /* 3 */
+  position: absolute;
+  top: 108.3%;
+  left: 12.6%;
+  font-family: "Oswald";
+  color: rgb(255,71,23);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 2.5em;
+}
+.pageNo2hover{ /* 3 */
+  position: absolute;
+  top: 108.3%;
+  left: 60.3%;
+  font-family: "Oswald";
+  color: rgb(255,71,23);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 2.5em;
+  text-underline-position: auto;
+}
 
 .carousel-control.right { /* 3 */
   background-image: url("img/blueRectangle.png");
@@ -1636,8 +1749,8 @@ background-color:  rgb(233, 233, 233);
   position: relative;
 }
 .footerLogoBlue{ /* 1366 */
-  position: relative;
-  left: 651px;
+  position: center;
+  left: 639px;
   width: 60px;
 }
 .loginBtn {
