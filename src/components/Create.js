@@ -117,7 +117,7 @@ class Create extends Component {
                                     <div className='row imgPrev'>{$imagePreview}</div>
                                     <div className="previewComponent">
                                         <form onSubmit={(e) => this._handleSubmit(e)} style={{ marginLeft: '14px', marginBottom: '6%' }}>
-                                            <input className="fileInput"
+                                            <input className="fileInput" style={{marginBottom: '5%'}}
                                                 type="file"
                                                 onChange={(e) => this._handleImageChange(e)} />
                                             <Button className="uploadImgButton"

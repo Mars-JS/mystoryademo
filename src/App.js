@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
     <BrowserRouter>
-      <div className="container-fluid entireSiteBG">
+      <div className="entireSiteBG">
           <Header />
           <Route exact path="/" component={Landing} />
           <Route exact path="/books" component={Landing} />

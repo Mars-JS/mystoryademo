@@ -1,6 +1,6 @@
 
 /* ///////////////// Landing.CSS /////////// */
-.jumbophoto {
+.jumbophoto { /* 1 */
     /* background-image: url("img/landing1.png"); */
     /* background-image: url("img/landing2.png"); */
     background-image: url("img/landing3.png");
@@ -315,6 +315,24 @@
   font-weight: 3em;
   text-underline-position: auto;
 }
+.mainCreateRow{
+  
+  margin-left: 0%;
+}
+.createButtonRow{
+  margin-left: 5%;
+}
+.bookTitleCreate{ /* 3 */
+  display: center;
+  color: rgb(23, 50, 70);
+  background-color: white;
+  text-align: center;
+}
+.createStory{ /* 3 */
+  background-color: rgb(219, 219, 219);
+  margin-bottom: 5%;
+}
+
 .createBtn{
   background-image: linear-gradient(rgb(23,50,70), #3B55A0);
   text-shadow: 0 -1px 0 black;
@@ -436,7 +454,7 @@
   margin-left: 17%;
 }
 @media(max-width: 1920px){
-  .bookTitleCreate{
+.bookTitleCreate{
   margin-left: 14%; width: 1280px; color: black; background-color: white; text-align: center;
 }
 .createStory{ /* 1 */
@@ -501,7 +519,7 @@
   margin-top: 1px;
   cursor: pointer;
 }
-.uploadImgButton{
+/* .uploadImgButton{
   padding: 6px;
   margin-left: -15px;
   margin-top: 7px;
@@ -524,7 +542,52 @@
   font-size: 11pt;
   cursor: pointer;
   background: rgb(23,50,70);
+} */
+.uploadButton{
+  background-image: linear-gradient(rgb(23,50,70), #3B55A0);
+  text-shadow: 0 -1px 0 black;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  width: 10em;
+  margin-top: -0.1em;
+  padding: 0px 5px 0px 0px;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 1px;
+  font-size: 18px;
+  
+  margin-top: 7px;
 }
+.uploadButton:hover, .uploadButton:focus, .uploadImgButton:hover, .uploadImgButton:focus{
+  border: 0px solid rgb(10,147,185);
+  color: rgb(255,255,255);
+  background: linear-gradient(rgb(23,50,70), rgb(10,147,185) );
+}
+.uploadImgButton{
+  position: absolute;
+  margin-left: -18px;
+  margin-top: 7px;
+  background-image: linear-gradient(rgb(23,50,70), #3B55A0);
+  text-shadow: 0 -1px 0 black;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  width: 10em;
+  margin-top: -0.1em;
+  padding: 0px 5px 0px 0px;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 1px;
+  font-size: 18px;
+}
+
 .uploadImgButton2{
   padding: 3px;
   margin-left: 1px;
@@ -844,7 +907,7 @@
   /* background-image: url("img/name.png"); */
   background-color: rgb(244,243,244);
   background-repeat: no-repeat;
-  width: 1920px;
+  
 }
 .crossBG{
   background-image: url("img/cross2.png");
@@ -856,19 +919,38 @@
   background-position-y: 50%; */
 }
 .pageBtnLeft{
-    margin-left: -35%;
-    position: absolute;
-    margin-top: -130%;
+  margin-left: -35%;
+  position: absolute;
+  margin-top: -130%;
 }
 .pageBtnRight{
-    margin-left: 57.3%;
-    position: absolute;
-    margin-top: -130%;
+  margin-left: 57.3%;
+  position: absolute;
+  margin-top: -130%;
+}
+
+.pageBtnSave:hover, .pageBtnSave:focus{
+  border: 0px solid rgb(10,147,185);
+  color: rgb(255,255,255);
+  background: linear-gradient(rgb(23,50,70), rgb(10,147,185) );
 }
 .pageBtnSave{
   margin-left: -133px;
-    width: 100px;
-    height: 37px;
+  background-image: linear-gradient(rgb(23,50,70), #3B55A0);
+  text-shadow: 0 -1px 0 black;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  width: 10em;
+  margin-top: -0.1em;
+  padding: 0px 5px 0px 0px;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 1px;
+  font-size: 18px;
 }
 .pageBtnShare{
   margin-left: 55px;
@@ -892,7 +974,7 @@
   background-image: linear-gradient(#4C69BA, #3B55A0);
   text-shadow: 0 -1px 0 #354C8C;
 }
-.pageBtnRow{
+.pageBtnRow{ /* 1 */
   width: 1280px;
   flex: auto;
   margin-left: 21%;
@@ -1312,7 +1394,7 @@
 /* ////////// Footer.CSS /////////// */
 .footerLogoBlue{ /* 1920 */
   position: relative;
-  left: 892px;
+  left: 898px;
   width: 65px;
   margin-top: 1%;
 }
@@ -1464,13 +1546,16 @@ background-color:  rgb(233, 233, 233);
 body {
   overflow-x: hidden;
 }
+/* read */
+.flipPageRow{ /* 1 */
+  margin-left: 15%;
+  height: 720px;
+  width: 1280px;
+  }
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////// media size controls //////////////////////////////////////////////////////////////////////////// */
 @media(max-width: 1440px){
-  
-  .centerThis {
 
-}
 .overlay { /* 2 */
   cursor: pointer;
   position: absolute;
@@ -1551,7 +1636,7 @@ body {
     background-image: url("img/landing3.png");
     /* background-image: url("img/landing2.png"); */
     height: 900px;
-    width: 1920px;
+    width: 1440px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1609,9 +1694,31 @@ body {
   /* background-image: url("img/name.png"); */
   background-color: rgb(244,243,244);
   background-repeat: no-repeat;
-  width: 1366px;
+}
+.pageBtnRow { /* 1 */
+  width: 1000px;
+  flex: auto;
+  margin-left: 12%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.flipPageRow { /* 3 */
+  margin-left: -1%;
+  height: 720px;
+  width: 1280px;
+}
+.pageBtnLeft{ /* 3 */
+  margin-left: -69%;
+  position: absolute;
+  margin-top: -130%;
+}
+.pageBtnRight{ /* 3 */
+  margin-left: 133%;
+  position: absolute;
+  margin-top: -130%;
 }
 .mainCreateRow{
+  
   margin-left: -17.5%;
 }
 .createButtonRow{
@@ -1750,7 +1857,7 @@ body {
 }
 .footerLogoBlue{ /* 1366 */
   position: center;
-  left: 639px;
+  left: 651px;
   width: 60px;
 }
 .loginBtn {

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 /* import ReadBookShelf from './ReadBookShelf'; */
 import BookShelfNew from './bookshelf/BookShelfNew';
 import FlipPage from 'react-flip-page';
+import { Button } from 'react-bootstrap';
 
 class Book7 extends Component {
     render() {
@@ -11,11 +12,11 @@ class Book7 extends Component {
                 <div id="spacer" className="row spacerRow"></div>
                 
                 <div className='row font3'><strong>TITLE OF BOOK </strong><span> by </span>" <a style={{color: 'rgb(23,50,70)'}} href='/viewprofile'>AUTHOR</a> "</div>
-                <div className='row' style={{marginLeft: '15%', height: '720px', width:'1280px'}}>
+                <div className='row flipPageRow'>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='450' fluid='true'>
                             <article>
-                                    <img className="img-responsive" src={require("../img/rihannaPage0.jpg")}/>
+                                <img className="img-responsive" src={require("../img/rihannaPage0.jpg")}/>
                             </article>
                             <article>
                                 <div className="container">
@@ -88,7 +89,7 @@ class Book7 extends Component {
                                                 </div>
                                                 <div className='row'>
                                                     <div className="col-sm-4 col-md-8 col-lg-12">
-                                                        <iframe id="videoPlayer" width="480px" height="272px" src="https://www.youtube.com/embed/0RyInjfgNc4" className="iframeYoutube" />
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0RyInjfgNc4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,8 +103,8 @@ class Book7 extends Component {
                 </div>
                 <div className='row pageBtnRow'>
                     <div className="col-sm-3 col-md-3 col-lg-3"><span className='glyphicon glyphicon-chevron-left pageBtn pageBtnLeft' /></div>
-                    <div className="col-sm-3 col-md-3 col-lg-3"><button className='pageBtn pageBtnSave'>Save</button></div>
-                    <div className="col-sm-3 col-md-3 col-lg-3"><button className='loginBtn loginbtn loginBtn--facebook pageBtnShare'>Share on facebook</button></div>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><Button className='pageBtnSave'>Save</Button></div>
+                    <div className="col-sm-3 col-md-3 col-lg-3"><button className='createFbBtn'>Share on facebook</button></div>
                     <div className="col-sm-3 col-md-3 col-lg-3"><span className='glyphicon glyphicon-chevron-right pageBtn pageBtnRight' /></div>
                  </div>
                  <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
