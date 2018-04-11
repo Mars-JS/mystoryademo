@@ -254,6 +254,48 @@
 }
 
 /* //////////// Create.CSS SelectPage.CSS SelectPageFull.CSS SelectPageType ///////////// */
+.fontName{
+  font-family: 'Oswald', serif;
+  color: rgb(23, 50, 70);
+  font-size: 3em;
+  font-weight: 3em;
+}
+.redEditBtn{
+  position: absolute;
+  cursor: pointer;
+  margin-top: 1.7%;
+  margin-left: 1px;
+  padding: 8px;
+  border: 0px solid rgb(255,71,23);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 1em;
+  background-image: linear-gradient(rgb(199, 55, 19), rgb(255,71,23));
+}
+.redEditBtn:hover, .redEditBtn:focus{
+  border: 0px solid rgb(10,147,185);
+  color: rgb(255,255,255);
+  background-image: linear-gradient(rgb(255,71,23), rgb(255, 51, 0));
+}
+.redCreateBtn{
+  position: absolute;
+  cursor: pointer;
+  margin-left: 11%;
+  margin-top: 1.7%;
+  padding: 8px;
+  border: 0px solid rgb(255,71,23);
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 1em;
+  background-image: linear-gradient(rgb(199, 55, 19), rgb(255,71,23));
+}
+.redCreateBtn:hover, .redCreateBtn:focus{
+  border: 0px solid rgb(10,147,185);
+  color: rgb(255,255,255);
+  background-image: linear-gradient(rgb(255,71,23), rgb(255, 51, 0));
+}
 .glyphCreate{
   font-size: 5.2em;
   color: rgb(23,50,70);
@@ -1502,8 +1544,8 @@ background-color:  rgb(233, 233, 233);
 /* /////////// Profile.CSS /////////// */
 .spacerRow{
   height: 126px;
-  background-color: rgb(23,50,70);
-  
+  /* background-color: rgb(23,50,70); */
+  background-color: white;
 }
 .profPic{
   width: 300px;

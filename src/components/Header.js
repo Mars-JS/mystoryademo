@@ -23,6 +23,13 @@ class Header extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll)
+        if(window.location.href === "http://localhost:3000/viewprofile") {
+                // some code to load
+                this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ searchColor: 'searchCSSblue' })
+                this.setState({ menuHamColor: require("../img/menuHam2.png") })
+                this.setState({ navScroll: 'white' })
+            }
     }
 
     componentWillUnmount() {
@@ -38,24 +45,32 @@ class Header extends Component {
     }
 
     handleScroll(event) {
-        // access window.scrollY etc
-        this.setState({ show: false });
-        if (window.scrollY<50){
-            this.setState({ navScroll: 'transparent' })
-            /* this.setState({ logoColor: require("../img/logoWhiteFullSm.png") }) */
-            this.setState({ logoColor: require("../img/logoWhite.png") })
-            this.setState({ menuHamColor: require("../img/menuHamWhite.png") })
-            this.setState({ searchColor: 'searchCSSwhite' })
-        }else{
-            /* this.setState({ logoColor: require("../img/logoBlueFullSm.png") }) */
-            this.setState({ logoColor: require("../img/logoBlue.png") })
-            this.setState({ searchColor: 'searchCSSblue' })
-            this.setState({ menuHamColor: require("../img/menuHam2.png") })
-            this.setState({ navScroll: 'white' })
-        }
-        /* console.log(this.state.navScroll); */
-    }
+            // access window.scrollY etc
+            this.setState({ show: false });
+            if(window.location.href === "http://localhost:3000/viewprofile") {
+                // some code to load
+                this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ searchColor: 'searchCSSblue' })
+                this.setState({ menuHamColor: require("../img/menuHam2.png") })
+                this.setState({ navScroll: 'white' })
+            } else {
 
+                if (window.scrollY<50){
+                    this.setState({ navScroll: 'transparent' })
+                    /* this.setState({ logoColor: require("../img/logoWhiteFullSm.png") }) */
+                    this.setState({ logoColor: require("../img/logoWhite.png") })
+                    this.setState({ menuHamColor: require("../img/menuHamWhite.png") })
+                    this.setState({ searchColor: 'searchCSSwhite' })
+                }else{
+                    /* this.setState({ logoColor: require("../img/logoBlueFullSm.png") }) */
+                    this.setState({ logoColor: require("../img/logoBlue.png") })
+                    this.setState({ searchColor: 'searchCSSblue' })
+                    this.setState({ menuHamColor: require("../img/menuHam2.png") })
+                    this.setState({ navScroll: 'white' })
+                }
+            }
+            /* console.log(this.state.navScroll); */
+}
     handleDismiss() {
         this.setState({ show: false });
         if (window.scrollY !== 0)this.setState({ navScroll: 'white' });

@@ -115,7 +115,10 @@ class Profile extends Component {
                         <div id="1B" className="row profBG font8">
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
-                                <h2>{this.state.valueDisplayName}<Button style={{marginLeft: '15%'}} onClick={this.handleShow} className="outlineButton">Edit Profile</Button></h2>
+                                <span><namething className='fontName'>{this.state.valueDisplayName}</namething>
+                                <editcreatebutton style={{marginLeft: '5%'}} ><button onClick={this.handleShow} className="redEditBtn">Edit Profile</button>
+                                <button type="submit" className='redCreateBtn'> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></editcreatebutton>
+                                </span>
                             </div>
                         </div>
 
@@ -138,6 +141,7 @@ class Profile extends Component {
                             <br/>
                             </div>
                         </div>
+                        
                         {/* <a href="/create"><button type="submit" className="blueButton"> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></a> */}
                     </div>
                 </div> {/* 1x */}
