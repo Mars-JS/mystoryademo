@@ -186,10 +186,12 @@
   position: relative;
 }
 .shelfBook2 { /* 1 */
-  margin-bottom: 35%;
+  margin-bottom: 32%;
   margin-top: 10%;
-  width: 263px;
-  height: 350px;
+  /* width: 263px;
+  height: 350px; */
+  width: 95%;
+  height: 95%;
   border: solid rgb(79, 96, 112) 1px;
   position: relative;
 }
@@ -1018,23 +1020,25 @@
   background-repeat: no-repeat;
 }
 /* ////////// carousel.CSS ////// 1920 ////// */
-.centerThis {
-    margin-top: 0 auto;
-    margin-bottom: 0 auto;
-    margin-right: 0 auto;
-    margin-left: 12%;
-    width: 80%;
-    float: none;
+.centerThis { /* 1920  */
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+  margin-right: 0 auto;
+  margin-left: 17.9%;
+  width: 65%;
+  float: none;
 }
 /* .carousel{
   background-image: url("img/openBook7.png");
 } */
-.carousel-inner{
+.carousel-inner{ /* this is the shelf object */
   /* background-image: url("img/lineShelfgrey.png"); */
-  background-image: url("img/shelf4.png");
+  /* background-image: url("img/shelf4.png"); */
+  background-image: url("img/shelf3.png");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 90%;
+  
 }
 /* .carouselitem{
   background-image: url("img/image.png");
@@ -1060,7 +1064,7 @@
  }
 .carousel-control { /* 1 */
   background-size: 55%;
-  background-position-y: 225px;
+  background-position-y: 202px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
@@ -1096,13 +1100,13 @@
     margin-top: 5px;
     margin-left: 5px;
 }
-.overlay { /* 1 */
+.overlay { /* 1920 */
   cursor: pointer;
   position: absolute;
-  top: 6.9%;
-  left: 4.2%;
-  height: 69%;
-  width: 69.9%;
+  top: 6%;
+  left: 5%;
+  height: 74.5%;
+  width: 85.5%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(10, 147, 185, 0.445);
