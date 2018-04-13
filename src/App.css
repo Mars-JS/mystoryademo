@@ -1392,23 +1392,38 @@ body {
   cursor: pointer;
 }
 /* header stuff */
-.profileImg{
+.profileDiv{
   position: absolute;
-  margin: auto;
-    border: 3px solid green;
-    padding: 10px;
+  margin-left: 78%;
+  padding: 10px;
+}
+.messageDiv{
+  position: absolute;
+  margin-left: 69%;
+  padding: 10px;
+}
+.heartDiv{
+  position: absolute;
+  margin-left: 60%;
+  padding: 10px;
+}
+.profileImg{
+  cursor: pointer;
+  margin-left: 25%;
+  height: 50%;
+  width: 50%;
 }
 .messageImg{
-  position: absolute;
-  margin: auto;
-    border: 3px solid green;
-    padding: 10px;
+  cursor: pointer;
+  margin-left: 25%;
+  height: 50%;
+  width: 50%;
 }
 .heartImg{
-  position: absolute;
-  margin: auto;
-    border: 3px solid green;
-    padding: 10px;
+  cursor: pointer;
+  margin-left: 25%;
+  height: 50%;
+  width: 50%;
 }
 /* menuham is for header */
 .menuHam{

@@ -15,6 +15,9 @@ class Header extends Component {
             show: false,
             navScroll: 'transparent',
             logoColor: require("../img/logoWhite.png"),
+            profColor: require("../img/iconT.png"),
+            msgColor: require("../img/iconT.png"),
+            hrtfColor: require("../img/iconT.png"),
             menuHamColor: require("../img/menuHamWhite.png"),
             searchColor: 'searchCSSwhite',
             showSearch: false
@@ -25,6 +28,9 @@ class Header extends Component {
         if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ profColor: require("../img/icon1.png") })
+                this.setState({ msgColor: require("../img/icon2.png") })
+                this.setState({ hrtColor: require("../img/icon3.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
                 this.setState({ menuHamColor: require("../img/menuHam2.png") })
                 this.setState({ navScroll: 'white' })
@@ -49,6 +55,9 @@ class Header extends Component {
             if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ profColor: require("../img/icon1.png") })
+                this.setState({ msgColor: require("../img/icon2.png") })
+                this.setState({ hrtColor: require("../img/icon3.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
                 this.setState({ menuHamColor: require("../img/menuHam2.png") })
                 this.setState({ navScroll: 'white' })
@@ -58,6 +67,9 @@ class Header extends Component {
                     this.setState({ navScroll: 'transparent' })
                     /* this.setState({ logoColor: require("../img/logoWhiteFullSm.png") }) */
                     this.setState({ logoColor: require("../img/logoWhite.png") })
+                    this.setState({ profColor: require("../img/iconT.png") })
+                    this.setState({ msgColor: require("../img/iconT.png") })
+                    this.setState({ hrtColor: require("../img/iconT.png") })
                     this.setState({ menuHamColor: require("../img/menuHamWhite.png") })
                     this.setState({ searchColor: 'searchCSSwhite' })
                 }else{
@@ -117,27 +129,27 @@ class Header extends Component {
                     
                     <div className='row dropDownRow' style={{ marginTop: '2%' }}>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/viewprofile'> Profile</a></Button>
+                            <Glyphicon glyph='glyphicon glyphicon-user' /> <a href='/profile' style={{color:'white'}}> Profile</a></Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-edit' /> My Stories</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-edit' /> <a href='/profile' style={{color:'white'}}>  My Stories</a></Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-book' /> Create New</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-book' /> <a href='/create' style={{color:'white'}}> Create New</a></Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-bookmark' /> Bookmarks</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-bookmark' /> <a href='/profile' style={{color:'white'}}> Bookmarks</a></Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> Friends</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-option-vertical' /> <a href='/viewprofile' style={{color:'white'}}> Friends</a></Button>
                     </div>
                     <div className='row dropDownRow'>
                         <Button type="submit" className="btn blueButton" style={{ width: '128px' }}>
-                            <Glyphicon glyph='glyphicon glyphicon-log-out' /> Logout</Button>
+                            <Glyphicon glyph='glyphicon glyphicon-log-out' /> <a href='/' style={{color:'white'}}> Logout</a></Button>
                     </div>
                     
                 </div>
@@ -159,14 +171,14 @@ class Header extends Component {
                 <Navbar fixedTop='true' fluid='true' href='nav'
                         style={{ background: this.state.navScroll, height: '126px', marginTop: '-0.5%', border: '1px transparent'}}>
                     <Navbar.Header>
-                    <profilediv className='profileImg'>
-                    <img alt="" className="img-responsive" src={require("../img/icon1.png")} />
+                    <profilediv className='profileDiv'>
+                    <img alt="" className="profileImg img-responsive" src={this.state.profColor} />
                     </profilediv>
-                    <messagediv className='messageImg'>
-                    <img alt="" className="img-responsive" src={require("../img/icon2.png")} />
+                    <messagediv className='messageDiv'>
+                    <img alt="" className="messageImg img-responsive" src={this.state.msgColor} />
                     </messagediv>
-                    <heartdiv className='heartImg'>
-                    <img alt="" className="img-responsive" src={require("../img/icon3.png")} />
+                    <heartdiv className='heartDiv'>
+                    <img alt="" className="heartImg img-responsive" src={this.state.hrtColor} />
                     </heartdiv>
                         <Nav>
                             <a href="/"><img style={{height:'155px'}} className='img-responsive logoLeft' src={this.state.logoColor} alt="logo" /></a>
