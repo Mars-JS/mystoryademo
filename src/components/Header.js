@@ -14,7 +14,6 @@ class Header extends Component {
         this.state = {
             show: false,
             navScroll: 'transparent',
-            /* logoColor: require("../img/logoWhiteFullSm.png"), */
             logoColor: require("../img/logoWhite.png"),
             menuHamColor: require("../img/menuHamWhite.png"),
             searchColor: 'searchCSSwhite',
@@ -23,7 +22,7 @@ class Header extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll)
-        if(window.location.href === "http://localhost:3000/viewprofile") {
+        if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlue.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
@@ -47,7 +46,7 @@ class Header extends Component {
     handleScroll(event) {
             // access window.scrollY etc
             this.setState({ show: false });
-            if(window.location.href === "http://localhost:3000/viewprofile") {
+            if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlue.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
@@ -155,17 +154,22 @@ class Header extends Component {
     }
     render() {
         return (
-            
             <div className='container-fluid'><div className='row'>
                 <div>
                 <Navbar fixedTop='true' fluid='true' href='nav'
                         style={{ background: this.state.navScroll, height: '126px', marginTop: '-0.5%', border: '1px transparent'}}>
                     <Navbar.Header>
+                    <profilediv className='profileImg'>
+                    <img alt="" className="img-responsive" src={require("../img/icon1.png")} />
+                    </profilediv>
+                    <messagediv className='messageImg'>
+                    <img alt="" className="img-responsive" src={require("../img/icon2.png")} />
+                    </messagediv>
+                    <heartdiv className='heartImg'>
+                    <img alt="" className="img-responsive" src={require("../img/icon3.png")} />
+                    </heartdiv>
                         <Nav>
-                                <a href="/"><img style={{height:'155px'}} className='img-responsive logoLeft' src={this.state.logoColor} alt="logo" />
-                                        {/* <img className='img-responsive logoBlue' src={require("../img/logoBlue.png")} alt="logo" /> */}
-                                        {/* <img className='img-responsive ' src={require("../img/logoText.png")} alt="logo" /> */}
-                            </a>
+                            <a href="/"><img style={{height:'155px'}} className='img-responsive logoLeft' src={this.state.logoColor} alt="logo" /></a>
                         </Nav>
                     </Navbar.Header>
                     <Nav pullRight>
@@ -180,6 +184,7 @@ class Header extends Component {
                     </Nav>
                 </Navbar>
                 </div>
+
             </div></div>
         )
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Glyphicon, Modal } from 'react-bootstrap';
 import ViewProfileAllShelf from './ViewProfileAllShelf';
 
+
 class ViewProfile extends Component {
         constructor(props, context) {
         super(props, context);
@@ -78,10 +79,10 @@ class ViewProfile extends Component {
                         <div id="1B" className="row profBG font8">
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
-                                <h2>{this.state.valueDisplayName}
+                                <viewdiv><namething className='fontName'>{this.state.valueDisplayName}</namething>
                                 <Button style={{marginLeft: '15%'}} onClick={this.handleShow} className="outlineButton2">Follow</Button>
                                 <Button style={{marginLeft: '1%'}} onClick={this.handleShow} className="outlineButton2">Message</Button>
-                                </h2>
+                                </viewdiv>
                             </div>
                         </div>
 

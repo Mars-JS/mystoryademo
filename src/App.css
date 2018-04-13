@@ -794,29 +794,30 @@ body {
   /* font-weight: 1.4em; */
   text-shadow: 1px 1px 1px black, 0 0 2px black;
 }
-.outlineButton{ /*  */
-  cursor:pointer;
+.outlineButton1{ /*  */
+  cursor: pointer;
   padding: 5px;
-  border:  2px solid rgb(23,50,70);
+  border: 2px solid rgb(23,50,70);
   border-radius: 1px;
   background-color: none;
   color: rgb(23,50,70);
   text-align: center;
   font-family: "Roboto";
   /* font-size: 16pt;  */
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: 800;
 }
-.outlineButton:hover{
+.outlineButton1:hover{
   border: 2px solid rgb(23,50,70);
   background-color: rgb(10,147,185);
 }
 .outlineButton2{ /* viewprofile */
+  margin-top: -3%;
   cursor:pointer;
   padding: 5px;
   padding-left: 7px;
   padding-right: 7px;
-  border:  2px solid rgb(23,50,70);
+  border: 2px solid rgb(23,50,70);
   border-radius: 1px;
   background-color: none;
   color: rgb(23,50,70);
@@ -828,7 +829,8 @@ body {
 }
 .outlineButton2:hover{
   border: 2px solid rgb(23,50,70);
-  background-color: rgb(10,147,185);
+  background: rgb(23,50,70);
+  color: rgb(255, 255, 255);
 }
 .headerLogin{
   margin-left: -210%;
@@ -1388,6 +1390,25 @@ body {
 }
 .cursorPointer{
   cursor: pointer;
+}
+/* header stuff */
+.profileImg{
+  position: absolute;
+  margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+}
+.messageImg{
+  position: absolute;
+  margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+}
+.heartImg{
+  position: absolute;
+  margin: auto;
+    border: 3px solid green;
+    padding: 10px;
 }
 /* menuham is for header */
 .menuHam{

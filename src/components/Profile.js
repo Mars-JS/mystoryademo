@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Button, Glyphicon, Modal, Popover, OverlayTrigger } from 'react-bootstrap';
 import ProfileAllShelf from './ProfileAllShelf';
 import ProfileContent from './profile/ProfileContent';
-/* import AllShelf from './bookshelf/AllShelf'; */
-
 
 class Profile extends Component {
     constructor(props, context) {
@@ -67,8 +65,8 @@ class Profile extends Component {
                 <div>
                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>1,111 Following </button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>2,222 followers</button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>3,333 stories</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>2,222 followers </button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>3,333 stories </button></div>
                     
                     <div>
                         <OverlayTrigger
@@ -167,7 +165,7 @@ class Profile extends Component {
                             <br/>
                                 <span><namething className='fontName'>{this.state.valueDisplayName}</namething>
                                 <editcreatebutton style={{marginLeft: '5%'}} ><button onClick={this.handleShow} className="profEditBtn">Edit Profile</button>
-                                <button type="submit" className='redCreateBtn'> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></editcreatebutton>
+                                <a href='/create'><button type="submit" className='redCreateBtn'> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></a></editcreatebutton>
                                 </span>
                             </div>
                         </div>
