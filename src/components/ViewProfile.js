@@ -109,7 +109,10 @@ class ViewProfile extends Component {
                     </div>
                 </div> {/* 1x */}
                 <div className='row flags' style={{backgroundColor: 'rgb(245,245,245)'}} >
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_usa.png")} alt="" /></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <a href='https://en.wikipedia.org/wiki/United_States'>
+                            <img id="" className="img-responsive cursorPointer" src={require("../img/flag_usa.png")} alt="" /></a>
+                    </div>
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
                 </div>

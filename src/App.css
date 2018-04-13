@@ -267,18 +267,20 @@ body {
   cursor: pointer;
   margin-top: 1.7%;
   margin-left: 1px;
-  padding: 8px;
-  border: 0px solid rgb(255,71,23);
+  padding: 5px;
+  border: 3px solid rgb(23,50,70);
   border-radius: 1px;
-  color: rgb(255, 255, 255);
+  color: rgb(23,50,70);
   font-weight: 800;
   font-size: 1em;
-  background-image: linear-gradient(rgb(23,50,70), rgb(10,147,185));
+  /* background-image: linear-gradient(rgb(23,50,70), rgba(10, 147, 185, 0.384)); */
 }
 .profEditBtn:hover, .profEditBtn:focus{
-  border: 0px solid rgb(10,147,185);
-  color: rgb(255,255,255);
-  background-image: linear-gradient(rgb(9, 119, 150), rgb(10,147,185));
+  border: 3px solid rgb(23,50,70);
+  color: rgb(0, 0, 0);
+  /* background-image: linear-gradient(rgb(9, 119, 150), rgb(10,147,185)); */
+  background-image: radial-gradient(rgb(10,147,185), rgb(42, 89, 126));
+  /* background-image: linear-gradient(rgb(9, 119, 150), rgb(10,147,185, 0.384)); */
 }
 .redCreateBtn{
   position: absolute;
@@ -288,6 +290,7 @@ body {
   padding: 8px;
   border: 0px solid rgb(255,71,23);
   border-radius: 1px;
+  /* color: rgb(255, 255, 255); */
   color: rgb(255, 255, 255);
   font-weight: 800;
   font-size: 1em;

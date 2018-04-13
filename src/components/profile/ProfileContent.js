@@ -16,25 +16,30 @@ class ProfileContent extends Component {
         this.handleSwitchStories = this.handleSwitchStories.bind(this);
         this.handleSwitchNewsfeed = this.handleSwitchNewsfeed.bind(this);
         this.handleSwitchFriendsFamily = this.handleSwitchFriendsFamily.bind(this);
-
+        
         this.state = {
             showFollow: 'stories'
         };
     }
         
     handleSwitchStories() {
+        if (window.scrollY < 545){window.scrollTo(0, 550)};
         this.setState({ showFollow: 'stories' });
     }
     handleSwitchPhotos() {
+        if (window.scrollY < 545){window.scrollTo(0, 550)};
         this.setState({ showFollow: 'photos' });
     }
     handleSwitchVideos() {
+        if (window.scrollY < 545){window.scrollTo(0, 550)};
         this.setState({ showFollow: 'videos' });
     }
     handleSwitchNewsfeed() {
+        if (window.scrollY < 545){window.scrollTo(0, 550)};
         this.setState({ showFollow: 'newsfeed' });
     }
     handleSwitchFriendsFamily() {
+        if (window.scrollY < 545){window.scrollTo(0, 550)};
         this.setState({ showFollow: 'friendsfamily' });
     }
 
