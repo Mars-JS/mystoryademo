@@ -10,7 +10,7 @@ class ProfileNewsfeed extends Component {
                     <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3 bgNews'></div>
                     
                     <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 bgNews'>
-                        <div className='row bgNews'>
+                        <div className='row bgNews2'>
                             <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><img id="" className="img-responsive newsProf" src={require("../../img/patProfile.png")} alt="" /></div>
                             <div className='col-xs-8 col-sm-8 col-md-8 col-lg-8 font07' style={{marginLeft: '-18%'}}>
                                 <strong>display name</strong> is somewhere doing something<p></p><p className='font08'>month 01 at 0:00pm Instagram</p><p>then they said something about it.</p>
@@ -24,19 +24,20 @@ class ProfileNewsfeed extends Component {
                         </div>
                         <div className='row bgNews'>
                             <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'></div>
-                            <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
-                            <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
+                            <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
                                 <span className='font08'>
                                 <span className='glyphicon glyphicon-thumbs-up' style={{fontSize: "3em", margin: '1%', color: 'rgb(23,50,70)'}}>
                                 </span>Like</span>
                             </div>
-                            <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
-                                <span className='glyphicon glyphicon-thumbs-up' style={{fontSize: "3em", margin: '1%', color: 'rgb(23,50,70)'}}>
-                                <span style={{fontSize: '10pt'}}>Like</span></span>
+                            <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+                                <span className='font08'>
+                                <span className='glyphicon glyphicon-comment' style={{fontSize: "3em", margin: '1%', color: 'rgb(23,50,70)'}}>
+                                </span>Comment</span>
                             </div>
-                            <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
-                                <span className='glyphicon glyphicon-thumbs-up' style={{fontSize: "3em", margin: '1%', color: 'rgb(23,50,70)'}}>
-                                <span style={{fontSize: '10pt'}}>Like</span></span>
+                            <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+                                <span className='font08'>
+                                <span className='glyphicon glyphicon-share-alt' style={{fontSize: "3em", margin: '1%', color: 'rgb(23,50,70)'}}>
+                                </span>Share</span>
                             </div>
                             
                         </div>

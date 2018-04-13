@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Glyphicon, Modal, Popover, OverlayTrigger } from 'react-bootstrap';
 import ProfileAllShelf from '../ProfileAllShelf';
 import ProfilePhotos from './ProfilePhotos';
+import ProfileVideos from './ProfileVideos';
 import ProfileNewsfeed from './ProfileNewsfeed';
 import ProfileFriendsFamily from './ProfileFriendsFamily';
 
@@ -11,6 +12,7 @@ class ProfileContent extends Component {
         super(props, context);
 
         this.handleSwitchPhotos = this.handleSwitchPhotos.bind(this);
+        this.handleSwitchVideos = this.handleSwitchVideos.bind(this);
         this.handleSwitchStories = this.handleSwitchStories.bind(this);
         this.handleSwitchNewsfeed = this.handleSwitchNewsfeed.bind(this);
         this.handleSwitchFriendsFamily = this.handleSwitchFriendsFamily.bind(this);
@@ -26,12 +28,16 @@ class ProfileContent extends Component {
     handleSwitchPhotos() {
         this.setState({ showFollow: 'photos' });
     }
+    handleSwitchVideos() {
+        this.setState({ showFollow: 'videos' });
+    }
     handleSwitchNewsfeed() {
         this.setState({ showFollow: 'newsfeed' });
     }
     handleSwitchFriendsFamily() {
         this.setState({ showFollow: 'friendsfamily' });
     }
+
     renderSwitch() {
         if (this.state.showFollow === 'stories') {
             return (
@@ -43,6 +49,14 @@ class ProfileContent extends Component {
                 <div className='row'>
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ProfilePhotos />
+                    </div></div>
+            );
+        }
+        if (this.state.showFollow === 'videos') {
+            return (
+                <div className='row'>
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ProfileVideos />
                     </div></div>
             );
         }
@@ -68,19 +82,19 @@ class ProfileContent extends Component {
         return (
             <div className='container-fluid'>
                 <div className='row'>
-                    <div className='col-xs-5 col-sm-5 col-md-5 col-lg-5'></div>
-                    <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
+                    <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4'></div>
+                    <div className='col-xs-7 col-sm-7 col-md-7 col-lg-7' style={{marginLeft:'5%', marginTop: '-3%'}}>
+                        
+                        <Button className='profBtn' onClick={this.handleSwitchStories} autofocus="autofocus" > stories </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchStories}> stories </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchPhotos} > photos </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchPhotos}> photos </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchVideos} > videos </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchNewsfeed}> newsfeed </Button>
-
-                        <Button className='profBtn' onClick={this.handleSwitchFriendsFamily}> friendsfamily </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchNewsfeed} > newsfeed </Button>
 
                     </div>
-                    <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
+                    <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
                 </div>
                 {this.renderSwitch()}
                 

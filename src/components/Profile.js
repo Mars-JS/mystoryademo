@@ -81,7 +81,11 @@ class Profile extends Component {
         }
         return (
             <div>
-            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div>
                     <OverlayTrigger
                         trigger={['hover', 'focus']}
                         placement="bottom"
@@ -201,8 +205,7 @@ class Profile extends Component {
                           {this.renderFollow()}
                 </div></div>
             </div>
-
-                <div className="row">
+                <div className="row" style={{}}>
                 
                     <ProfileContent/>
                 </div>

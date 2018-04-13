@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class ProfilePhotos extends Component {
     render() {
         return (
-            <div className='container'>
-                <div className='row' style={{background: 'lightgrey', marginBottom: '1%', marginTop: '1%'}}>
-                    <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 '>
+            <div className='container-fluid'>
+                <div className='row' style={{marginBottom: '1%', marginTop: '1%'}}>
+                    <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 ' style={{background: 'lightgrey' }}>
                         <div className='photoRow'>
                             <div className='row photoSubRow'>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
@@ -42,7 +42,16 @@ class ProfilePhotos extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 '>
+                    
+                </div>
+            </div>
+        )
+    }
+}
+
+export default ProfilePhotos;
+
+    {/* <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 '>
                         <div className='row'>
                             <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 '>
                                 <div className='row' style={{marginTop: '25%'}}>
@@ -63,11 +72,4 @@ class ProfilePhotos extends Component {
                                 links to googleplay etc.. 
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
-
-export default ProfilePhotos;
+                    </div> */}
