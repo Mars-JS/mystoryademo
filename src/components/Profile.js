@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Glyphicon, Modal } from 'react-bootstrap';
+import { Button, Glyphicon, Modal, Popover, OverlayTrigger } from 'react-bootstrap';
 import ProfileAllShelf from './ProfileAllShelf';
+import ProfileContent from './profile/ProfileContent';
+/* import AllShelf from './bookshelf/AllShelf'; */
 
 
 class Profile extends Component {
@@ -12,11 +14,14 @@ class Profile extends Component {
         this.handleCloseSave = this.handleCloseSave.bind(this);
         this.handleChangeDisplayName = this.handleChangeDisplayName.bind(this);
         this.handleChangeAboutMe = this.handleChangeAboutMe.bind(this);
+        this.handleDismissFollow = this.handleDismissFollow.bind(this);
+        this.handleShowFollow = this.handleShowFollow.bind(this);
 
         this.state = {
             show: false,
             valueDisplayName: 'Patrick Hustad',
-            valueAboutMe: 'Surfer, designer, engineer, family man !'
+            valueAboutMe: 'Surfer, designer, engineer, family man !',
+            showFollow: true
         };
     }
     handleClose() {
@@ -44,12 +49,53 @@ class Profile extends Component {
     handleChangeAboutMe(e) {
         this.setState({ valueAboutMe: e.target.value });
     }
+    handleDismissFollow() {
+        this.setState({ showFollow: false });
+    }
+    handleShowFollow() {
+        this.setState({ showFollow: true });
+    }
+    renderFollow() {
+        const popoverHoverFocus = (
+            <Popover id="popover-trigger-hover-focus" title="Hide / Show Followers">
+                If you hide your followers, no one will be able to see how many followers you have or who you're following.
+            </Popover>
+        );
 
+        if (this.state.showFollow) {
+            return (
+                <div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>1,111 Following </button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>2,222 followers</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>3,333 stories</button></div>
+                    
+                    <div>
+                        <OverlayTrigger
+                            trigger={['hover', 'focus']} placement="bottom" overlay={popoverHoverFocus}>
+                            <Button className='hideFollowBtn' onClick={this.handleDismissFollow}> hide </Button>
+                        </OverlayTrigger>
+                    </div>
+                </div>
+            );
+        }
+        return (
+            <div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <OverlayTrigger
+                        trigger={['hover', 'focus']}
+                        placement="bottom"
+                        overlay={popoverHoverFocus}>
+                        <Button onClick={this.handleShowFollow} className='hideFollowBtn'> show </Button>
+                    </OverlayTrigger>
+            </div></div>
+        );
+
+    }
     render() {
 
         return (
             <div className='container-fluid'>
-
                 
                 <Modal bsSize='md' show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
@@ -116,7 +162,7 @@ class Profile extends Component {
                             <div id="col1B" className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <br/>
                                 <span><namething className='fontName'>{this.state.valueDisplayName}</namething>
-                                <editcreatebutton style={{marginLeft: '5%'}} ><button onClick={this.handleShow} className="redEditBtn">Edit Profile</button>
+                                <editcreatebutton style={{marginLeft: '5%'}} ><button onClick={this.handleShow} className="profEditBtn">Edit Profile</button>
                                 <button type="submit" className='redCreateBtn'> Create New Story <Glyphicon glyph="glyphicon glyphicon-plus"/></button></editcreatebutton>
                                 </span>
                             </div>
@@ -150,16 +196,15 @@ class Profile extends Component {
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_columbia.png")} alt="" /></div>
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
                 </div>
-                <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>1,111 Following </button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>2,222 followers</button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>3,333 stories</button></div>
-                </div>
+                <div className='container-fluid'>
+                <div className='row socialBtnRow'>
+                          {this.renderFollow()}
+                </div></div>
             </div>
 
                 <div className="row">
-                    <ProfileAllShelf />
+                
+                    <ProfileContent/>
                 </div>
             </div>
         );

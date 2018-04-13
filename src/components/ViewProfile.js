@@ -109,14 +109,16 @@ class ViewProfile extends Component {
                 </div> {/* 1x */}
                 <div className='row flags' style={{backgroundColor: 'rgb(245,245,245)'}} >
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_usa.png")} alt="" /></div>
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img id="" className="img-responsive" src={require("../img/flag_add.png")} alt="" /></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
                 </div>
+                <div className='container-fluid'>
                 <div className='row socialBtnRow' style={{backgroundColor: 'rgb(245,245,245)'}} >
                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>1,111 Following </button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>2,222 followers</button></div>
-                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc'>3,333 stories</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>1,111 Following </button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>2,222 followers</button></div>
+                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button className='whiteBtnSoc socialBtn'>3,333 stories</button></div>
+                </div>
                 </div>
             </div>
 
