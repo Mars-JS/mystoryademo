@@ -172,13 +172,13 @@ class Header extends Component {
                         style={{ background: this.state.navScroll, height: '126px', marginTop: '-0.5%', border: '1px transparent'}}>
                     <Navbar.Header>
                     <profilediv className='profileDiv'>
-                    <img alt="" className="profileImg img-responsive" src={this.state.profColor} />
+                        <img alt="" className="profileImg img-responsive" src={this.state.profColor} />
                     </profilediv>
-                    <messagediv className='messageDiv'>
+                        <messagediv className='messageDiv'>
                     <img alt="" className="messageImg img-responsive" src={this.state.msgColor} />
-                    </messagediv>
+                        </messagediv>
                     <heartdiv className='heartDiv'>
-                    <img alt="" className="heartImg img-responsive" src={this.state.hrtColor} />
+                        <img alt="" className="heartImg img-responsive" src={this.state.hrtColor} />
                     </heartdiv>
                         <Nav>
                             <a href="/"><img style={{height:'155px'}} className='img-responsive logoLeft' src={this.state.logoColor} alt="logo" /></a>
