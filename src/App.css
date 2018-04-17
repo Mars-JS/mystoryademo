@@ -5031,17 +5031,17 @@ background-color:  rgb(233, 233, 233);
 /* header stuff */
 .profileDiv{ /* 1366 */
   position: absolute;
-  margin-left: 78%;
+  margin-left: 64%;
   padding: 10px;
 }
 .messageDiv{ /* 1366 */
   position: absolute;
-  margin-left: 69%;
+  margin-left: 55%;
   padding: 10px;
 }
 .heartDiv{ /* 1366 */
   position: absolute;
-  margin-left: 60%;
+  margin-left: 48%;
   padding: 10px;
 }
 .profileImg{ /* 1366 */
@@ -5074,13 +5074,13 @@ background-color:  rgb(233, 233, 233);
 .menuHam2{ /* 1366 */
   height: 30%;
   width: 30%;
-  margin-right: 59%;
+  margin-right: 105%;
   margin-top: 16.5%;
   float: right;
   cursor: pointer;
 }
 .dropDownRow{ /* 1366 */
-  margin-left: -23.5%;
+  margin-left: -78.5%;
 }
 /* .dropDownRow{
   margin-top: 1%;
@@ -5141,7 +5141,7 @@ background-color:  rgb(233, 233, 233);
 .font0 { /* 1366 */
   font-family: 'TimesNewRoman', serif;
   color: rgb(233, 233, 233);
-  font-size: 6.5em;
+  font-size: 6.3em;
   font-weight: 100;
   margin-right: -1.5%;
 }
