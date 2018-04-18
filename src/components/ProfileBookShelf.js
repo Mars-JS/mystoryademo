@@ -226,7 +226,7 @@ class ProfileBookShelf extends Component {
                                 <a href="/">
                                     <div className="books">
                                         <div className="book">
-                                            <img className="bookImage img-responsive" src={require("../img/fren4.jpg")} />
+                                            <img className="bookImage img-responsive" src={require("../img/fren3.jpg")} />
                                             <div className="overlay">
                                                 <div className="text">SHOP NOW</div>
                                             </div>

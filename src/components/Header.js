@@ -27,7 +27,7 @@ class Header extends Component {
         window.addEventListener('scroll', this.handleScroll)
         if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
-                this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ logoColor: require("../img/logoBlack.png") })
                 this.setState({ profColor: require("../img/icon1.png") })
                 this.setState({ msgColor: require("../img/icon2.png") })
                 this.setState({ hrtColor: require("../img/icon3.png") })
@@ -54,7 +54,7 @@ class Header extends Component {
             this.setState({ show: false });
             if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
                 // some code to load
-                this.setState({ logoColor: require("../img/logoBlue.png") })
+                this.setState({ logoColor: require("../img/logoBlack.png") })
                 this.setState({ profColor: require("../img/icon1.png") })
                 this.setState({ msgColor: require("../img/icon2.png") })
                 this.setState({ hrtColor: require("../img/icon3.png") })
@@ -74,7 +74,7 @@ class Header extends Component {
                     this.setState({ searchColor: 'searchCSSwhite' })
                 }else{
                     /* this.setState({ logoColor: require("../img/logoBlueFullSm.png") }) */
-                    this.setState({ logoColor: require("../img/logoBlue.png") })
+                    this.setState({ logoColor: require("../img/logoBlack.png") })
                     this.setState({ searchColor: 'searchCSSblue' })
                     this.setState({ menuHamColor: require("../img/menuHam2.png") })
                     this.setState({ navScroll: 'white' })

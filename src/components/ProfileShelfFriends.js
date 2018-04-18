@@ -91,7 +91,7 @@ class ProfileShelfFriends extends Component {
                                                 </div>
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/fren4.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/fren3.jpg")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
                                                                 <div className="bookTitle">book Title</div>

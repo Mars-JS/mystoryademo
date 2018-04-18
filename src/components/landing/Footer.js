@@ -23,7 +23,7 @@ class Footer extends Component {
                 </div>
             <div id='2A' className="row" style={{marginTop: '10px'}}>
                 <div id='col2A' className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                    <img alt="" className="footerLogoBlue" src={require("../../img/logoBlueFooter.png")} />
+                    <img alt="" className="footerLogoBlue" src={require("../../img/logoBlackFooter.png")} />
                 </div></div>
             <div id='3A' className="row font7" style={{marginTop: '10px'}}>
                 <div id='col3A' className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>

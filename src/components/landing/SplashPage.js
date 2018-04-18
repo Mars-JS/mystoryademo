@@ -53,12 +53,13 @@ class Splash extends Component {
             </div>
       <div className="row jumbophoto">
       
-        <div className="col-xs-1 col-sm-2 col-md-8 col-lg-8"></div>
-
+        
+        <div className='splashRowA'>
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
          
-         <div id="row10e" className="row" style={{marginTop: '25%' }}>
-          <div className='logoSplashText font0'><span style={{fontWeight:'900'}}>My</span>storya</div>
+         <div id="row10e" className="row" style={{marginTop: '24%' }}>
+          {/* <div className='logoSplashText font0'><span style={{fontWeight:'900'}}>My</span>storya</div> */}
+              <img alt="" className="img-responsive imgLogoText" src={require("../../img/logoWhiteText2.png")} /> 
          </div>
 
           <div id="row10e" className="row" style={{ marginTop: '15%' }}>
@@ -69,21 +70,21 @@ class Splash extends Component {
             </div>
           </div>
 
-          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '20%', marginTop: '10%' }}>
+            <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '24%', marginTop: '10%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
-              <button onClick={this.handleShowSearch} className="loginBtn loginBtn--custom"><a className="loginbtn" onClick={this.handleShowSearch}>Login with email</a></button>
-            </div>
-          </div>
-
-            <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '20%'}}>
-            <div className="col-sm-8 col-md-8 col-lg-8">
-              <button className="loginBtn loginBtn--facebook"><a className="loginbtn" href="/profile">Login with Facebook</a></button>
+              <a className="loginbtn" href="/profile"><button className="loginBtn loginBtn--facebook">Login with Facebook</button></a>
             </div>
           </div>
           
-            <div id="row10c" className="row" style={{ marginBottom: '1%', marginLeft: '20%' }}>
+          <div id="row10c" className="row" style={{ marginBottom: '1%', marginLeft: '24%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button className="loginBtn loginBtn--google"><a className="loginbtn" href="/profile">Login with Google</a></button>
+            </div>
+          </div>
+
+          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '24%'}}>
+            <div className="col-sm-8 col-md-8 col-lg-8">
+              <button onClick={this.handleShowSearch} className="loginBtn loginBtn--custom"><a className="loginbtn" onClick={this.handleShowSearch}>Login with email</a></button>
             </div>
           </div>
 
@@ -93,12 +94,9 @@ class Splash extends Component {
             </div>
           </div> */}
             
+        </div></div>
 
-          
-
-        </div>
-
-      
+        <div className="col-xs-1 col-sm-2 col-md-8 col-lg-8"></div> {/* spacer horizontal */}
 
     </div>
   </div>);
