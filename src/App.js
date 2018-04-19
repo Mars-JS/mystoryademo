@@ -9,8 +9,9 @@ import Profile from "./components/Profile";
 import ViewProfile from "./components/ViewProfile";
 import Book7 from "./components/Book7";
 import Create from "./components/Create";
+import CreateFlip from "./components/CreateFlip";
 /* import BookShelfTemp from './components/BookShelfTemp'; */
-import TempCreate2 from "./components/template/TempCreate2";
+/* import TempCreate2 from "./components/template/TempCreate2"; */
 /* const Header = 'header'; */
 /* const Book1 = 'book1'; */
 /* const Book2 = 'book2'; */
@@ -28,8 +29,8 @@ class App extends Component {
           <Route exact path="/viewProfile" component={ViewProfile} />
           <Route exact path="/books/7" component={Book7} />
           <Route exact path="/create" component={Create} />
-          <Route exact path="/create2" component={TempCreate2} />
-          <Footer/>
+          <Route exact path="/create2" component={CreateFlip} />
+          <Footer />
       </div>
     </BrowserRouter>
     );

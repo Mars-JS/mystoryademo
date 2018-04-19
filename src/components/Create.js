@@ -95,9 +95,9 @@ class Create extends Component {
         
             return (
                 <div className='container-fluid'><div className='row'>
-                    
+
                     <div className='row formRow'><div className='col-sm-12 col-md-12 col-lg-12'>
-                        
+
                         <div className='row' > {/* title input*/}
                                 <div className='col-sm-6 col-md-6 col-lg-6'>
                                     <form>
@@ -150,17 +150,19 @@ class Create extends Component {
                             </div></div>
                     </div></div>
 
+                    
                 </div></div>
             );
         
     }
 
-    render() {
+    renderMenuLg() {
+        
+        if (this.state.show) {
+            return (
 
-        return (
-            <div className="container-fluid">
-            <div id="spacer" className="row spacerRow"></div>
                 <div className='row mainCreateRow'>
+                <Button onClick={this.handleDismiss} className="hideButton">Show FlipPage (click)</Button>
                 <div className='container-fluid'>
                     <div className='row'> {/* title */}
                         <div className='col-sm-12 col-md-12 col-lg-12'>
@@ -181,101 +183,113 @@ class Create extends Component {
                     <div className="col-sm-4 col-md-4 col-lg-4"><button className='createFbBtn'>Share on facebook</button></div>
                  </div></div>
                 </div> {/* container-fluid end */}
-                </div> {/* row end */}
+                </div>
+
+            )
+            return (<div className='container'><Button className="hideButton" style={{ backgroundColor: 'black', color: 'white', marginTop: '1%' }} onClick={this.handleShow}>Update cover & title (click)</Button></div>);
+
+        }
+    }
+    render() {
+
+        return (
+            <div className="container-fluid">
+                <div id="spacer" className="row spacerRow"></div>
+                {this.renderMenuLg()}
                 <SearchBig />
 
                 <div className='container-fluid'>
                     {/* preview pages stuff */}
                     <div className='font3'>Storybook Preview</div>
-                    <div className='row' style={{marginTop: '2%'}}>
-                    
+                    <div className='row' style={{ marginTop: '2%' }}>
+
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev8.png")} />
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 1</div><div className='pageNo2hover'>Page 2</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev8.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 1</div><div className='pageNo2hover'>Page 2</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 3</div><div className='pageNo2'>Page 4</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev1.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 3</div><div className='pageNo2hover'>Page 4</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev1.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 3</div><div className='pageNo2hover'>Page 4</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 5</div><div className='pageNo2'>Page 6</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev2.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 5</div><div className='pageNo2hover'>Page 6</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev2.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 5</div><div className='pageNo2hover'>Page 6</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 7</div><div className='pageNo2'>Page 8</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev3.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 7</div><div className='pageNo2hover'>Page 8</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev3.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 7</div><div className='pageNo2hover'>Page 8</div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-                        </div>
+                    </div>
 
-                        <div className='row' style={{marginTop: '2%', marginBottom: '4%'}}>
+                    <div className='row' style={{ marginTop: '2%', marginBottom: '4%' }}>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 9</div><div className='pageNo2'>Page 10</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev4.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 9</div><div className='pageNo2hover'>Page 10</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev4.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 9</div><div className='pageNo2hover'>Page 10</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 11</div><div className='pageNo2'>Page 12</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev5.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 11</div><div className='pageNo2hover'>Page 12</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev5.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 11</div><div className='pageNo2hover'>Page 12</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 13</div><div className='pageNo2'>Page 14</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev6.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 13</div><div className='pageNo2hover'>Page 14</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev6.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 13</div><div className='pageNo2hover'>Page 14</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 15</div><div className='pageNo2'>Page 16</div>
                             <div className='row pagePreview'>
-                            <div className='containerPreview'>
-                                <img alt="" className="img-responsive" src={require("../img/prev7.png")} /> 
-                                    <div className='overlayPreview'> 
-                                    <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 15</div><div className='pageNo2hover'>Page 16</div>
+                                <div className='containerPreview'>
+                                    <img alt="" className="img-responsive" src={require("../img/prev7.png")} />
+                                    <div className='overlayPreview'>
+                                        <div className='textEditHover font10'>EDIT</div><div className='pageNo1hover'>Page 15</div><div className='pageNo2hover'>Page 16</div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                </div>
+            </div>
         )
     }
 }

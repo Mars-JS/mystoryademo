@@ -154,7 +154,7 @@ class Profile extends Component {
                 <div id="1x" className="row">
                     <div id="col2A" className="col-sm-1 col-md-1 col-lg-1"></div>
                     <div id="col1A" className="col-sm-4 col-md-4 col-lg-4 " style={{ marginTop: '50px'}} >
-                        <div className='row profPic'>
+                            <div className='row profPic'>
                             <img id="" className="img-responsive" src={require("../img/patProfile.png")} alt="" />
                         </div>
                     </div>

@@ -87,26 +87,25 @@ class ProfileContent extends Component {
         return (
             <div className='container-fluid'>
                 <div className='row'>
-                    <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4'></div>
+                    <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
                     <div className='col-xs-7 col-sm-7 col-md-7 col-lg-7' style={{marginLeft:'5%', marginTop: '-3%'}}>
                         
-                        <Button className='profBtn' onClick={this.handleSwitchStories} autofocus="autofocus" > stories </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchStories} autofocus="autofocus" > My Stories </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchPhotos} > photos </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchPhotos} > My Photos </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchVideos} > videos </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchVideos} > My Videos </Button>
 
-                        <Button className='profBtn' onClick={this.handleSwitchNewsfeed} > newsfeed </Button>
+                        <Button className='profBtn' onClick={this.handleSwitchNewsfeed} > Newsfeed </Button>
 
                     </div>
-                    <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
+                    <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2'></div>
                 </div>
                 {this.renderSwitch()}
                 
             </div>
         );
     }
-
 
 }
 

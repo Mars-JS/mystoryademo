@@ -25,15 +25,15 @@ class Header extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll)
-        if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
+        if (window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile" || window.location.href === "http://localhost:3000/create" || window.location.href === "http://localhost:3000/books/7") {
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlack.png") })
-                this.setState({ profColor: require("../img/icon1.png") })
-                this.setState({ msgColor: require("../img/icon2.png") })
-                this.setState({ hrtColor: require("../img/icon3.png") })
+                this.setState({ profColor: require("../img/iconT.png") })
+                this.setState({ msgColor: require("../img/iconT.png") })
+                this.setState({ hrtColor: require("../img/iconT.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
                 this.setState({ menuHamColor: require("../img/menuHam2.png") })
-                this.setState({ navScroll: 'white' })
+                this.setState({ navScroll: 'transparent' })
             }
     }
 
@@ -52,12 +52,12 @@ class Header extends Component {
     handleScroll(event) {
             // access window.scrollY etc
             this.setState({ show: false });
-            if(window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile"){
+        if (window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile" || window.location.href === "http://localhost:3000/create" || window.location.href === "http://localhost:3000/books/7"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlack.png") })
-                this.setState({ profColor: require("../img/icon1.png") })
-                this.setState({ msgColor: require("../img/icon2.png") })
-                this.setState({ hrtColor: require("../img/icon3.png") })
+                this.setState({ profColor: require("../img/iconT.png") })
+                this.setState({ msgColor: require("../img/iconT.png") })
+                this.setState({ hrtColor: require("../img/iconT.png") })
                 this.setState({ searchColor: 'searchCSSblue' })
                 this.setState({ menuHamColor: require("../img/menuHam2.png") })
                 this.setState({ navScroll: 'white' })
