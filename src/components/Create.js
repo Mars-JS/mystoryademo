@@ -4,6 +4,7 @@ import FlipPage from 'react-flip-page';
 import SelectPage from './SelectPage';
 import SelectPageType from './SelectPageType';
 import SearchBig from './landing/SearchBig';
+import CreateFlip from './CreateFlip';
 
 class Create extends Component {
     constructor(props, context) {
@@ -131,7 +132,7 @@ class Create extends Component {
                                 <span className='font2'>Share:</span>
                                             <form>
                                             <div className='container'><div className='row'>
-                                                
+     
                                                 <div className='row'>
                                                 <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
                                                 <input className='genreCheckBox' type="checkbox" name="private" value="private" /> <span className='font6'>Private</span></div>
@@ -157,7 +158,13 @@ class Create extends Component {
     }
 
     renderMenuLg() {
-        
+        let { imagePreviewUrl } = this.state;
+        let $imagePreview = null;
+        if (imagePreviewUrl) {
+            $imagePreview = (<img style={{ width: '1280px', height: '720px' }} src={imagePreviewUrl} />);
+        } else {
+            $imagePreview = (<div className="previewText" style={{ width: '1280px', height: '720px' }}>Preview your story here as you create</div>);
+        } 
         if (this.state.show) {
             return (
 
@@ -186,12 +193,112 @@ class Create extends Component {
                 </div>
 
             )
-            return (<div className='container'><Button className="hideButton" style={{ backgroundColor: 'black', color: 'white', marginTop: '1%' }} onClick={this.handleShow}>Update cover & title (click)</Button></div>);
-
-        }
+        }else{
+        return (
+        <div className='row mainCreateRow'>
+            <Button className="hideButton" style={{ backgroundColor: 'black', color: 'white', marginTop: '1%' }} onClick={this.handleShow}>Update cover & title (click)</Button>
+                <div className='row'> {/* title */}
+                    <div className='col-sm-12 col-md-12 col-lg-12'>
+                        {/* <h1 style={{ marginLeft: '14%', width: '1280px', color: 'black', backgroundColor: 'white', textAlign: 'center'}}>{this.state.value}</h1> */}
+                    <h1 className='bookTitleCreate'>{this.state.value}</h1>
+                </div></div>
+            <div className='createFlip'>
+                <FlipPage flipOnTouch='true' loopForever='true' height='720' width='1280' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='450' fluid='true'>
+                    <article> {/* cover page */}
+                        <div className='row'><div className='col-sm-12 col-md-12 col-lg-12'>
+                            <div className="imgPreview img-responsive">{$imagePreview}</div>
+                        </div>
+                        </div>
+                    </article>
+                            <article>
+                                <img className="img-responsive" src={require("../img/rihannaPage0.jpg")}/>
+                            </article>
+                            <article>
+                                <div className="container">
+                                        <div className="row">
+                                            <div className="col-sm-6 col-md-6 col-lg-6">
+                                                <h1 className='font3'>Chapter 1</h1>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                            
+                                            </div>
+                                            <div className="col-sm-6 col-md-6 col-lg-6">
+                                                <div className="row">
+                                                    <p />
+                                                    <p />
+                                                    <p />
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </p>
+                                                    <p>
+                                                        Consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat.
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                      
+                                                    </p>
+                                                </div>
+                                                <div className='row'>
+                                                    <div className="col-sm-4 col-md-8 col-lg-12">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0RyInjfgNc4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </article>
+             
+                        </FlipPage>
+            </div>
+        </div>);}
     }
-    render() {
 
+    render() {
+       
         return (
             <div className="container-fluid">
                 <div id="spacer" className="row spacerRow"></div>
@@ -203,7 +310,7 @@ class Create extends Component {
                     <div className='font3'>Storybook Preview</div>
                     <div className='row' style={{ marginTop: '2%' }}>
 
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 1</div><div className='pageNo2'>Page 2</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev8.png")} />
@@ -213,7 +320,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 3</div><div className='pageNo2'>Page 4</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 3</div><div className='pageNo2'>Page 4</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev1.png")} />
@@ -223,7 +330,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 5</div><div className='pageNo2'>Page 6</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 5</div><div className='pageNo2'>Page 6</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev2.png")} />
@@ -233,7 +340,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 7</div><div className='pageNo2'>Page 8</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 7</div><div className='pageNo2'>Page 8</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev3.png")} />
@@ -246,7 +353,7 @@ class Create extends Component {
                     </div>
 
                     <div className='row' style={{ marginTop: '2%', marginBottom: '4%' }}>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 9</div><div className='pageNo2'>Page 10</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 9</div><div className='pageNo2'>Page 10</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev4.png")} />
@@ -256,7 +363,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 11</div><div className='pageNo2'>Page 12</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 11</div><div className='pageNo2'>Page 12</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev5.png")} />
@@ -266,7 +373,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 13</div><div className='pageNo2'>Page 14</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 13</div><div className='pageNo2'>Page 14</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev6.png")} />
@@ -276,7 +383,7 @@ class Create extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 col-md-3 col-lg-3"><div className='pageNo1'>Page 15</div><div className='pageNo2'>Page 16</div>
+                        <div className="col-sm-3 col-md-3 col-lg-3">{/* <div className='pageNo1'>Page 15</div><div className='pageNo2'>Page 16</div> */}
                             <div className='row pagePreview'>
                                 <div className='containerPreview'>
                                     <img alt="" className="img-responsive" src={require("../img/prev7.png")} />

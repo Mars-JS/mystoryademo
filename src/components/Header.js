@@ -28,9 +28,8 @@ class Header extends Component {
         if (window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile" || window.location.href === "http://localhost:3000/create" || window.location.href === "http://localhost:3000/books/7") {
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlack.png") })
-                this.setState({ profColor: require("../img/iconT.png") })
-                this.setState({ msgColor: require("../img/iconT.png") })
-                this.setState({ hrtColor: require("../img/iconT.png") })
+                this.setState({ profColor: require("../img/iconT.png"), msgColor: require("../img/iconT.png"), hrtColor: require("../img/iconT.png") })
+                
                 this.setState({ searchColor: 'searchCSSblue' })
                 this.setState({ menuHamColor: require("../img/menuHam2.png") })
                 this.setState({ navScroll: 'transparent' })
@@ -52,7 +51,7 @@ class Header extends Component {
     handleScroll(event) {
             // access window.scrollY etc
             this.setState({ show: false });
-        if (window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile" || window.location.href === "http://localhost:3000/create" || window.location.href === "http://localhost:3000/books/7"){
+        if (window.location.href === "http://localhost:3000/viewprofile" || window.location.href === "http://localhost:3000/profile" || window.location.href === "http://localhost:3000/create"){
                 // some code to load
                 this.setState({ logoColor: require("../img/logoBlack.png") })
                 this.setState({ profColor: require("../img/iconT.png") })
@@ -80,6 +79,16 @@ class Header extends Component {
                     this.setState({ navScroll: 'white' })
                 }
             }
+        if (window.location.href === "http://localhost:3000/books/") {
+            // some code to load
+            this.setState({ logoColor: require("../img/logoBlack.png") })
+            this.setState({ profColor: require("../img/iconT.png") })
+            this.setState({ msgColor: require("../img/iconT.png") })
+            this.setState({ hrtColor: require("../img/iconT.png") })
+            this.setState({ searchColor: 'searchCSSblue' })
+            this.setState({ menuHamColor: require("../img/menuHam2.png") })
+            this.setState({ navScroll: 'rgba(73, 73, 73, 0.397)' })
+        }
             /* console.log(this.state.navScroll); */
 }
     handleDismiss() {
