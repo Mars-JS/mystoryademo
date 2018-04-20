@@ -2031,7 +2031,7 @@ background-color:  rgb(233, 233, 233);
   position: relative;
 }
 .shelfBook2 { /* 1440 */
-   margin-bottom: 33%;
+  margin-bottom: 33%;
   margin-top: 10%;
   /* width: 263px;
   height: 350px; */
@@ -2630,10 +2630,10 @@ background-color:  rgb(233, 233, 233);
   /* box-shadow: 1px 1px 1px 1px #000000; */
   /* color: rgb(23,50,70); */
   color: black;
-  margin-top: 18px;
+  margin-top: 3.3%;
   text-align: center;
   font-family: "proxima-nova,sans-serif";
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 800;
   /* text-shadow: 1px 1px 1px rgb(143, 143, 143); */
 }
@@ -3029,12 +3029,12 @@ background-color:  rgb(233, 233, 233);
     margin-top: 5px;
     margin-left: 5px;
 }
-.overlay { /* 1440 */ /* 1440 p */
+.overlay { /* 1440 */ 
   cursor: pointer;
   position: absolute;
   top: 6.9%;
   left: 4.2%;
-  height: 69%;
+  height: 73%;
   width: 69.9%;
   opacity: 0;
   transition: .5s ease;
