@@ -5,6 +5,23 @@ import FlipPage from 'react-flip-page';
 import { Button, Overlay, OverlayTrigger, Popover } from 'react-bootstrap';
 
 class BookDisney extends Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.handleDismissFollow = this.handleDismissFollow.bind(this);
+        this.handleShowFollow = this.handleShowFollow.bind(this);
+
+        this.state = {
+            showFollow: true
+        };
+    }
+    handleDismissFollow() {
+        this.setState({ showFollow: false });
+    }
+    handleShowFollow() {
+        this.setState({ showFollow: true });
+    }
+
     renderFollow() {
         const popoverHoverFocus = (
             <Popover id="popover-trigger-hover-focus" title="Hide / Show Followers">

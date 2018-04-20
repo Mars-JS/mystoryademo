@@ -25,11 +25,11 @@ class SearchBig extends Component {
   render(){
     return(
     <div className='container-fluid'>
-    <Jumbotron className="jumboSearch">
+    <div className="row jumboSearch">
         <div className='container-fluid'><div className='row'>
           <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
           <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-          <FormGroup id="searchhome" className="has-feedback">
+          <FormGroup id="searchhome" className="has-feedback searchBarLg">
             <FormControl id="searchtext" type="text" placeholder="Search Mystorya" />
             <i className="glyphicon glyphicon-search form-control-feedback"></i>
           </FormGroup>{' '}
@@ -37,7 +37,7 @@ class SearchBig extends Component {
           <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 whiteButton' onClick={this.handleShow}>SEARCH GENRES</div>
           <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
         </div></div>
-    </Jumbotron>
+    </div>
         <Modal bsSize="large" show={this.state.show} onHide={this.handleClose} bsClass='modal'>
         <Modal.Header closeButton>
           <Modal.Title className='font3'>Search by genre</Modal.Title>
@@ -74,6 +74,42 @@ class SearchBig extends Component {
                   <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Animals</genretext></div>
                   <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Fiction</genretext></div>
                   <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Military</genretext></div>
+                </div>
+
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="education" value="education" /> <genretext className='fontCheckBox'>Robotics</genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="science" value="science" /> <genretext className='fontCheckBox'>Artificial Intelligence</genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="autmobiles" value="automobiles" /> <genretext className='fontCheckBox'>Aircraft</genretext></div>
+                </div>
+
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Motor Sports</genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Plants</genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Science</genretext></div>
+                </div>
+                
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>History </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Games </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Fantasy </genretext></div>
+                </div>
+
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Autobiography </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Popular </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Random </genretext></div>
+                </div>
+
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>High school </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>College </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Architecture </genretext></div>
+                </div>
+
+                <div className='row'>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Space </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Physics </genretext></div>
+                  <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'><input className='genreCheckBox' type="checkbox" name="fiction" value="fiction" /><genretext className='fontCheckBox'>Motorcycles </genretext></div>
                 </div>
 
               </div></div>

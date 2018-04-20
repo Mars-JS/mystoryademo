@@ -20,6 +20,7 @@ import CreateFlip from "./components/CreateFlip";
 class App extends Component {
   render() {
     return (
+    
     <BrowserRouter>
       <div className="entireSiteBG">
           <Header />
@@ -33,6 +34,7 @@ class App extends Component {
           <Footer />
       </div>
     </BrowserRouter>
+    
     );
   }
 }

@@ -52,8 +52,7 @@ class Splash extends Component {
                 </Modal>
             </div>
       <div className="row jumbophoto">
-      
-        
+              
         <div className='splashRowA'>
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
          

@@ -85,12 +85,12 @@ class Profile extends Component {
             <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
             <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
             <div>
-                    <OverlayTrigger
-                        trigger={['hover', 'focus']}
-                        placement="bottom"
-                        overlay={popoverHoverFocus}>
-                        <Button onClick={this.handleShowFollow} className='hideFollowBtn'> show </Button>
-                    </OverlayTrigger>
+                <OverlayTrigger
+                    trigger={['hover', 'focus']}
+                    placement="bottom"
+                    overlay={popoverHoverFocus}>
+                    <Button onClick={this.handleShowFollow} className='hideFollowBtn'> show </Button>
+                </OverlayTrigger>
             </div></div>
         );
 
