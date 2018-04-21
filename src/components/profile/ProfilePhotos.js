@@ -9,35 +9,35 @@ class ProfilePhotos extends Component {
                         <div className='photoRow'>
                             <div className='row photoSubRow'>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp2.png")} alt="" />
                                 </div>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp3.png")} alt="" />
                                 </div>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
-                                </div>
-                            </div>
-                            <div className='row photoSubRow'>
-                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
-                                </div>
-                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
-                                </div>
-                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp4.png")} alt="" />
                                 </div>
                             </div>
                             <div className='row photoSubRow'>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp5.png")} alt="" />
                                 </div>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp6.png")} alt="" />
                                 </div>
                                 <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
-                                    <img id="" className="img-responsive" src={require("../../img/patProfile.png")} alt="" />
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp7.png")} alt="" />
+                                </div>
+                            </div>
+                            <div className='row photoSubRow'>
+                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp8.png")} alt="" />
+                                </div>
+                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/pp9.png")} alt="" />
+                                </div>
+                                <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 photoColumn'>
+                                    <img id="" className="img-responsive instaPics" src={require("../../img/patProfile.png")} alt="" />
                                 </div>
                             </div>
                         </div>

@@ -28,10 +28,10 @@ body {
   margin-bottom: 1%;
 }
 /* ///////////////// Landing.CSS /////////// */
-.jumbophoto { /* 1 */
+.jumbophoto { /* 1920 */
     /* background-image: url("img/landing1.png"); */
     /* background-image: url("img/landing2.png"); */
-    background-image: url("img/landing3.png");
+    background-image: url("img/lolo2.png");
     height: 1080px;
     background-position: center;
     background-size: cover;
@@ -161,11 +161,15 @@ body {
   border-radius: 1px;
   background-color: rgb(23,50,70);
   color: rgb(255,255,255);
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 4px;
   text-align: center;
   font-family: "Oswald";
   font-size: 12pt;
   font-weight: 550;
+  margin-left: -5%;
 }
 .modalCloseBtn:hover{
   color: rgb(255,255,255);
@@ -219,7 +223,7 @@ body {
   /* width: 263px;
   height: 350px; */
   width: 95%;
-  height: 360px;
+  height: 330px;
   border: solid rgb(79, 96, 112) 1px;
   position: relative;
 }
@@ -813,7 +817,7 @@ body {
   /* box-shadow: 1px 1px 1px 1px #000000; */
   /* color: rgb(23,50,70); */
   color: black;
-  margin-top: 3%;
+  margin-top: 3.1%;
   text-align: center;
   font-family: "proxima-nova,sans-serif";
   font-size: 1.4em;
@@ -857,7 +861,7 @@ body {
   text-align: center;
   font-family: "Roboto";
   /* font-size: 16pt;  */
-  font-size: 12pt;
+  font-size: 16pt;
   font-weight: 800;
 }
 .outlineButton2:hover{
@@ -1178,7 +1182,7 @@ body {
  }
 .carousel-control { /* 1920 */
   background-size: 55%;
-  background-position-y: 214px;
+  background-position-y: 196px;
   margin-top: -5%;
   visibility: visible;
   color: rgb(182,186,190);
@@ -1289,7 +1293,7 @@ body {
   transform: translate(-50%, -50%);
   font-family: "Oswald";
   color: rgb(240,241,244);
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: 1.5em;
 }
 /* .bookTitle:hover, .bookTitle:focus{
@@ -1541,7 +1545,7 @@ body {
   height: 250px;
 }
 .logoSplashText{ /* 1920 */
-  margin-left: 3%;
+  margin-left: 14%;
   text-align: center;
 }
 .splashRowA{ /* 1920 */
@@ -1549,14 +1553,17 @@ body {
   margin-top: -1%;
 }
 .imgLogoText{
-  margin-left: 7.5%;
+  margin-left: 11%;
+  height:300% ;
+  width: 300%;
 }
 /* ////////// Footer.CSS /////////// */
 .footerLogoBlue{ /* 1920 */
   position: relative;
-  left: 885px;
+  left: 838px;
   width: 65px;
   margin-top: 1%;
+  margin-bottom: 0.5%;
 }
 .footer{
 background-color:  rgb(233, 233, 233);
@@ -1672,9 +1679,12 @@ background-color:  rgb(233, 233, 233);
   /* background-color: rgb(23,50,70); */
   background-color: transparent;
 }
+.instaPics{
+  
+}
 .profPic{ /* 1920 */
-  width: 434px;
-  margin-bottom: 1%;
+  width: 410px;
+  margin-bottom: 2%;
   margin-left: 38.5%;
   margin-top: 3%;
 }
@@ -1743,6 +1753,8 @@ background-color:  rgb(233, 233, 233);
   margin-left: 15%;
   height: 720px;
   width: 1280px;
+  margin-top: 1%;
+  margin-bottom: 2.3%;
   }
 .photoRow{ /* 1920 */
   margin: 1%;
@@ -2956,7 +2968,7 @@ background-color:  rgb(233, 233, 233);
   margin-bottom: 0 auto;
   margin-right: 0 auto;
   margin-left: 9.9%;
-  width: 80%;
+  width: 70%;
   float: none;
 }
 

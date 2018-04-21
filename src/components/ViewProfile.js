@@ -21,7 +21,7 @@ class ViewProfile extends Component {
     }
     handleClose() {
         this.setState({ show: false });
-        this.setState({ valueDisplayName: 'pat_hustad' })
+        this.setState({ valueDisplayName: 'Rihanna' })
     }
     handleShow() {
         this.setState({ show: true });

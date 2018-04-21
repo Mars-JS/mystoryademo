@@ -88,7 +88,7 @@ class ProfileContent extends Component {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
-                    <div className='col-xs-7 col-sm-7 col-md-7 col-lg-7' style={{marginLeft:'5%', marginTop: '-3%'}}>
+                    <div className='col-xs-7 col-sm-7 col-md-7 col-lg-7' style={{marginLeft:'11.5%', marginTop: '-1%', marginBottom: '1%'}}>
                         
                         <Button className='profBtn' onClick={this.handleSwitchStories} autofocus="autofocus" > My Stories </Button>
 

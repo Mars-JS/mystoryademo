@@ -57,8 +57,8 @@ class Splash extends Component {
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
          
          <div id="row10e" className="row" style={{marginTop: '24%' }}>
-          {/* <div className='logoSplashText font0'><span style={{fontWeight:'900'}}>My</span>storya</div> */}
-              <img alt="" className="img-responsive imgLogoText" src={require("../../img/logoWhiteText2.png")} /> 
+           <div className='logoSplashText font0'><span style={{fontWeight:'900'}}>My</span>storya</div> 
+              <img alt="" className="img-responsive imgLogoText" src={require("../../img/logoTextBlue.png")} />
          </div>
 
           <div id="row10e" className="row" style={{ marginTop: '15%' }}>

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import BookShelfNew from './bookshelf/BookShelfNew';
 import FlipPage from 'react-flip-page';
 import { Button, Overlay, OverlayTrigger, Popover } from 'react-bootstrap';
+import AllShelf from './bookshelf/AllShelf';
 
 class Book7 extends Component {
     constructor(props, context) {
@@ -281,7 +282,7 @@ class Book7 extends Component {
                         {this.renderFollow()}
                     </div></div>
                 {/* <ReadBookShelf /> */}
-                <BookShelfNew />
+                <AllShelf/>
             </div>
         );
     }

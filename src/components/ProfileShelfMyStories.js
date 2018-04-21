@@ -45,16 +45,11 @@ class ProfileShelfMyStories extends Component {
                                             <div className="row ">
                                                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                                                     <div className='containerBook'>
-                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/patPic1.jpg")} />
+                                                        <img alt="" className="shelfBook2 img-responsive" src={require("../img/createBook.png")} />
                                                         <Link to="/books/7">
                                                             <div className='overlay'>
-                                                                <div className="bookTitle">book Title</div>
-                                                                <div className="bookViews"><span className='glyphicon glyphicon-sunglasses' /> 2,222</div>
-                                                                <div className="bookLikes"><span className='glyphicon glyphicon-heart' /> 2,222</div>
-                                                                <div className="bookComments"><span className='glyphicon glyphicon-comment' /> 2,222</div>
-                                                                <div className="bookRating"><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star' />
-                                                                    <span className='glyphicon glyphicon-star' /><span className='glyphicon glyphicon-star-empty' /></div>
-                                                                <div className="bookAuthor">book Author</div>
+                                                                <div className="bookTitle">CREATE NEW STORY</div>
+                                                               
                                                             </div></Link>
                                                     </div>
                                                 </div>
