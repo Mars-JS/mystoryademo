@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Glyphicon, Modal, Popover, OverlayTrigger } from 'react-bootstrap';
 import ProfileAllShelf from './ProfileAllShelf';
 import ProfileContent from './profile/ProfileContent';
+import AllShelf from './bookshelf/AllShelf';
 
 class Profile extends Component {
     constructor(props, context) {
@@ -213,10 +214,11 @@ class Profile extends Component {
                           {this.renderFollow()}
                 </div></div>
             </div>
-                <div className="row" style={{}}>
+                <div className="row centerContents">
                 
                     <ProfileContent/>
                 </div>
+                <AllShelf/>
             </div>
         );
     }

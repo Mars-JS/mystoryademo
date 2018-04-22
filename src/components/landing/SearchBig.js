@@ -26,7 +26,7 @@ class SearchBig extends Component {
     return(
     <div className='container-fluid'>
     <div className="row jumboSearch">
-        <div className='container-fluid'><div className='row'>
+        <div className='container-fluid'><div className='row searchRow'>
           <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
           <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
           <FormGroup id="searchhome" className="has-feedback searchBarLg">

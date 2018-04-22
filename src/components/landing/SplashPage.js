@@ -21,8 +21,8 @@ class Splash extends Component {
         this.setState({ showSearch: true });
     }
   render(){
-  return (
-  <div className="container-fluid">
+    return (
+      <div className="container-fluid">
               <div>
                 <Modal show={this.state.showSearch} onHide={this.handleCloseSearch}>
                     <Modal.Header closeButton>
@@ -56,9 +56,9 @@ class Splash extends Component {
         <div className='splashRowA'>
         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
          
-         <div id="row10e" className="row" style={{marginTop: '24%' }}>
-           <div className='logoSplashText font0'><span style={{fontWeight:'900'}}>My</span>storya</div> 
-              <img alt="" className="img-responsive imgLogoText" src={require("../../img/logoTextBlue.png")} />
+         <div id="row10e" className="row " style={{marginTop: '24%' }}>
+            <div className='logoSplashText font0 centerContents'><span style={{fontWeight:'900'}}>My</span>storya</div> 
+            <img alt="" className="img-responsive imgLogoText" src={require("../../img/logoTextBlue.png")} />
          </div>
 
           <div id="row10e" className="row" style={{ marginTop: '15%' }}>
@@ -69,19 +69,19 @@ class Splash extends Component {
             </div>
           </div>
 
-            <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '24%', marginTop: '10%' }}>
+          <div id="row10b" className="row" style={{ marginBottom: '1%', marginLeft: '20%', marginTop: '10%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
-              <a className="loginbtn" href="/profile"><button className="loginBtn loginBtn--facebook">Login with Facebook</button></a>
+                <a className="loginbtn" href="/profile"><button className="loginBtn loginBtn--facebook"><a href='/profile' className='loginbtn'>Login with Facebook</a></button></a>
             </div>
           </div>
           
-          <div id="row10c" className="row" style={{ marginBottom: '1%', marginLeft: '24%' }}>
+          <div id="row10c" className="row" style={{ marginBottom: '1%', marginLeft: '20%' }}>
             <div className="col-sm-8 col-md-8 col-lg-8">
-              <button className="loginBtn loginBtn--google"><a className="loginbtn" href="/profile">Login with Google</a></button>
+                <a className="loginbtn" href="/profile"><button className="loginBtn loginBtn--google"><a href='/profile' className='loginbtn'>Login with Google</a></button></a>
             </div>
           </div>
 
-          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '24%'}}>
+          <div id="row10a" className="row" style={{ marginBottom: '1%', marginLeft: '20%'}}>
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button onClick={this.handleShowSearch} className="loginBtn loginBtn--custom"><a className="loginbtn" onClick={this.handleShowSearch}>Login with email</a></button>
             </div>
