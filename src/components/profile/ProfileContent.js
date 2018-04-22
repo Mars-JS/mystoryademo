@@ -86,7 +86,7 @@ class ProfileContent extends Component {
     render() {
         return (
             <div className='container-fluid'>
-                <div className='row'>
+                <div className='row centerContents'>
                     
                     <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                         

@@ -214,7 +214,7 @@ class Profile extends Component {
                           {this.renderFollow()}
                 </div></div>
             </div>
-                <div className="row centerContents">
+                <div className="row">
                 
                     <ProfileContent/>
                 </div>
