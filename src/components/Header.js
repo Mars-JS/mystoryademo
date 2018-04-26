@@ -32,15 +32,17 @@ class Header extends Component {
         }else{
             this.setState({ navScroll: 'white' })
         }
-        console.log(this.state.navScroll);
+        /* console.log(this.state.navScroll); */
         /* console.log(y); */
     }
 
     handleDismiss() {
         this.setState({ show: false });
+        if (this.state.navScroll=='transparent')this.setState({ navScroll: 'white' })
     }
 
     handleShow() {
+        this.setState({ navScroll: 'transparent' })
         this.setState({ show: true });
     }
     renderMenuHam() {
