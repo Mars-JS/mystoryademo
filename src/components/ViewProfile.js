@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Glyphicon, Modal } from 'react-bootstrap';
-<<<<<<< HEAD
 import ViewProfileAllShelf from './ViewProfileAllShelf';
-=======
-import BookShelfNew from './bookshelf/BookShelfNew';
->>>>>>> eccf84c0f5d0e7ceba80de33ba643c4d605e382b
-
 
 class ViewProfile extends Component {
         constructor(props, context) {
