@@ -1,5 +1,5 @@
 import React from 'react';
-import SplashPage from './landing/SplashPage';
+import Splash from './landing/Splash';
 import SearchBig from './landing/SearchBig';
 import AllShelf from './bookshelf/AllShelf';
 /* import BookShelfNew from './BookShelfNew'; */
@@ -7,7 +7,7 @@ import AllShelf from './bookshelf/AllShelf';
 const Landing = () => {
     return (
       <div>
-      <SplashPage/>
+      <Splash/>
       <SearchBig/>
       <AllShelf />
       {/* <BookShelfNew/> */}

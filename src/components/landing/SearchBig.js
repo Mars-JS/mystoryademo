@@ -25,18 +25,21 @@ class SearchBig extends Component {
   render(){
     return(
     <div className='container-fluid'>
-    <div className="row jumboSearch">
-        <div className='container-fluid'><div className='row searchRow'>
-          <div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'></div>
-          <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
-          <FormGroup id="searchhome" className="has-feedback searchBarLg">
-            <FormControl id="searchtext" type="text" placeholder="Search Mystorya" />
-            <i className="glyphicon glyphicon-search form-control-feedback"></i>
-          </FormGroup>{' '}
-          </div>
-          <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 whiteButton' onClick={this.handleShow}>SEARCH GENRES</div>
-          <div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
-        </div></div>
+    <div className="row largeSearchBar container-fluid centerVertical">
+          
+            
+            <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 landingButton' onClick={this.handleShow}>SEARCH GENRES</div>
+            
+            <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
+            <FormGroup id="searchhome" className="has-feedback searchBarLg">
+              <FormControl id="searchtext" type="text" placeholder="Search Mystorya" />
+              <i className="glyphicon glyphicon-search form-control-feedback"></i>
+            </FormGroup>{' '}
+            </div>
+            
+            <div className='col-xs-4 col-sm-4 col-md-4 col-lg-4 landingButton'>OUR PLATFORM</div>
+            
+        
     </div>
         <Modal bsSize="large" show={this.state.show} onHide={this.handleClose} bsClass='modal'>
         <Modal.Header closeButton>

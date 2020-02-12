@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
-class Splash extends Component {
+class SplashPage extends Component {
       constructor(props, context) {
         super(props, context);
 
@@ -102,7 +102,7 @@ class Splash extends Component {
   }
 };
 
-export default Splash;
+export default SplashPage;
 
 /* old splash
               <div id="row4" className="row">
