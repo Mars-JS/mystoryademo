@@ -11,7 +11,7 @@
     "babel-preset-react": "^6.24.1",
     "express": "4.16.2",
     "flexbox-react": "^4.4.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "lodash.omit": "^4.5.0",
     "process": "^0.11.10",
     "prop-types": "^15.6.0",
